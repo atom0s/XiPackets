@@ -16,6 +16,7 @@ _This packet contains the information used to connect the client to the proper g
 ## Packet Layout
 
 ```cpp
+// PS2: lpkt_next_login
 struct packet_t
 {
     //

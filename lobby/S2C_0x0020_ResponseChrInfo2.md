@@ -24,7 +24,8 @@ Other examples of this packets size are:
 ## Packet Layout
 
 ```cpp
-struct lpkt_chr_info2
+// PS2: lpkt_chr_info_sub2
+struct lpkt_chr_info_sub2
 {
     uint32_t            ffxi_id;                    // PS2: ffxi_id
     uint16_t            ffxi_id_world;              // PS2: ffxi_id_world
@@ -37,6 +38,7 @@ struct lpkt_chr_info2
     TC_OPERATION_MAKE   character_info;             // PS2: character_info
 };
 
+// PS2: lpkt_chr_info2
 struct packet_t
 {
     //

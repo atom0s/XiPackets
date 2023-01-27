@@ -14,6 +14,7 @@ The server response packet sent to the client after logging into the lobby serve
 ## Packet Layout
 
 ```cpp
+// PS2: lpkt_key
 struct packet_t
 {
     //

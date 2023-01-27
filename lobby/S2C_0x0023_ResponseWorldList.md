@@ -16,12 +16,14 @@ This packet contains the available servers the player can select when creating a
 ## Packet Layout
 
 ```cpp
+// PS2: lpkt_world_name
 struct lpkt_world_name
 {
     uint32_t        no;                         // PS2: no
     char            name[16];                   // PS2: name
 };
 
+// PS2: lpkt_world_list
 struct packet_t
 {
     //
