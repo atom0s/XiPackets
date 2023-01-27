@@ -75,7 +75,7 @@ _The number of character information blocks this packet contains._
 
 _The array of available character (or content id) information._
 
-## Packet Fields (`lpkt_chr_info2`)
+## Packet Fields (`lpkt_chr_info_sub2`)
 
 ### ffxi_id
 
