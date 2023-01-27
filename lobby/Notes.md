@@ -102,3 +102,97 @@ uint32_t server_id = ffxi_id_world + (ffxi_id_world_tbl << 16);
 
 // server_id is now: 0x00081122
 ```
+
+# ExCodes (`excode_client`, `excode_server`, `excode_server2`)
+
+The `excode` fields are bit-fields that hold flags stating extended properties that are available.
+
+  - `excode_client` - Holds the available expansions the client has installed.
+  - `excode_server` - Holds the available expansions the server has enabled.
+  - `excode_server2` - Holds the available features the client has purchased/enabled. _(Security token, wardrobes, etc.)_
+
+## `excode_client`, `excode_server`
+
+As mentioned above, these bit-fields hold the available expansions on either end of the connection. The layout of this field is as follows:
+
+```cpp
+struct expansions_t
+{
+    uint32_t has_final_fantasy_xi : 1;          // Final Fantasy XI (Base Game)
+    uint32_t has_rise_of_the_zilart : 1;        // Rise of the Zilart
+    uint32_t has_chains_of_promathia : 1;       // Chains of Promathia
+    uint32_t has_treasures_of_aht_urhgan : 1;   // Treasures of Aht Urhgan
+    uint32_t has_wings_of_the_goddess : 1;      // Wings of the Goddess
+    uint32_t has_a_crystalline_prophecy : 1;    // A Crystalline Prophecy (Requires Rise of the Zilart to be enabled!)
+    uint32_t has_a_moogle_kupo_detat : 1;       // A Moogle Kupo d'Etat (Requires Rise of the Zilart to be enabled!)
+    uint32_t has_a_shantotto_ascension : 1;     // A Shantotto Ascension (Requires Rise of the Zilart to be enabled!)
+    uint32_t has_vision_of_abyssea : 1;         // Vision of Abyssea
+    uint32_t has_scars_of_abyssea : 1;          // Scars of Abyssea
+    uint32_t has_heroes_of_abyssea : 1;         // Heroes of Abyssea
+    uint32_t has_seekers_of_adoulin : 1;        // Seekers of Adoulin
+    uint32_t has_bit12 : 1;                     // (unused)
+    uint32_t has_bit13 : 1;                     // (unused)
+    uint32_t has_bit14 : 1;                     // (unused)
+    uint32_t has_bit15 : 1;                     // (unused)
+    uint32_t has_bit16 : 1;                     // (unused)
+    uint32_t has_bit17 : 1;                     // (unused)
+    uint32_t has_bit18 : 1;                     // (unused)
+    uint32_t has_bit19 : 1;                     // (unused)
+    uint32_t has_bit20 : 1;                     // (unused)
+    uint32_t has_bit21 : 1;                     // (unused)
+    uint32_t has_bit22 : 1;                     // (unused)
+    uint32_t has_bit23 : 1;                     // (unused)
+    uint32_t has_bit24 : 1;                     // (unused)
+    uint32_t has_bit25 : 1;                     // (unused)
+    uint32_t has_bit26 : 1;                     // (unused)
+    uint32_t has_bit27 : 1;                     // (unused)
+    uint32_t has_bit28 : 1;                     // (unused)
+    uint32_t has_bit29 : 1;                     // (unused)
+    uint32_t has_bit30 : 1;                     // (unused)
+    uint32_t has_bit31 : 1;                     // (unused)
+};
+```
+
+## `excode_server2`
+
+As mentioned above, this bit-field hold the clients paid for / unlocked additional features. The layout of this field is as follows:
+
+```cpp
+struct features_t
+{
+    uint32_t has_security_token : 1;            // The client has a security token linked to their account.
+    uint32_t has_bit1 : 1;                      // (Unknown; see notes below.)
+    uint32_t has_wardrobe3 : 1;                 // The client has access to Wardrobe 3.
+    uint32_t has_wardrobe4 : 1;                 // The client has access to Wardrobe 4.
+    uint32_t has_wardrobe5 : 1;                 // The client has access to Wardrobe 5.
+    uint32_t has_wardrobe6 : 1;                 // The client has access to Wardrobe 6.
+    uint32_t has_wardrobe7 : 1;                 // The client has access to Wardrobe 7.
+    uint32_t has_wardrobe8 : 1;                 // The client has access to Wardrobe 8.
+    uint32_t has_bit8 : 1;                      // (unused)
+    uint32_t has_bit9 : 1;                      // (unused)
+    uint32_t has_bit10 : 1;                     // (unused)
+    uint32_t has_bit11 : 1;                     // (unused)
+    uint32_t has_bit12 : 1;                     // (unused)
+    uint32_t has_bit13 : 1;                     // (unused)
+    uint32_t has_bit14 : 1;                     // (unused)
+    uint32_t has_bit15 : 1;                     // (unused)
+    uint32_t has_bit16 : 1;                     // (unused)
+    uint32_t has_bit17 : 1;                     // (unused)
+    uint32_t has_bit18 : 1;                     // (unused)
+    uint32_t has_bit19 : 1;                     // (unused)
+    uint32_t has_bit20 : 1;                     // (unused)
+    uint32_t has_bit21 : 1;                     // (unused)
+    uint32_t has_bit22 : 1;                     // (unused)
+    uint32_t has_bit23 : 1;                     // (unused)
+    uint32_t has_bit24 : 1;                     // (unused)
+    uint32_t has_bit25 : 1;                     // (unused)
+    uint32_t has_bit26 : 1;                     // (unused)
+    uint32_t has_bit27 : 1;                     // (unused)
+    uint32_t has_bit28 : 1;                     // (unused)
+    uint32_t has_bit29 : 1;                     // (unused)
+    uint32_t has_bit30 : 1;                     // (unused)
+    uint32_t has_bit31 : 1;                     // (unused)
+};
+```
+
+The field `has_bit1` has been observed to be set on new trial accounts. However, the actual usage/purpose is unknown. It does not appear this bit is ever tested/used within the client side of things. So this may just be a flag used on the server side.
