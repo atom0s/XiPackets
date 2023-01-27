@@ -191,9 +191,12 @@ _The characters main job level._
 
 ### open_flag
 
-_Unknown._
+_The characters current online status._
 
-_This value is not used within the client. It appears to be a flag that states if the character slot is open for creation of a new character. It is observed to be 0 where a character already exists, but 1 otherwise on available slots._
+  - `0` - The character has marked their information as hidden. _(via `/anon`)_
+  - `1` - The character has marked their information as visible. _(via `/anon off`)_
+
+_This value is not used within the client. It appears this value is also sometimes inconsistent and not correctly marked according to the characters actual information status._
 
 ### GMCallCounter
 
@@ -209,9 +212,7 @@ _This value is not used within the client. It appears to always be set to 2._
 
 ### skill1
 
-_Unknown._
-
-_This value is not used within the client. It appears to always be set to 0._
+_The characters Fishing skill level._
 
 ### zone_no2
 
@@ -261,7 +262,7 @@ _This value is not used within the client. It's value may not be what is expecte
 
 ### TC_OPERATION_WORK_USER_FAME_DARK_GUILD_
 
-_The characters fame amount with an unknown group._
+_The characters Norg fame amount._
 
 _This value is not used within the client. It's value may not be what is expected based on the field name._
 
@@ -289,27 +290,19 @@ _The characters current gil amount._
 
 ### skill2
 
-_Unknown._
-
-_This value is not used within the client._
+_The characters Woodworking skill level._
 
 ### skill3
 
-_Unknown._
-
-_This value is not used within the client._
+_The characters Smithing skill level._
 
 ### skill4
 
-_Unknown._
-
-_This value is not used within the client._
+_The characters Goldsmithing skill level._
 
 ### skill5
 
-_Unknown._
-
-_This value is not used within the client._
+_The characters Clothcraft skill level._
 
 ### ChatCounter
 
@@ -325,27 +318,19 @@ _This value is not used within the client. The naming of this field does not rel
 
 ### skill6
 
-_Unknown._
-
-_This value is not used within the client._
+_The characters Leathercraft skill level._
 
 ### skill7
 
-_Unknown._
-
-_This value is not used within the client._
+_The characters Bonecraft skill level._
 
 ### skill8
 
-_Unknown._
-
-_This value is not used within the client._
+_The characters Alchemy skill level._
 
 ### skill9
 
-_Unknown._
-
-_This value is not used within the client._
+_The characters Cooking skill level._
 
 ## General Notes
 
