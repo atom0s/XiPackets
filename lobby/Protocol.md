@@ -256,13 +256,13 @@ Other general errors are able to happen while working with the `lobby` server. T
 ### English DAT Files
 
 | File Id | File Path | Purpose |
-|--- |--- |--- |--- |
+|--- |--- |--- |
 | `48`      | `ROM\97\36.DAT`   | Contains `lobby` server general status messages. |
 | `55646`   | `ROM\165\70.DAT`  | Contains general error messages used for both the `lobby` server and in-game conditions. |
 
 ### Japanese DAT Files
 
 | File Id | File Path | Purpose |
-|--- |--- |--- |--- |
+|--- |--- |--- |
 | `30`      | `ROM\97\8.DAT`    | Contains `lobby` server general status messages. |
 | `55526`   | `ROM\165\54.DAT`  | Contains general error messages used for both the `lobby` server and in-game conditions. |
