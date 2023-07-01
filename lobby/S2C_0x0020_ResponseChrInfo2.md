@@ -55,7 +55,7 @@ struct packet_t
     //
 
     uint32_t            characters;                 // PS2: characters
-    lpkt_chr_info2      character_info[characters]; // PS2: character_info
+    lpkt_chr_info_sub2  character_info[characters]; // PS2: character_info
 };
 ```
 
@@ -128,7 +128,7 @@ _The name of the world the character is registered to._
 
 _The block of data containing the character creation information._
 
-_This block of data uses a shared data type, for information on its layout please see: [**Character Info**](/packets/lobby/CharacterInfo.md)_
+_This block of data uses a shared data type, for information on its layout please see: [**Character Info**](/lobby/CharacterInfo.md)_
 
 ## Example Packet
 
