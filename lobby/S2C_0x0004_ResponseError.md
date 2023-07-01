@@ -40,7 +40,7 @@ struct packet_t
 
 _These fields are part of the packet header._
 
-_You can find more information about the header fields here: [**Header**](/packets/lobby/Header.md)_
+_You can find more information about the header fields here: [**Header**](/lobby/Header.md)_
 
 ### unknown0000
 

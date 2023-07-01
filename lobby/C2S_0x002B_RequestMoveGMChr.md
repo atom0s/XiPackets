@@ -46,13 +46,13 @@ struct packet_t
 
 _These fields are part of the packet header._
 
-_You can find more information about the header fields here: [**Header**](/packets/lobby/Header.md)_
+_You can find more information about the header fields here: [**Header**](/lobby/Header.md)_
 
 ### ffxi_id
 
 _The selected characters unique id._
 
-_For more information on how the server ids work, please see: [**Server Ids**](/packets/lobby/Notes.md#server-ids)_
+_For more information on how the server ids work, please see: [**Server Ids**](/lobby/Notes.md#server-ids)_
 
 ### new_worldno
 
@@ -66,7 +66,7 @@ _The new name of the selected character._
 
 _The random generated password MD5 hashed, using the current `md5key` of the clients session._
 
-_For more information on how the passwords work, please see: [**Passwords**](/packets/lobby/Notes.md#passwords)_
+_For more information on how the passwords work, please see: [**Passwords**](/lobby/Notes.md#passwords)_
 
 ## Example Packet
 

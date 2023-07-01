@@ -44,25 +44,25 @@ struct packet_t
 
 _These fields are part of the packet header._
 
-_You can find more information about the header fields here: [**Header**](/packets/lobby/Header.md)_
+_You can find more information about the header fields here: [**Header**](/lobby/Header.md)_
 
 ### ffxi_id
 
 _The selected characters unique id._
 
-_For more information on how the server ids work, please see: [**Server Ids**](/packets/lobby/Notes.md#server-ids)_
+_For more information on how the server ids work, please see: [**Server Ids**](/lobby/Notes.md#server-ids)_
 
 ### passwd
 
 _The random generated password MD5 hashed, using the current `md5key` of the clients session._
 
-_For more information on how the passwords work, please see: [**Passwords**](/packets/lobby/Notes.md#passwords)_
+_For more information on how the passwords work, please see: [**Passwords**](/lobby/Notes.md#passwords)_
 
 ### character_info
 
 _The block of data containing the character creation information._
 
-_This block of data uses a shared data type, for information on its layout please see: [**Character Info**](/packets/lobby/CharacterInfo.md)_
+_This block of data uses a shared data type, for information on its layout please see: [**Character Info**](/lobby/CharacterInfo.md)_
 
 _**Note:** Only certain bits of the `character_info` field are populated and used with character creation. Not all data is used/honored or looked at on the server end._
 

@@ -65,7 +65,7 @@ struct packet_t
 
 _These fields are part of the packet header._
 
-_You can find more information about the header fields here: [**Header**](/packets/lobby/Header.md)_
+_You can find more information about the header fields here: [**Header**](/lobby/Header.md)_
 
 ### characters
 
@@ -81,19 +81,19 @@ _The array of available character (or content id) information._
 
 _The characters unique id._
 
-_For more information on how the server ids work, please see: [**Server Ids**](/packets/lobby/Notes.md#server-ids)_
+_For more information on how the server ids work, please see: [**Server Ids**](/lobby/Notes.md#server-ids)_
 
 ### ffxi_id_world
 
 _The characters in-game server id._
 
-_For more information on how the server ids work, please see: [**Server Ids**](/packets/lobby/Notes.md#server-ids)_
+_For more information on how the server ids work, please see: [**Server Ids**](/lobby/Notes.md#server-ids)_
 
 ### worldid
 
 _The characters server world id._
 
-_For more information on valid server world ids, please see: [**Character Info**](/packets/lobby/CharacterInfo.md)_
+_For more information on valid server world ids, please see: [**Character Info**](/lobby/CharacterInfo.md)_
 
 ### status
 
@@ -114,7 +114,7 @@ _Flag that states if the character is required to be renamed before it can be pl
 
 _The characters in-game server id. (hi-byte)_
 
-_For more information on how the server ids work, please see: [**Server Ids**](/packets/lobby/Notes.md#server-ids)_
+_For more information on how the server ids work, please see: [**Server Ids**](/lobby/Notes.md#server-ids)_
 
 ### character_name
 
