@@ -1,9 +1,9 @@
-# `Todo`
+# `GP_SERV_COMMAND_FEAT_DATA`
 
 | Information               | Notes |
 |---                        |---    |
-| **Command Name**          | `Todo` |
-| **Client Handler**        | `Todo` |
+| **Command Name**          | `GP_SERV_COMMAND_FEAT_DATA` |
+| **Client Handler**        | `RecvFeatData` |
 | **Direction**             | `S -> C` |
 | **OpCode**                | `0x00AB` |
 | **Size**                  | `Todo` |

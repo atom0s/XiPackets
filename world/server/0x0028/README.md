@@ -1,4 +1,4 @@
-# `RecvBattleCalc2`
+# `GP_SERV_COMMAND_BATTLE2`
 
 | Information               | Notes |
 |---                        |---    |

@@ -1,9 +1,9 @@
-# `Todo`
+# `GP_SERV_COMMAND_BATTLE_MESSAGE2`
 
 | Information               | Notes |
 |---                        |---    |
-| **Command Name**          | `Todo` |
-| **Client Handler**        | `Todo` |
+| **Command Name**          | `GP_SERV_COMMAND_BATTLE_MESSAGE2` |
+| **Client Handler**        | `RecvBattleMessage2` |
 | **Direction**             | `S -> C` |
 | **OpCode**                | `0x002D` |
 | **Size**                  | `Todo` |

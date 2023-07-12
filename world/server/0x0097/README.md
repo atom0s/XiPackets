@@ -1,9 +1,9 @@
-# `Todo`
+# `GP_SERV_COMMAND_MYROOM_EXIT`
 
 | Information               | Notes |
 |---                        |---    |
-| **Command Name**          | `Todo` |
-| **Client Handler**        | `Todo` |
+| **Command Name**          | `GP_SERV_COMMAND_MYROOM_EXIT` |
+| **Client Handler**        | `RecvMyroomExit` |
 | **Direction**             | `S -> C` |
 | **OpCode**                | `0x0097` |
 | **Size**                  | `Todo` |

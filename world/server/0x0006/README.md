@@ -1,9 +1,9 @@
-# `Todo`
+# `GP_SERV_COMMAND_NARAKU`
 
 | Information               | Notes |
 |---                        |---    |
-| **Command Name**          | `Todo` |
-| **Client Handler**        | `Todo` |
+| **Command Name**          | `GP_SERV_COMMAND_NARAKU` |
+| **Client Handler**        | `RecvNaraku` |
 | **Direction**             | `S -> C` |
 | **OpCode**                | `0x0006` |
 | **Size**                  | `Todo` |

@@ -1,9 +1,9 @@
-# `Todo`
+# `GP_SERV_COMMAND_REQLOGOUTINFO`
 
 | Information               | Notes |
 |---                        |---    |
-| **Command Name**          | `Todo` |
-| **Client Handler**        | `Todo` |
+| **Command Name**          | `GP_SERV_COMMAND_REQLOGOUTINFO` |
+| **Client Handler**        | `RecvLogoutInfo` |
 | **Direction**             | `S -> C` |
 | **OpCode**                | `0x010F` |
 | **Size**                  | `Todo` |

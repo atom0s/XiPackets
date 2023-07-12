@@ -1,9 +1,9 @@
-# `Todo`
+# `GP_SERV_COMMAND_OPENMOGMENU`
 
 | Information               | Notes |
 |---                        |---    |
-| **Command Name**          | `Todo` |
-| **Client Handler**        | `Todo` |
+| **Command Name**          | `GP_SERV_COMMAND_OPENMOGMENU` |
+| **Client Handler**        | `RecvOpenMogMenu` |
 | **Direction**             | `S -> C` |
 | **OpCode**                | `0x002E` |
 | **Size**                  | `Todo` |

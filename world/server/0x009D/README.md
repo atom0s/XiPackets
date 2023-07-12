@@ -1,9 +1,9 @@
-# `Todo`
+# `GP_SERV_COMMAND_MYROOM_DIARY`
 
 | Information               | Notes |
 |---                        |---    |
-| **Command Name**          | `Todo` |
-| **Client Handler**        | `Todo` |
+| **Command Name**          | `GP_SERV_COMMAND_MYROOM_DIARY` |
+| **Client Handler**        | `RecvMyroomDiary` |
 | **Direction**             | `S -> C` |
 | **OpCode**                | `0x009D` |
 | **Size**                  | `Todo` |

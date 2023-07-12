@@ -1,9 +1,9 @@
-# `Todo`
+# `GP_SERV_COMMAND_MAGIC_DATA`
 
 | Information               | Notes |
 |---                        |---    |
-| **Command Name**          | `Todo` |
-| **Client Handler**        | `Todo` |
+| **Command Name**          | `GP_SERV_COMMAND_MAGIC_DATA` |
+| **Client Handler**        | `RecvMagicData` |
 | **Direction**             | `S -> C` |
 | **OpCode**                | `0x00AA` |
 | **Size**                  | `Todo` |

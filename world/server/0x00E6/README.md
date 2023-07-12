@@ -1,9 +1,9 @@
-# `Todo`
+# `Unknown - Packet: 0x00E6`
 
 | Information               | Notes |
 |---                        |---    |
-| **Command Name**          | `Todo` |
-| **Client Handler**        | `Todo` |
+| **Command Name**          | `(Unknown)` |
+| **Client Handler**        | `(Unknown)` |
 | **Direction**             | `S -> C` |
 | **OpCode**                | `0x00F6` |
 | **Size**                  | `Todo` |

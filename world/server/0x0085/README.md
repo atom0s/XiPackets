@@ -1,9 +1,9 @@
-# `Todo`
+# `GP_SERV_COMMAND_GUILD_SELLLIST`
 
 | Information               | Notes |
 |---                        |---    |
-| **Command Name**          | `Todo` |
-| **Client Handler**        | `Todo` |
+| **Command Name**          | `GP_SERV_COMMAND_GUILD_SELLLIST` |
+| **Client Handler**        | `gcRecvGuildSellList` |
 | **Direction**             | `S -> C` |
 | **OpCode**                | `0x0085` |
 | **Size**                  | `Todo` |

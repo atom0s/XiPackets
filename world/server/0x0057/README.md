@@ -1,9 +1,9 @@
-# `Todo`
+# `GP_SERV_COMMAND_WEATHER`
 
 | Information               | Notes |
 |---                        |---    |
-| **Command Name**          | `Todo` |
-| **Client Handler**        | `Todo` |
+| **Command Name**          | `GP_SERV_COMMAND_WEATHER` |
+| **Client Handler**        | `RecvWeather` |
 | **Direction**             | `S -> C` |
 | **OpCode**                | `0x0057` |
 | **Size**                  | `Todo` |

@@ -1,9 +1,9 @@
-# `Todo`
+# `GP_SERV_COMMAND_MYROOM_PLACE`
 
 | Information               | Notes |
 |---                        |---    |
-| **Command Name**          | `Todo` |
-| **Client Handler**        | `Todo` |
+| **Command Name**          | `GP_SERV_COMMAND_MYROOM_PLACE` |
+| **Client Handler**        | `RecvMyroomJob` |
 | **Direction**             | `S -> C` |
 | **OpCode**                | `0x009E` |
 | **Size**                  | `Todo` |

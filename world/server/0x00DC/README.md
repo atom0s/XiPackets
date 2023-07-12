@@ -1,9 +1,9 @@
-# `Todo`
+# `GP_SERV_COMMAND_GROUP_SOLICIT_REQ`
 
 | Information               | Notes |
 |---                        |---    |
-| **Command Name**          | `Todo` |
-| **Client Handler**        | `Todo` |
+| **Command Name**          | `GP_SERV_COMMAND_GROUP_SOLICIT_REQ` |
+| **Client Handler**        | `RecvGroupSolicitreq` |
 | **Direction**             | `S -> C` |
 | **OpCode**                | `0x00DC` |
 | **Size**                  | `Todo` |

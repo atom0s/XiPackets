@@ -1,9 +1,9 @@
-# `Todo`
+# `GP_SERV_COMMAND_SWITCH_START`
 
 | Information               | Notes |
 |---                        |---    |
-| **Command Name**          | `Todo` |
-| **Client Handler**        | `Todo` |
+| **Command Name**          | `GP_SERV_COMMAND_SWITCH_START` |
+| **Client Handler**        | `RecvStart` |
 | **Direction**             | `S -> C` |
 | **OpCode**                | `0x0078` |
 | **Size**                  | `Todo` |

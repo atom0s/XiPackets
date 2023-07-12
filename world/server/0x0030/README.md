@@ -1,9 +1,9 @@
-# `Todo`
+# `GP_SERV_COMMAND_EFFECT`
 
 | Information               | Notes |
 |---                        |---    |
-| **Command Name**          | `Todo` |
-| **Client Handler**        | `Todo` |
+| **Command Name**          | `GP_SERV_COMMAND_EFFECT` |
+| **Client Handler**        | `RecvEffect` |
 | **Direction**             | `S -> C` |
 | **OpCode**                | `0x0030` |
 | **Size**                  | `Todo` |

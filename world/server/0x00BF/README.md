@@ -1,9 +1,9 @@
-# `Todo`
+# `Unknown - Packet: 0x00BF`
 
 | Information               | Notes |
 |---                        |---    |
-| **Command Name**          | `Todo` |
-| **Client Handler**        | `Todo` |
+| **Command Name**          | `(Unknown)` |
+| **Client Handler**        | `(Unknown)` |
 | **Direction**             | `S -> C` |
 | **OpCode**                | `0x00BF` |
 | **Size**                  | `Todo` |

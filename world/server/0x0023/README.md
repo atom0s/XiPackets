@@ -1,9 +1,9 @@
-# `Todo`
+# `GP_SERV_COMMAND_ITEM_TRADE_LIST`
 
 | Information               | Notes |
 |---                        |---    |
-| **Command Name**          | `Todo` |
-| **Client Handler**        | `Todo` |
+| **Command Name**          | `GP_SERV_COMMAND_ITEM_TRADE_LIST` |
+| **Client Handler**        | `RecvItemTradeList` |
 | **Direction**             | `S -> C` |
 | **OpCode**                | `0x0023` |
 | **Size**                  | `Todo` |

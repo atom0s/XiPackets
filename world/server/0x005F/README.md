@@ -1,9 +1,9 @@
-# `Todo`
+# `GP_SERV_COMMAND_MUSIC`
 
 | Information               | Notes |
 |---                        |---    |
-| **Command Name**          | `Todo` |
-| **Client Handler**        | `Todo` |
+| **Command Name**          | `GP_SERV_COMMAND_MUSIC` |
+| **Client Handler**        | `RecvMusic` |
 | **Direction**             | `S -> C` |
 | **OpCode**                | `0x005F` |
 | **Size**                  | `Todo` |
