@@ -9,7 +9,6 @@ The following list is the various packets that are currently sent from the serve
 
 | Packet Id | Packet Command Name | Client Handler Name |
 |---|---|---|
-| [`0x0000`](/world/server/0x0000/README.md) | `GP_SERV_COMMAND_NON`              | _N/A_                     |
 | [`0x0005`](/world/server/0x0005/README.md) | `GP_SERV_COMMAND_PACKETCONTROL`    | `RecvPacketControl`       |
 | [`0x0006`](/world/server/0x0006/README.md) | `GP_SERV_COMMAND_NARAKU`           | `RecvNaraku`              |
 | [`0x0008`](/world/server/0x0008/README.md) | `GP_SERV_COMMAND_ENTERZONE`        | `RecvEnterZone`           |
