@@ -319,7 +319,7 @@ For general attacks, this value is used to determine the the severity of the hit
 
 For `cmd_no: 15`, when using Ward or Effusion, this value is used to set the element color and type:
 
-  - `0` - _Unknown_
+  - `0` - _Elemental Mix_
   - `1` - Ignis
   - `2` - Gelus
   - `3` - Flabra
@@ -328,6 +328,18 @@ For `cmd_no: 15`, when using Ward or Effusion, this value is used to set the ele
   - `6` - Unda
   - `7` - Lux
   - `8` - Tenebrae
+
+**Elemental Mixing:** Once a Rune Fencer reaches Lv.35, they can begin to cast two runes at the same time. This allows for some of their skills to cause elemental mixing to happen. When using Ward or Effusion skills, the game will determine the animation to play based on the Rune Fencers current activate runes. If the runes are different elemental types, then mixing will occur and animation id `0` is used. _(Not all abilities will cause mixing, see the table below.)_
+
+  - `Ward: Vallation` - _Elemental mixing will take place when two (or more) runes of different elements are active._
+  - `Ward: Pflug` - _Elemental mixing will take place when two (or more) runes of different elements are active._
+  - `Ward: Valiance` - _Elemental mixing will take place when two (or more) runes of different elements are active._
+  - `Ward: Battuta` - _Elemental mixing will NOT take place. The last element used will be displayed._
+  - `Ward: Liement` - _Elemental mixing will take place when two (or more) runes of different elements are active._
+  - `Effusion: Swipe` - _Elemental mixing will NOT take place. The last element used will be displayed._
+  - `Effusion: Lunge` - _Elemental mixing will NOT take place. The last element used will be displayed._
+  - `Effusion: Gambit` - _Elemental mixing will take place when two (or more) runes of different elements are active._
+  - `Effusion: Rayke` - _Elemental mixing will take place when two (or more) runes of different elements are active._
 
 ### `scale`
 
