@@ -126,7 +126,7 @@ _The command number of the action._
   - `12` - Range Attack (Start)
   - `13` - Unknown
   - `14` - Dancer Ability (Flourish, Jig, Samba, Step, Waltz, etc.)
-  - `15` - Unknown
+  - `15` - Rune Fencer Effusion/Ward
 
 _**Note:** DNC job abilities are a mix between `cmd_no` 6 and `cmd_no` 14, depending on the type, such as Flourishes._
 
@@ -165,7 +165,7 @@ This value differs based on the current `cmd_no` of the action.
     - Interrupt: `splg` _(1735159923)_
   - `cmd_no: 13` - _Unknown._
   - `cmd_no: 14` - _The value will be equal to the ability id._
-  - `cmd_no: 15` - _Unknown._
+  - `cmd_no: 15` - _The value will be equal to the ability id._
 
 If an action is interrupted, then a secondary action with the same `cmd_no` will be sent with the `cmd_arg` being marked as interrupted. _(It's prefix will start with `sp` when denoting an interrupt.)_
 
@@ -190,7 +190,7 @@ This value differs based on the current `cmd_no` of the action.
   - `cmd_no: 12` - _The value is 0. (Unused.)_
   - `cmd_no: 13` - _The value is 0. (Unused.)_
   - `cmd_no: 14` - _The value is 0. (Unused.)_
-  - `cmd_no: 15` - _Unknown._
+  - `cmd_no: 15` - _The value is 0. (Unused.)_
 
 ### `res_sum`
 
@@ -302,8 +302,9 @@ These values relate to the current action `cmd_no` value. The client will make u
   - `cmd_no: 14` - (Dancer Ability (Flourish, Jig, Samba, Step, Waltz, etc.))
     - `kind` is set to `2`.
     - `sub_kind` is set to the animation id to be played. _(ie. Spectral Jig will set this to `12`.)_
-  - `cmd_no: 15` - (Unknown)
-    - _Unknown at this time._
+  - `cmd_no: 15` - (Rune Fencer Effusion/Ward)
+    - `kind` is set to `3`.
+    - `sub_kind` is set to the animation id to be played. _(ie. Effusion > Lunge will set this to `5`.)_
 
 ### `info`
 
@@ -315,6 +316,18 @@ For general attacks, this value is used to determine the the severity of the hit
   - `1` - Normal hit. _(Retail picks between `0` and `1` without a known cause.)_
   - `2` - Critical hit. _(Retail picks between `2` and `3` without a known cause.)_
   - `3` - Critical hit. _(Retail picks between `2` and `3` without a known cause.)_
+
+For `cmd_no: 15`, when using Ward or Effusion, this value is used to set the element color and type:
+
+  - `0` - _Unknown_
+  - `1` - Ignis
+  - `2` - Gelus
+  - `3` - Flabra
+  - `4` - Tellus
+  - `5` - Suplor
+  - `6` - Unda
+  - `7` - Lux
+  - `8` - Tenebrae
 
 ### `scale`
 
@@ -376,7 +389,9 @@ This value is used differently depending on the type of `cmd_no` and additional 
     - For Steps, this value is set to the current level affecting the target.
     - For Flourishes that deal damage, this value is set to the amount of damage dealt.
     - For Flourishes that cause an effect, this value is set to the status effect id granted. _(ie. Desperate Flourish causes weight `12`)_
-  - `cmd_no: 15` - _Unknown._
+  - `cmd_no: 15` - This vlaue is set depending on the type of RUN ability used.
+    - For Ward > Vallation, this value is set to the status effect id granted. _(ie. Vallation is `531`)_
+    - For Effusion > Swipe/Lunge, this value is set to the amount of damage dealt.
 
 ### `message`
 
