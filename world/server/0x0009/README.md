@@ -80,7 +80,6 @@ This value is formatted in a specific manner in which the client parses for an e
 
 | Key | Value Type | Value Size |
 | --- | :---: | :---: |
-|
 | `CasUniqueNo` | `int32_t` | `4` |
 | `TarUniqueNo` | `int32_t` | `4` |
 | `Para0`       | `int32_t` | `4` |
