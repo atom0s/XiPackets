@@ -70,15 +70,15 @@ _These fields are part of the packet header._
 
 _You can find more information about the header fields here: [**Header**](/world/server/Header.md)_
 
-### LogoutState
+### `LogoutState`
 
 _The logout state type that triggered this response._
 
-### Iwasaki
+### `Iwasaki`
 
 _Buffer containing data based on the `LogoutState` value._
 
-### cliErrCode
+### `cliErrCode`
 
 _The client error code, if set._
 

@@ -11,7 +11,7 @@
 ## Description
 
 > [!NOTE]
-> This is not a normal packet sent to regular players. It is specifically for GM's.
+> This is a special GM-related packet!
 
 This packet is sent by the server to display a message to chat for Game Masters.
 
@@ -42,7 +42,7 @@ _These fields are part of the packet header._
 
 _You can find more information about the header fields here: [**Header**](/world/server/Header.md)_
 
-### Mes
+### `Mes`
 
 _The message to be printed to chat._
 

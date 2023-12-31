@@ -43,19 +43,19 @@ _These fields are part of the packet header._
 
 _You can find more information about the header fields here: [**Header**](/world/server/Header.md)_
 
-### UniqueNo
+### `UniqueNo`
 
 _The entity server id._
 
-### ActIndex
+### `ActIndex`
 
 _The entity target index._
 
-### MesNo
+### `MesNo`
 
 _The system message id._
 
-### Attr
+### `Attr`
 
 _The message attributes._
 
@@ -70,7 +70,7 @@ if ((packet->Attr & 0x10) == 0 || FUNC_gcCheckBlackID(packet->UniqueNo) != 1)
 
 If this is false, the client will ignore the packet.
 
-### Data
+### `Data`
 
 _The message parameters string._
 
