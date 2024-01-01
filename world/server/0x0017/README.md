@@ -121,9 +121,15 @@ _All other `Kind` usages do not make use of this value._
 
 _The message sender name._
 
+> [!WARNING]
+> This string value is not guaranteed to be null-terminated! If a sender name takes up all 15 bytes, there will be no null-terminator!
+
 ### `Mes`
 
 _The message string._
+
+> [!WARNING]
+> This string value is not guaranteed to be null-terminated! Due to how packet alignment is handled, it is possible the string will not be null-terminated. See info below.
 
 ## Additional Information
 
@@ -195,3 +201,34 @@ The table index value (`val1`) is passed to a helper method which is used to det
   - `10` - `UnityMess` - _Unity NPC messages._
 
 _This kind of message setup expects additional client values to be already set from things such as event related buffers. Because of this, this kind of message handling is not recommended for general usage. Incorrect usage will crash the client as there is little to no error checking performed._
+
+## Additional Information: Message Length / Null-Termination
+
+This packet contains two string values, `sName` and `Mes`, which are both **NOT** null-terminated. Due to the way string values in packets are handled, these must be read properly in order for their contents to not overflow into other values or cause incorrect termination.
+
+The sender name (`sName`) can hold upto a maxmium of 15 characters. If a sender name is this length, then there will be no valid null character in the buffer. Because of this, the name should be read as its full 15 characters always and then trimmed based on if any nulls are present. If not, then the name will be the full 15 characters instead.
+
+The message string (`Mes`) is variable length and based on the message being sent. Due to how packet alignment is handled in FFXI, this value is also not null-terminated and is instead alignment-terminated as well as 'clamped' to a maximum length of 150 characters.
+
+When this packet is received, the client determines the length of the message by doing the following:
+
+```cpp
+auto id_size = *static_cast<uint16_t*>(pkt);
+auto msg_len = FUNC_enQueAddSizeGet(0x18, id_size >> 0x09) + 0x01;
+```
+
+This helper function is used to determine the size of a variable-length field within the packet data; generally the last field in the packet, and looks like this:
+
+```cpp
+int __cdecl FUNC_enQueAddSizeGet(int struct_size, int packet_size)
+{
+    return 4 * packet_size - struct_size;
+}
+```
+
+  - `struct_size` - _The offset into the packet where the actual variable length member starts. This is used to remove the length of data used for the other packet members._
+  - `packet_size` - _The total size of the packet from the packet header._
+
+_The client further clamps the value of `msg_len` returned from this function to a maximum of 150 characters._
+
+_**Please note:** FFXI reuses the same main packet buffer for all game traffic. Due to this, it is important that you read the message length properly and not assume there is any kind of null-termination after the message. The buffer used for packets is not cleared between usages and can contain junk data. Due to the message not being null-terminated, it is possible to read extra junk characters into your message if you try and assume null-termination._
