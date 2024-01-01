@@ -51,6 +51,9 @@ _The server id of the GM that executed the command._
 
 _The buffer containing the command to be executed._
 
+> [!WARNING]
+> This string value is not guaranteed to be null-terminated!
+
 ## Additional Information
 
 This packet is used to allow GMs to execute commands on a players client. The game client only has several built-in functions that this is designed for, while other GM commands are executed on the server.

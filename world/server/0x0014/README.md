@@ -66,6 +66,9 @@ _Padding; unused._
 
 _The message string._
 
+> [!WARNING]
+> This string value is not guaranteed to be null-terminated!
+
 ## Additional Information
 
 While this packet is no longer used for its original assumed purpose of displaying `/tell` messages, the client still has the handler code for it. The only part of the packet that is used within the handler is the `Str` message string. The client parses this raw string for auto-translate phrases and converts them then displays the parsed string.

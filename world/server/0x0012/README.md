@@ -46,6 +46,9 @@ _You can find more information about the header fields here: [**Header**](/world
 
 _The message to be printed to chat._
 
+> [!WARNING]
+> This string value is not guaranteed to be null-terminated!
+
 ## Additional Information
 
 This packet is used for GM related messaging and is not sent to normal clients. This is not used for normal GM communications with players either, those are sent as normal chat packets (`0x0017`) with a flag set to mark the packet as from a GM. The intended purpose of this packet is unknown, but speculations on what it could be for are:

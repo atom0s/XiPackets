@@ -130,6 +130,9 @@ int __cdecl FUNC_Packet_Incoming_0x0009_RecvMessage_Inline2(char *buffer, char *
 }
 ```
 
+> [!WARNING]
+> This string value is not guaranteed to be null-terminated!
+
 ## Additional Information
 
 The messages this packet makes use of are stored in the following DAT files:
