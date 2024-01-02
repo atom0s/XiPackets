@@ -29,7 +29,6 @@ struct GP_SERV_CHAT_STD
     uint8_t     sName[15];  // PS2: sName
     uint8_t     Mes[];      // PS2: Mes
 };
-
 ```
 
 ## Packet Fields
