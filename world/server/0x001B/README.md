@@ -39,7 +39,7 @@ struct packet_t
 
 The following information describes the structures outlined above.
 
-## Structure Fields (`GP_SERV_CHAT_STD`)
+## Structure Fields (`packet_t`)
 
 ### `id`, `size`, `sync`
 
