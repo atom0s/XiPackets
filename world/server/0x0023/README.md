@@ -10,7 +10,7 @@
 
 ## Description
 
-This packet is sent by the server to inform the player of a trade item update.
+This packet is sent by the server to inform the player of a trade item update. _(This update is related to the other parties items.)_
 
 ## Packet Layout
 
@@ -68,7 +68,7 @@ zone->ItemSys.Trade.ItemFreeNum = pkt->ItemFreeSpaceNum;
 
 ### `TradeIndex`
 
-_The traded item index._
+_The trade container index._
 
 ### `Attr`
 
