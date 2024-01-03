@@ -6,7 +6,7 @@
 | **Client Handler**        | `RecvItemMax` |
 | **Direction**             | `S -> C` |
 | **OpCode**                | `0x001C` |
-| **Size**                  | `Todo` |
+| **Size**                  | `0x0064` |
 
 ## Description
 
@@ -24,7 +24,9 @@ struct GP_SERV_ITEM_MAX
     uint16_t    size: 7;
     uint16_t    sync;
     uint8_t     ItemNum[18];    // PS2: ItemNum
+    uint8_t     padding00[14];  // PS2: (New; did not exist.)
     uint16_t    ItemNum2[18];   // PS2: (New; did not exist.)
+    uint8_t     padding01[28];  // PS2: (New; did not exist.)
 };
 ```
 
@@ -50,11 +52,19 @@ Containers hold `81` items total, however the first item of every container is h
 
 If a container is set to `0`, it will be considered locked.
 
+### `padding00`
+
+_Padding; unused._
+
 ### `ItemNum2`
 
 _The characters various inventory container sizes._
 
 This array holds the available space of a container, however the client does not use this array much at all. It is only used to check specific containers and with specific conditions. _(See additional notes below.)_
+
+### `padding01`
+
+_Padding; unused._
 
 ## Additional Notes
 
