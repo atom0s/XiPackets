@@ -29,7 +29,7 @@ struct GP_SERV_ITEM_ATTR
     uint8_t     Category;   // PS2: Category
     uint8_t     ItemIndex;  // PS2: ItemIndex
     uint8_t     LockFlg;    // PS2: LockFlg
-    uint8_t     Attr[];     // PS2: Attr
+    uint8_t     Attr[24];   // PS2: Attr
 };
 ```
 
