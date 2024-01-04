@@ -74,7 +74,7 @@ _The message type._
 This value is used to determine the message type. The client uses a local lookup table for this value. Any value that is `>= 8` will be ignored and defaults to `0`, otherwise the following table is used:
 
 | Type | Returned Lookup Value |
-| --- | --- | --- |
+| --- | --- |
 | `0` | `0x8E` |
 | `1` | `0xA1` |
 | `2` | `0x90` |
