@@ -27,12 +27,12 @@ struct GP_SERV_TALKNUMWORK2
     uint16_t    ActIndex;   // PS2: ActIndex
     uint16_t    MesNum;     // PS2: MesNum
     uint16_t    Type;       // PS2: Type
-    uint8_t     Flags;      // PS2: (New; didn't exist.)
+    uint8_t     Flags;      // PS2: (New; did not exist.)
     uint8_t     padding00;  // PS2: dummy
     uint32_t    Num1[4];    // PS2: Num
     uint8_t     String1[32];// PS2: String
-    uint8_t     String2[16];// PS2: (New; didn't exist.)
-    uint32_t    Num2[8];    // PS2: (New; didn't exist.)
+    uint8_t     String2[16];// PS2: (New; did not exist.)
+    uint32_t    Num2[8];    // PS2: (New; did not exist.)
 };
 ```
 

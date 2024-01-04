@@ -6,7 +6,7 @@
 | **Client Handler**        | `(Unknown)` |
 | **Direction**             | `S -> C` |
 | **OpCode**                | `0x001B` |
-| **Size**                  | `0x84` |
+| **Size**                  | `0x0084` |
 
 ## Description
 
