@@ -36,11 +36,11 @@ The following list is the various packets that are currently sent from the serve
 | [`0x0026`](/world/server/0x0026/README.md) | `(Unknown)`                        | `(Unknown)`               | :white_check_mark: |
 | [`0x0027`](/world/server/0x0027/README.md) | `GP_SERV_COMMAND_TALKNUMWORK2`     | `RecvMessageTalkNumWork2` | :white_check_mark: |
 | [`0x0028`](/world/server/0x0028/README.md) | `GP_SERV_COMMAND_BATTLE2`          | `RecvBattleCalc2`         | :white_check_mark: |
-| [`0x0029`](/world/server/0x0029/README.md) | `GP_SERV_COMMAND_BATTLE_MESSAGE`   | `RecvBattleMessage`       | :x: |
-| [`0x002A`](/world/server/0x002A/README.md) | `GP_SERV_COMMAND_TALKNUMWORK`      | `RecvMessageTalkNumWork`  | :x: |
-| [`0x002B`](/world/server/0x002B/README.md) | `GP_SERV_COMMAND_CHANNEL_ITEM`     | `RecvChannelItem`         | :x: |
-| [`0x002C`](/world/server/0x002C/README.md) | `GP_SERV_COMMAND_CHANNEL_STATE`    | `RecvChannelState`        | :x: |
-| [`0x002D`](/world/server/0x002D/README.md) | `GP_SERV_COMMAND_BATTLE_MESSAGE2`  | `RecvBattleMessage2`      | :x: |
+| [`0x0029`](/world/server/0x0029/README.md) | `GP_SERV_COMMAND_BATTLE_MESSAGE`   | `RecvBattleMessage`       | :white_check_mark: |
+| [`0x002A`](/world/server/0x002A/README.md) | `GP_SERV_COMMAND_TALKNUMWORK`      | `RecvMessageTalkNumWork`  | :white_check_mark: |
+| [`0x002B`](/world/server/0x002B/README.md) | `GP_SERV_COMMAND_CHANNEL_ITEM`     | `RecvChannelItem`         | :white_check_mark: |
+| [`0x002C`](/world/server/0x002C/README.md) | `GP_SERV_COMMAND_CHANNEL_STATE`    | `RecvChannelState`        | :white_check_mark: |
+| [`0x002D`](/world/server/0x002D/README.md) | `GP_SERV_COMMAND_BATTLE_MESSAGE2`  | `RecvBattleMessage2`      | :white_check_mark: |
 | [`0x002E`](/world/server/0x002E/README.md) | `GP_SERV_COMMAND_OPENMOGMENU`      | `RecvOpenMogMenu`         | :x: |
 | [`0x002F`](/world/server/0x002F/README.md) | `GP_SERV_COMMAND_DIG`              | `RecvDig`                 | :x: |
 | [`0x0030`](/world/server/0x0030/README.md) | `GP_SERV_COMMAND_EFFECT`           | `RecvEffect`              | :x: |
