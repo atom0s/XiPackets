@@ -41,7 +41,7 @@ struct GP_SERV_BATTLE_MESSAGE2
 
 The following information describes the structures outlined above.
 
-## Structure Fields (`GP_SERV_BATTLE_MESSAGE`)
+## Structure Fields (`GP_SERV_BATTLE_MESSAGE2`)
 
 ### `id`, `size`, `sync`
 
