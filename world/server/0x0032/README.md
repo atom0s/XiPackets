@@ -37,7 +37,7 @@ struct GP_SERV_EVENT
 
 The following information describes the structures outlined above.
 
-## Structure Fields (`GP_SERV_RECIPE`)
+## Structure Fields (`GP_SERV_EVENT`)
 
 ### `id`, `size`, `sync`
 
