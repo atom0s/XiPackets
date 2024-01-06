@@ -41,11 +41,11 @@ The following list is the various packets that are currently sent from the serve
 | [`0x002B`](/world/server/0x002B/README.md) | `GP_SERV_COMMAND_CHANNEL_ITEM`     | `RecvChannelItem`         | :white_check_mark: |
 | [`0x002C`](/world/server/0x002C/README.md) | `GP_SERV_COMMAND_CHANNEL_STATE`    | `RecvChannelState`        | :white_check_mark: |
 | [`0x002D`](/world/server/0x002D/README.md) | `GP_SERV_COMMAND_BATTLE_MESSAGE2`  | `RecvBattleMessage2`      | :white_check_mark: |
-| [`0x002E`](/world/server/0x002E/README.md) | `GP_SERV_COMMAND_OPENMOGMENU`      | `RecvOpenMogMenu`         | :x: |
-| [`0x002F`](/world/server/0x002F/README.md) | `GP_SERV_COMMAND_DIG`              | `RecvDig`                 | :x: |
-| [`0x0030`](/world/server/0x0030/README.md) | `GP_SERV_COMMAND_EFFECT`           | `RecvEffect`              | :x: |
-| [`0x0031`](/world/server/0x0031/README.md) | `GP_SERV_COMMAND_RECIPE`           | `RecvRecipe`              | :x: |
-| [`0x0032`](/world/server/0x0032/README.md) | `GP_SERV_COMMAND_EVENT`            | `RecvEventCalc`           | :x: |
+| [`0x002E`](/world/server/0x002E/README.md) | `GP_SERV_COMMAND_OPENMOGMENU`      | `RecvOpenMogMenu`         | :white_check_mark: |
+| [`0x002F`](/world/server/0x002F/README.md) | `GP_SERV_COMMAND_DIG`              | `RecvDig`                 | :white_check_mark: |
+| [`0x0030`](/world/server/0x0030/README.md) | `GP_SERV_COMMAND_EFFECT`           | `RecvEffect`              | :white_check_mark: |
+| [`0x0031`](/world/server/0x0031/README.md) | `GP_SERV_COMMAND_RECIPE`           | `RecvRecipe`              | :white_check_mark: |
+| [`0x0032`](/world/server/0x0032/README.md) | `GP_SERV_COMMAND_EVENT`            | `RecvEventCalc`           | :white_check_mark: |
 | [`0x0033`](/world/server/0x0033/README.md) | `GP_SERV_COMMAND_EVENTSTR`         | `RecvEventCalcStr`        | :x: |
 | [`0x0034`](/world/server/0x0034/README.md) | `GP_SERV_COMMAND_EVENTNUM`         | `RecvEventCalcNum`        | :x: |
 | [`0x0036`](/world/server/0x0036/README.md) | `GP_SERV_COMMAND_TALKNUM`          | `RecvMessageTalkNum`      | :x: |
