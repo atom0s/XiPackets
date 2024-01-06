@@ -48,7 +48,7 @@ The following list is the various packets that are currently sent from the serve
 | [`0x0032`](/world/server/0x0032/README.md) | `GP_SERV_COMMAND_EVENT`            | `RecvEventCalc`           | :white_check_mark: |
 | [`0x0033`](/world/server/0x0033/README.md) | `GP_SERV_COMMAND_EVENTSTR`         | `RecvEventCalcStr`        | :white_check_mark: |
 | [`0x0034`](/world/server/0x0034/README.md) | `GP_SERV_COMMAND_EVENTNUM`         | `RecvEventCalcNum`        | :white_check_mark: |
-| [`0x0036`](/world/server/0x0036/README.md) | `GP_SERV_COMMAND_TALKNUM`          | `RecvMessageTalkNum`      | :x: |
+| [`0x0036`](/world/server/0x0036/README.md) | `GP_SERV_COMMAND_TALKNUM`          | `RecvMessageTalkNum`      | :white_check_mark: |
 | [`0x0037`](/world/server/0x0037/README.md) | `GP_SERV_COMMAND_SERVERSTATUS`     | `RecvServerStatus`        | :x: |
 | [`0x0038`](/world/server/0x0038/README.md) | `GP_SERV_COMMAND_SCHEDULOR`        | `RecvSchedulor`           | :x: |
 | [`0x0039`](/world/server/0x0039/README.md) | `GP_SERV_COMMAND_MAPSCHEDULOR`     | `RecvMapSchedulor`        | :x: |
