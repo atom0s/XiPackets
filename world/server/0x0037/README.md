@@ -148,8 +148,8 @@ struct status_bits_t
 // PS2: GP_SERV_SERVERSTATUS
 struct GP_SERV_SERVERSTATUS
 {
-    uint16_t        id : 9;
-    uint16_t        size : 7;
+    uint16_t        id: 9;
+    uint16_t        size: 7;
     uint16_t        sync;
     uint8_t         BufStatus[32];          // PS2: BufStatus
     uint32_t        UniqueNo;               // PS2: UniqueNo

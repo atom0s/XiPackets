@@ -49,11 +49,11 @@ The following list is the various packets that are currently sent from the serve
 | [`0x0033`](/world/server/0x0033/README.md) | `GP_SERV_COMMAND_EVENTSTR`         | `RecvEventCalcStr`        | :white_check_mark: |
 | [`0x0034`](/world/server/0x0034/README.md) | `GP_SERV_COMMAND_EVENTNUM`         | `RecvEventCalcNum`        | :white_check_mark: |
 | [`0x0036`](/world/server/0x0036/README.md) | `GP_SERV_COMMAND_TALKNUM`          | `RecvMessageTalkNum`      | :white_check_mark: |
-| [`0x0037`](/world/server/0x0037/README.md) | `GP_SERV_COMMAND_SERVERSTATUS`     | `RecvServerStatus`        | :x: |
-| [`0x0038`](/world/server/0x0038/README.md) | `GP_SERV_COMMAND_SCHEDULOR`        | `RecvSchedulor`           | :x: |
-| [`0x0039`](/world/server/0x0039/README.md) | `GP_SERV_COMMAND_MAPSCHEDULOR`     | `RecvMapSchedulor`        | :x: |
-| [`0x003A`](/world/server/0x003A/README.md) | `GP_SERV_COMMAND_MAGICSCHEDULOR`   | `RecvMagicSchedulor`      | :x: |
-| [`0x003B`](/world/server/0x003B/README.md) | `GP_SERV_COMMAND_EVENTMES`         | `RecvEventMes`            | :x: |
+| [`0x0037`](/world/server/0x0037/README.md) | `GP_SERV_COMMAND_SERVERSTATUS`     | `RecvServerStatus`        | :white_check_mark: |
+| [`0x0038`](/world/server/0x0038/README.md) | `GP_SERV_COMMAND_SCHEDULOR`        | `RecvSchedulor`           | :white_check_mark: |
+| [`0x0039`](/world/server/0x0039/README.md) | `GP_SERV_COMMAND_MAPSCHEDULOR`     | `RecvMapSchedulor`        | :white_check_mark: |
+| [`0x003A`](/world/server/0x003A/README.md) | `GP_SERV_COMMAND_MAGICSCHEDULOR`   | `RecvMagicSchedulor`      | :white_check_mark: |
+| [`0x003B`](/world/server/0x003B/README.md) | `GP_SERV_COMMAND_EVENTMES`         | `RecvEventMes`            | :white_check_mark: |
 | [`0x003C`](/world/server/0x003C/README.md) | `GP_SERV_COMMAND_SHOP_LIST`        | `RecvShopList`            | :x: |
 | [`0x003D`](/world/server/0x003D/README.md) | `GP_SERV_COMMAND_SHOP_SELL`        | `RecvShopSell`            | :x: |
 | [`0x003E`](/world/server/0x003E/README.md) | `GP_SERV_COMMAND_SHOP_OPEN`        | `RecvShopOpen`            | :x: |
