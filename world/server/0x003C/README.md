@@ -34,7 +34,8 @@ struct GP_SERV_SHOP_LIST
     uint16_t    size: 7;
     uint16_t    sync;
     uint16_t    ShopItemOffsetIndex;// PS2: ShopItemOffsetIndex
-    uint16_t    padding00;          // PS2: dammy
+    uint8_t     Flags;              // PS2: dammy
+    uint8_t     padding00;          // PS2: Dammy
     GP_SHOP     ShopItemTbl[];      // PS2: ShopItemTbl
 };
 ```
@@ -54,6 +55,12 @@ _You can find more information about the header fields here: [**Header**](/world
 ### `ShopItemOffsetIndex`
 
 _The starting offset of where the items in this packet will be placed into the internal shop system table._
+
+### `Flags`
+
+_The shop flags._
+
+The client currently only uses the first bit of this value. However, its usage only sets flags in the client that are then never used.
 
 ### `padding00`
 
