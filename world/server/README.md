@@ -57,7 +57,7 @@ The following list is the various packets that are currently sent from the serve
 | [`0x003C`](/world/server/0x003C/README.md) | `GP_SERV_COMMAND_SHOP_LIST`        | `RecvShopList`            | :white_check_mark: |
 | [`0x003D`](/world/server/0x003D/README.md) | `GP_SERV_COMMAND_SHOP_SELL`        | `RecvShopSell`            | :white_check_mark: |
 | [`0x003E`](/world/server/0x003E/README.md) | `GP_SERV_COMMAND_SHOP_OPEN`        | `RecvShopOpen`            | :white_check_mark: |
-| [`0x003F`](/world/server/0x003F/README.md) | `GP_SERV_COMMAND_SHOP_BUY`         | `RecvShopBuy`             | :x: |
+| [`0x003F`](/world/server/0x003F/README.md) | `GP_SERV_COMMAND_SHOP_BUY`         | `RecvShopBuy`             | :white_check_mark: |
 | [`0x0040`](/world/server/0x0040/README.md) | `(Unknown)`                        | `(Unknown)`               | :x: |
 | [`0x0041`](/world/server/0x0041/README.md) | `GP_SERV_COMMAND_BLACK_LIST`       | `RecvBlacklist`           | :x: |
 | [`0x0042`](/world/server/0x0042/README.md) | `GP_SERV_COMMAND_BLACK_EDIT`       | `RecvBlackEdit`           | :x: |
