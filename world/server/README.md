@@ -62,7 +62,7 @@ The following list is the various packets that are currently sent from the serve
 | [`0x0041`](/world/server/0x0041/README.md) | `GP_SERV_COMMAND_BLACK_LIST`       | `RecvBlacklist`           | :white_check_mark: |
 | [`0x0042`](/world/server/0x0042/README.md) | `GP_SERV_COMMAND_BLACK_EDIT`       | `RecvBlackEdit`           | :white_check_mark: |
 | [`0x0043`](/world/server/0x0043/README.md) | `GP_SERV_COMMAND_TALKNUMNAME`      | `RecvMessageTalkNumName`  | :white_check_mark: |
-| [`0x0044`](/world/server/0x0044/README.md) | `(Unknown)`                        | `(Unknown)`               | :x: |
+| [`0x0044`](/world/server/0x0044/README.md) | `(Unknown)`                        | `(Unknown)`               | :white_check_mark: |
 | [`0x0047`](/world/server/0x0047/README.md) | `(Unknown)`                        | `(Unknown)`               | :x: |
 | [`0x0048`](/world/server/0x0048/README.md) | `(Unknown)`                        | `(Unknown)`               | :x: |
 | [`0x0049`](/world/server/0x0049/README.md) | `(Unknown)`                        | `(Unknown)`               | :x: |
