@@ -137,7 +137,7 @@ _The following list is the base skill ranks. Their value is multiplied by 100 in
   - `14` - _Grandmaster_
   - `15` - _Legend_
 
-## Additional Notes
+## Additional Information
 
 The size of this packet will vary based on the number of items sent within the `ShopItemTbl` field. To determine the number of items that is stored in a packet, the client uses the following:
 

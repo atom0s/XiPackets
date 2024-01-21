@@ -66,7 +66,7 @@ This array holds the available space of a container, however the client does not
 
 _Padding; unused._
 
-## Additional Notes
+## Additional Information
 
 The manner in which the client uses both `ItemNum` and `ItemNum2` is a bit hacky and only for certain conditions. Not all containers rely on either value and some containers have special cases in how these values are used.
 
