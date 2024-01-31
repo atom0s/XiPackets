@@ -7,6 +7,10 @@
 
 The following list is the various packets that are currently sent from the server to the client:
 
+  - :x: - _Initial documentation incomplete._
+  - :warning: - _Initial documentation partially finished._
+  - :white_check_mark: = _Initial documentation done._
+
 | Packet Id | Packet Command Name | Client Handler Name | First Pass Documented |
 | --- | --- | --- | --- |
 | [`0x0005`](/world/server/0x0005/README.md) | `GP_SERV_COMMAND_PACKETCONTROL`    | `RecvPacketControl`       | :white_check_mark: |
@@ -64,7 +68,7 @@ The following list is the various packets that are currently sent from the serve
 | [`0x0043`](/world/server/0x0043/README.md) | `GP_SERV_COMMAND_TALKNUMNAME`      | `RecvMessageTalkNumName`  | :white_check_mark: |
 | [`0x0044`](/world/server/0x0044/README.md) | `(Unknown)`                        | `(Unknown)`               | :white_check_mark: |
 | [`0x0047`](/world/server/0x0047/README.md) | `(Unknown)`                        | `(Unknown)`               | :white_check_mark: |
-| [`0x0048`](/world/server/0x0048/README.md) | `(Unknown)`                        | `(Unknown)`               | :x: |
+| [`0x0048`](/world/server/0x0048/README.md) | `(Unknown)`                        | `(Unknown)`               | :warning: |
 | [`0x0049`](/world/server/0x0049/README.md) | `(Unknown)`                        | `(Unknown)`               | :x: |
 | [`0x004B`](/world/server/0x004B/README.md) | `GP_SERV_COMMAND_PBX_RESULT`       | `RecvReqPostReplyCommon`  | :x: |
 | [`0x004C`](/world/server/0x004C/README.md) | `GP_SERV_COMMAND_AUC`              | `RecvAucCommon`           | :x: |
