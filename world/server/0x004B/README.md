@@ -224,6 +224,24 @@ This value is only used during certain `Command` and `Result` values are set. Wh
 
 _The item status._
 
+| Stat | Meaning |
+| --- | --- |
+| `0x00` | `NONE` |
+| `0x01` | `SET` |
+| `0x02` | `SEND_GOING` |
+| `0x03` | `SEND_DONE` |
+| `0x04` | `CANCEL_GOING` |
+| `0x05` | `CANCEL_DONE` |
+| `0x06` | `RECV_INC` |
+| `0x07` | `RECV_DONE` |
+| `0x08` | `ACCEPTED_BY` |
+| `0x09` | `REJECTED_BY` |
+| `0x0A` | `ACCEPTING` |
+| `0x0B` | `ACCEPT` |
+| `0x0C` | `REJECTING` |
+| `0x0D` | `REJECT` |
+| `0x0E` | `GET` |
+
 ### `box_state`
 
 _The item box state structure._
