@@ -72,7 +72,7 @@ The following list is the various packets that are currently sent from the serve
 | [`0x0049`](/world/server/0x0049/README.md) | `(Unknown)`                        | `(Unknown)`               | :white_check_mark: |
 | [`0x004B`](/world/server/0x004B/README.md) | `GP_SERV_COMMAND_PBX_RESULT`       | `RecvReqPostReplyCommon`  | :warning: |
 | [`0x004C`](/world/server/0x004C/README.md) | `GP_SERV_COMMAND_AUC`              | `RecvAucCommon`           | :warning: |
-| [`0x004D`](/world/server/0x004D/README.md) | `GP_SERV_COMMAND_FRAGMENTS`        | `RecvFragments`           | :x: |
+| [`0x004D`](/world/server/0x004D/README.md) | `GP_SERV_COMMAND_FRAGMENTS`        | `RecvFragments`           | :white_check_mark: |
 | [`0x004F`](/world/server/0x004F/README.md) | `GP_SERV_COMMAND_EQUIP_CLEAR`      | `RecvEquipClear`          | :x: |
 | [`0x0050`](/world/server/0x0050/README.md) | `GP_SERV_COMMAND_EQUIP_LIST`       | `RecvEquipList`           | :x: |
 | [`0x0051`](/world/server/0x0051/README.md) | `GP_SERV_COMMAND_GRAP_LIST`        | `RecvGrapList`            | :x: |
