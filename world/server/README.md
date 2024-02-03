@@ -73,11 +73,11 @@ The following list is the various packets that are currently sent from the serve
 | [`0x004B`](/world/server/0x004B/README.md) | `GP_SERV_COMMAND_PBX_RESULT`       | `RecvReqPostReplyCommon`  | :warning: |
 | [`0x004C`](/world/server/0x004C/README.md) | `GP_SERV_COMMAND_AUC`              | `RecvAucCommon`           | :warning: |
 | [`0x004D`](/world/server/0x004D/README.md) | `GP_SERV_COMMAND_FRAGMENTS`        | `RecvFragments`           | :white_check_mark: |
-| [`0x004F`](/world/server/0x004F/README.md) | `GP_SERV_COMMAND_EQUIP_CLEAR`      | `RecvEquipClear`          | :x: |
-| [`0x0050`](/world/server/0x0050/README.md) | `GP_SERV_COMMAND_EQUIP_LIST`       | `RecvEquipList`           | :x: |
-| [`0x0051`](/world/server/0x0051/README.md) | `GP_SERV_COMMAND_GRAP_LIST`        | `RecvGrapList`            | :x: |
-| [`0x0052`](/world/server/0x0052/README.md) | `GP_SERV_COMMAND_EVENTUCOFF`       | `RecvUcOff`               | :x: |
-| [`0x0053`](/world/server/0x0053/README.md) | `GP_SERV_COMMAND_SYSTEMMES`        | `RecvSystemMessage`       | :x: |
+| [`0x004F`](/world/server/0x004F/README.md) | `GP_SERV_COMMAND_EQUIP_CLEAR`      | `RecvEquipClear`          | :white_check_mark: |
+| [`0x0050`](/world/server/0x0050/README.md) | `GP_SERV_COMMAND_EQUIP_LIST`       | `RecvEquipList`           | :white_check_mark: |
+| [`0x0051`](/world/server/0x0051/README.md) | `GP_SERV_COMMAND_GRAP_LIST`        | `RecvGrapList`            | :white_check_mark: |
+| [`0x0052`](/world/server/0x0052/README.md) | `GP_SERV_COMMAND_EVENTUCOFF`       | `RecvUcOff`               | :white_check_mark: |
+| [`0x0053`](/world/server/0x0053/README.md) | `GP_SERV_COMMAND_SYSTEMMES`        | `RecvSystemMessage`       | :white_check_mark: |
 | [`0x0054`](/world/server/0x0054/README.md) | `GP_SERV_COMMAND_DEBUGPRINT`       | `RecvDebufPrint`          | :x: |
 | [`0x0055`](/world/server/0x0055/README.md) | `GP_SERV_COMMAND_SCENARIOITEM`     | `RecvScenarioItem`        | :x: |
 | [`0x0056`](/world/server/0x0056/README.md) | `GP_SERV_COMMAND_MISSION`          | `RecvMissionItem`         | :x: |
