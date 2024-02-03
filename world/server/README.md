@@ -78,7 +78,7 @@ The following list is the various packets that are currently sent from the serve
 | [`0x0051`](/world/server/0x0051/README.md) | `GP_SERV_COMMAND_GRAP_LIST`        | `RecvGrapList`            | :white_check_mark: |
 | [`0x0052`](/world/server/0x0052/README.md) | `GP_SERV_COMMAND_EVENTUCOFF`       | `RecvUcOff`               | :white_check_mark: |
 | [`0x0053`](/world/server/0x0053/README.md) | `GP_SERV_COMMAND_SYSTEMMES`        | `RecvSystemMessage`       | :white_check_mark: |
-| [`0x0054`](/world/server/0x0054/README.md) | `GP_SERV_COMMAND_DEBUGPRINT`       | `RecvDebufPrint`          | :x: |
+| [`0x0054`](/world/server/0x0054/README.md) | `GP_SERV_COMMAND_DEBUGPRINT`       | `RecvDebufPrint`          | :white_check_mark: |
 | [`0x0055`](/world/server/0x0055/README.md) | `GP_SERV_COMMAND_SCENARIOITEM`     | `RecvScenarioItem`        | :x: |
 | [`0x0056`](/world/server/0x0056/README.md) | `GP_SERV_COMMAND_MISSION`          | `RecvMissionItem`         | :x: |
 | [`0x0057`](/world/server/0x0057/README.md) | `GP_SERV_COMMAND_WEATHER`          | `RecvWeather`             | :x: |
