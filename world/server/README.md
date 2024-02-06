@@ -84,7 +84,7 @@ The following list is the various packets that are currently sent from the serve
 | [`0x0057`](/world/server/0x0057/README.md) | `GP_SERV_COMMAND_WEATHER`          | `RecvWeather`             | :white_check_mark: |
 | [`0x0058`](/world/server/0x0058/README.md) | `GP_SERV_COMMAND_ASSIST`           | `RecvAssist`              | :white_check_mark: |
 | [`0x0059`](/world/server/0x0059/README.md) | `GP_SERV_COMMAND_FRIENDPASS`       | `RecvFriendPass`          | :white_check_mark: |
-| [`0x005A`](/world/server/0x005A/README.md) | `GP_SERV_COMMAND_MOTIONMES`        | `RecvEmotionMes`          | :x: |
+| [`0x005A`](/world/server/0x005A/README.md) | `GP_SERV_COMMAND_MOTIONMES`        | `RecvEmotionMes`          | :white_check_mark: |
 | [`0x005B`](/world/server/0x005B/README.md) | `GP_SERV_COMMAND_WPOS`             | `RecvWpos`                | :x: |
 | [`0x005C`](/world/server/0x005C/README.md) | `GP_SERV_COMMAND_PENDINGNUM`       | `RecvPendingNum`          | :x: |
 | [`0x005D`](/world/server/0x005D/README.md) | `GP_SERV_COMMAND_AUCTIONHOUSE`     | `RecvAuctionHouse`        | :x: |
