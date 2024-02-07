@@ -89,8 +89,8 @@ The following list is the various packets that are currently sent from the serve
 | [`0x005C`](/world/server/0x005C/README.md) | `GP_SERV_COMMAND_PENDINGNUM`         | `RecvPendingNum`          | :white_check_mark: |
 | [`0x005D`](/world/server/0x005D/README.md) | `(Unknown)`                          | `(Unknown)`               | :white_check_mark: |
 | [`0x005E`](/world/server/0x005E/README.md) | `GP_SERV_COMMAND_CONQUEST`           | `RecvConquest`            | :x: |
-| [`0x005F`](/world/server/0x005F/README.md) | `GP_SERV_COMMAND_MUSIC`              | `RecvMusic`               | :x: |
-| [`0x0060`](/world/server/0x0060/README.md) | `GP_SERV_COMMAND_MUSICVOLUME`        | `RecvMusicVolume`         | :x: |
+| [`0x005F`](/world/server/0x005F/README.md) | `GP_SERV_COMMAND_MUSIC`              | `RecvMusic`               | :white_check_mark: |
+| [`0x0060`](/world/server/0x0060/README.md) | `GP_SERV_COMMAND_MUSICVOLUME`        | `RecvMusicVolume`         | :white_check_mark: |
 | [`0x0061`](/world/server/0x0061/README.md) | `GP_SERV_COMMAND_CLISTATUS`          | `RecvCliStatus`           | :x: |
 | [`0x0062`](/world/server/0x0062/README.md) | `GP_SERV_COMMAND_CLISTATUS2`         | `RecvCliStatus2`          | :x: |
 | [`0x0063`](/world/server/0x0063/README.md) | `(Unknown)`                          | `(Unknown)`               | :white_check_mark: |
