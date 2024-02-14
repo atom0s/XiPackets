@@ -92,12 +92,12 @@ The following list is the various packets that are currently sent from the serve
 | [`0x005F`](/world/server/0x005F/README.md) | `GP_SERV_COMMAND_MUSIC`              | `RecvMusic`               | :white_check_mark: |
 | [`0x0060`](/world/server/0x0060/README.md) | `GP_SERV_COMMAND_MUSICVOLUME`        | `RecvMusicVolume`         | :white_check_mark: |
 | [`0x0061`](/world/server/0x0061/README.md) | `GP_SERV_COMMAND_CLISTATUS`          | `RecvCliStatus`           | :white_check_mark: |
-| [`0x0062`](/world/server/0x0062/README.md) | `GP_SERV_COMMAND_CLISTATUS2`         | `RecvCliStatus2`          | :x: |
+| [`0x0062`](/world/server/0x0062/README.md) | `GP_SERV_COMMAND_CLISTATUS2`         | `RecvCliStatus2`          | :white_check_mark: |
 | [`0x0063`](/world/server/0x0063/README.md) | `(Unknown)`                          | `(Unknown)`               | :white_check_mark: |
-| [`0x0064`](/world/server/0x0064/README.md) | `GP_SERV_COMMAND_PREFERENCE_DATA`    | `receivePreferenceData`   | :x: |
-| [`0x0065`](/world/server/0x0065/README.md) | `GP_SERV_COMMAND_WPOS2`              | `RecvWpos2`               | :x: |
-| [`0x0067`](/world/server/0x0067/README.md) | `(Unknown)`                          | `(Unknown)`               | :x: |
-| [`0x0068`](/world/server/0x0068/README.md) | `(Unknown)`                          | `(Unknown)`               | :x: |
+| [`0x0064`](/world/server/0x0064/README.md) | `GP_SERV_COMMAND_PREFERENCE_DATA`    | `receivePreferenceData`   | :white_check_mark: |
+| [`0x0065`](/world/server/0x0065/README.md) | `GP_SERV_COMMAND_WPOS2`              | `RecvWpos2`               | :white_check_mark: |
+| [`0x0067`](/world/server/0x0067/README.md) | `(Unknown)`                          | `(Unknown)`               | :white_check_mark: |
+| [`0x0068`](/world/server/0x0068/README.md) | `(Unknown)`                          | `(Unknown)`               | :white_check_mark: |
 | [`0x0069`](/world/server/0x0069/README.md) | `(Unknown)`                          | `(Unknown)`               | :x: |
 | [`0x006F`](/world/server/0x006F/README.md) | `GP_SERV_COMMAND_COMBINE_ANS`        | `gcRecvCombine`           | :x: |
 | [`0x0070`](/world/server/0x0070/README.md) | `GP_SERV_COMMAND_COMBINE_INF`        | `gcRecvCombineInfo`       | :x: |
