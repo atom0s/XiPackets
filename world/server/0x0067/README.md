@@ -12,8 +12,6 @@
 
 This packet is sent by the server to update entity information.
 
-_This is generally used with pets or pet-like entities, but is also used with the local player entity for specific additional information._
-
 ## Packet Layout
 
 The initial layout of this packet is the following:
