@@ -107,7 +107,7 @@ The following list is the various packets that are currently sent from the serve
 | [`0x0074`](/world/server/0x0074/README.md) | `(Unknown)`                          | `(Unknown)`               | :x: |
 | [`0x0075`](/world/server/0x0075/README.md) | `(Unknown)`                          | `(Unknown)`               | :white_check_mark: |
 | [`0x0076`](/world/server/0x0076/README.md) | `(Unknown)`                          | `(Unknown)`               | :white_check_mark: |
-| [`0x0077`](/world/server/0x0077/README.md) | `(Unknown)`                          | `(Unknown)`               | :x: |
+| [`0x0077`](/world/server/0x0077/README.md) | `(Unknown)`                          | `(Unknown)`               | :white_check_mark: |
 | [`0x0078`](/world/server/0x0078/README.md) | `GP_SERV_COMMAND_SWITCH_START`       | `RecvStart`               | :x: |
 | [`0x0079`](/world/server/0x0079/README.md) | `GP_SERV_COMMAND_SWITCH_PROC`        | `RecvProc`                | :x: |
 | [`0x0081`](/world/server/0x0081/README.md) | `(Unknown)`                          | `(Unknown)`               | :x: |
