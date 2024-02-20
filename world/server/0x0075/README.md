@@ -135,7 +135,7 @@ This value is used to determine which parts of this packets information is popul
 | `0x01` | _Used when timestamp information is used._   | `Timestamp`, `Duration`, `DurationWarn` |
 | `0x02` | _Used when extra data is used._              | `Data` |
 | `0x04` | _Used when message ids are used._            | `MesNumTitle`, `MesNumDescription` |
-| `0x08` | _Used when unknown value is used._           | `unknown25` |
+| `0x08` | _Used when unknown value is used._           | `unknown26` |
 
 The following fields are always used regardless of these `Flags` and `Mode`:
   - `FenceColor`, `FenceX`, `FenceY`, `FenceRadius`, `FenceRotation`
