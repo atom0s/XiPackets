@@ -113,9 +113,9 @@ The following list is the various packets that are currently sent from the serve
 | [`0x0081`](/world/server/0x0081/README.md) | `(Unknown)`                          | `(Unknown)`               | :x: |
 | [`0x0082`](/world/server/0x0082/README.md) | `GP_SERV_COMMAND_GUILD_BUY`          | `gcRecvGuildBuy`          | :white_check_mark: |
 | [`0x0083`](/world/server/0x0083/README.md) | `GP_SERV_COMMAND_GUILD_BUYLIST`      | `gcRecvGuildBuyList`      | :white_check_mark: |
-| [`0x0084`](/world/server/0x0084/README.md) | `GP_SERV_COMMAND_GUILD_SELL`         | `gcRecvGuildSell`         | :x: |
-| [`0x0085`](/world/server/0x0085/README.md) | `GP_SERV_COMMAND_GUILD_SELLLIST`     | `gcRecvGuildSellList`     | :x: |
-| [`0x0086`](/world/server/0x0086/README.md) | `GP_SERV_COMMAND_GUILD_OPEN`         | `gcRecvGuildOpen`         | :x: |
+| [`0x0084`](/world/server/0x0084/README.md) | `GP_SERV_COMMAND_GUILD_SELL`         | `gcRecvGuildSell`         | :white_check_mark: |
+| [`0x0085`](/world/server/0x0085/README.md) | `GP_SERV_COMMAND_GUILD_SELLLIST`     | `gcRecvGuildSellList`     | :white_check_mark: |
+| [`0x0086`](/world/server/0x0086/README.md) | `GP_SERV_COMMAND_GUILD_OPEN`         | `gcRecvGuildOpen`         | :white_check_mark: |
 | [`0x008C`](/world/server/0x008C/README.md) | `(Unknown)`                          | `(Unknown)`               | :x: |
 | [`0x008D`](/world/server/0x008D/README.md) | `(Unknown)`                          | `(Unknown)`               | :x: |
 | [`0x0096`](/world/server/0x0096/README.md) | `GP_SERV_COMMAND_MYROOM_ENTER`       | `RecvMyroomEnter`         | :x: |
