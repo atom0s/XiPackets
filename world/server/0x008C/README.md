@@ -33,6 +33,7 @@ struct packet_t
     uint16_t    merit_count;
     uint16_t    padding00;
     merit_t     merits[];
+    uint8_t     padding01[];
 };
 ```
 
@@ -63,6 +64,12 @@ _Padding; unused._
 ### `merits`
 
 _The array of merit points information._
+
+### `padding01`
+
+_Padding; unused._
+
+This value is not always present in the packet and will depend on the `merit_count`. Its size can also vary and will fill the rest of the packet.
 
 ## Structure Fields (`merit_t`)
 
