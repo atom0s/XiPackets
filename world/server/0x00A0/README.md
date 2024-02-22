@@ -23,12 +23,12 @@ struct _GP_MAP_GROUP
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
-    uint32_t    UniqueID;
-    int16_t     zone;
-    uint16_t    padding00;
-    float       x;
-    float       y;
-    float       z;
+    uint32_t    UniqueID;   // PS2: UniqueID
+    int16_t     zone;       // PS2: zone
+    uint16_t    padding00;  // PS2: padding00
+    float       x;          // PS2: x
+    float       y;          // PS2: y
+    float       z;          // PS2: z
 };
 ```
 
