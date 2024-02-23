@@ -40,7 +40,7 @@ The following information describes the structures outlined above.
 
 _These fields are part of the packet header._
 
-_You can find more information about the header fields here: [**Header**](/world/server/Header.md)_
+_You can find more information about the header fields here: [**Header**](/world/HEADER.md)_
 
 ### `UniqueNo`
 
