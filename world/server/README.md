@@ -130,7 +130,7 @@ The following list is the various packets that are currently sent from the serve
 | [`0x00A0`](/world/server/0x00A0/README.md) | `GP_SERV_COMMAND_MAP_GROUP`          | `RecvMapGroup`            | :white_check_mark: |
 | [`0x00AA`](/world/server/0x00AA/README.md) | `GP_SERV_COMMAND_MAGIC_DATA`         | `RecvMagicData`           | :white_check_mark: |
 | [`0x00AB`](/world/server/0x00AB/README.md) | `GP_SERV_COMMAND_FEAT_DATA`          | `RecvFeatData`            | :white_check_mark: |
-| [`0x00AC`](/world/server/0x00AC/README.md) | `GP_SERV_COMMAND_COMMAND_DATA`       | `RecvCommandData`         | :x: |
+| [`0x00AC`](/world/server/0x00AC/README.md) | `GP_SERV_COMMAND_COMMAND_DATA`       | `RecvCommandData`         | :white_check_mark: |
 | [`0x00AD`](/world/server/0x00AD/README.md) | `(Unknown)`                          | `(Unknown)`               | :x: |
 | [`0x00AE`](/world/server/0x00AE/README.md) | `(Unknown)`                          | `(Unknown)`               | :x: |
 | [`0x00B4`](/world/server/0x00B4/README.md) | `GP_SERV_COMMAND_CONFIG`             | `RecvConf`                | :x: |
