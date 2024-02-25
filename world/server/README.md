@@ -133,7 +133,7 @@ The following list is the various packets that are currently sent from the serve
 | [`0x00AC`](/world/server/0x00AC/README.md) | `GP_SERV_COMMAND_COMMAND_DATA`       | `RecvCommandData`         | :white_check_mark: |
 | [`0x00AD`](/world/server/0x00AD/README.md) | `(Unknown)`                          | `(Unknown)`               | :white_check_mark: |
 | [`0x00AE`](/world/server/0x00AE/README.md) | `(Unknown)`                          | `(Unknown)`               | :white_check_mark: |
-| [`0x00B4`](/world/server/0x00B4/README.md) | `GP_SERV_COMMAND_CONFIG`             | `RecvConf`                | :x: |
+| [`0x00B4`](/world/server/0x00B4/README.md) | `GP_SERV_COMMAND_CONFIG`             | `RecvConf`                | :white_check_mark: |
 | [`0x00B5`](/world/server/0x00B5/README.md) | `GP_SERV_COMMAND_FAQ_GMPARAM`        | `FDtRecvGmParam`          | :x: |
 | [`0x00B6`](/world/server/0x00B6/README.md) | `GP_SERV_COMMAND_SET_GMMSG`          | `FDtRecvGmNotice`         | :x: |
 | [`0x00B7`](/world/server/0x00B7/README.md) | `GP_SERV_COMMAND_GMSCITEM`           | `RecvGmScitem`            | :x: |
