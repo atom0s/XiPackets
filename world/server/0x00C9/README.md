@@ -86,7 +86,7 @@ struct GP_SERV_EQUIP_INSPECT_MODE1
     uint16_t    BallistaFlags;          // PS2: (New; did not exist.)
     uint32_t    MesNo;                  // PS2: (New; did not exist.)
     int32_t     Params[5];              // PS2: (New; did not exist.)
-    uint8_t     padding03[4];           // PS2: (New; did not exist.)
+    uint8_t     padding03[8];           // PS2: (New; did not exist.)
 };
 
 // PS2: GP_SERV_EQUIP_INSPECT2
@@ -403,6 +403,6 @@ _The purpose of this mode is currently unknown as the equipped item information 
 
 ### `OptionFlag` Mode: 3
 
-This mode is used to populate a players equipment. When this mode is used, the client will use the `EquipCount` value to begin looping through the `Equip` items to populate the equipment slots. If an entry contains an `ItemNo` of 0, then the client will exit the loop early, regardless if there is more potential items in the array.
+This mode is used to populate a players equipment. When this mode is used, the client will use the `EquipCount` value to begin looping through the `Equip` items to populate the equipment slots. If an entry contains an `ItemNo` of 0, then the client will exit the loop early, regardless if there is more potential items in the array. The server will send a maximum of 8 equipped items per packet.
 
 The server does not send information for empty equipment slots, only slots that have items will have an entry sent in this packet!
