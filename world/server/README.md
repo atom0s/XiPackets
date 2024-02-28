@@ -140,7 +140,7 @@ The following list is the various packets that are currently sent from the serve
 | [`0x00BF`](/world/server/0x00BF/README.md) | `(Unknown)`                          | `(Unknown)`               | :white_check_mark: |
 | [`0x00C8`](/world/server/0x00C8/README.md) | `GP_SERV_COMMAND_GROUP_TBL`          | `RecvGroupTbl`            | :white_check_mark: |
 | [`0x00C9`](/world/server/0x00C9/README.md) | `GP_SERV_COMMAND_EQUIP_INSPECT`      | `RecvEquipInspect`        | :white_check_mark: |
-| [`0x00CA`](/world/server/0x00CA/README.md) | `GP_SERV_COMMAND_INSPECT_MESSAGE`    | `RecvInspectMessage`      | :x: |
+| [`0x00CA`](/world/server/0x00CA/README.md) | `GP_SERV_COMMAND_INSPECT_MESSAGE`    | `RecvInspectMessage`      | :white_check_mark: |
 | [`0x00CC`](/world/server/0x00CC/README.md) | `GP_SERV_COMMAND_LINKSHELL_MESSAGE`  | `RecvComlinkMessage`      | :x: |
 | [`0x00D2`](/world/server/0x00D2/README.md) | `GP_SERV_COMMAND_TROPHY_LIST`        | `RecvTrophyList`          | :x: |
 | [`0x00D3`](/world/server/0x00D3/README.md) | `GP_SERV_COMMAND_TROPHY_SOLUTION`    | `RecvTrophySolution`      | :x: |
