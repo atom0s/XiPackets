@@ -3,7 +3,7 @@
 | Information               | Notes |
 |---                        |---    |
 | **Command Name**          | `GP_SERV_COMMAND_GUILD_OPEN` |
-| **Client Handler**        | `gcRecvGuildOpen` |
+| **Client Handlers**       | `YkWndGuildMain::RecvGuildOpen`, `gcRecvGuildOpen` |
 | **Direction**             | `S -> C` |
 | **OpCode**                | `0x0086` |
 | **Size**                  | `0x000C` |

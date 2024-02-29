@@ -3,7 +3,7 @@
 | Information               | Notes |
 |---                        |---    |
 | **Command Name**          | `GP_SERV_COMMAND_GUILD_SELL` |
-| **Client Handler**        | `gcRecvGuildSell` |
+| **Client Handlers**       | `RecvGuildSell`, `gcRecvGuildSell` |
 | **Direction**             | `S -> C` |
 | **OpCode**                | `0x0084` |
 | **Size**                  | `0x0008` |
