@@ -3,7 +3,7 @@
 | Information               | Notes |
 |---                        |---    |
 | **Command Name**          | `GP_SERV_COMMAND_ITEM_TRADE_RES` |
-| **Client Handler**        | `RecvItemTradeRes` |
+| **Client Handlers**       | `CTkTrade::TkRecvItemTradeRes`, `RecvItemTradeRes` |
 | **Direction**             | `S -> C` |
 | **OpCode**                | `0x0022` |
 | **Size**                  | `0x0010` |
