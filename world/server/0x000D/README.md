@@ -3,7 +3,7 @@
 | Information               | Notes |
 |---                        |---    |
 | **Command Name**          | `GP_SERV_COMMAND_CHAR_PC` |
-| **Client Handler**        | `RecvCharPc` |
+| **Client Handlers**       | `RecvCharPc`, `RecvDebugPc` |
 | **Direction**             | `S -> C` |
 | **OpCode**                | `0x000D` |
 | **Size**                  | `Todo` |

@@ -3,7 +3,7 @@
 | Information               | Notes |
 |---                        |---    |
 | **Command Name**          | `GP_SERV_COMMAND_CHAR_NPC` |
-| **Client Handler**        | `RecvCharNpc` |
+| **Client Handlers**       | `RecvCharNpc`, `RecvDebugNpc` |
 | **Direction**             | `S -> C` |
 | **OpCode**                | `0x000E` |
 | **Size**                  | `Todo` |
