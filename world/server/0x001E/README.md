@@ -3,7 +3,7 @@
 | Information               | Notes |
 |---                        |---    |
 | **Command Name**          | `GP_SERV_COMMAND_ITEM_NUM` |
-| **Client Handler**        | `RecvItemNum` |
+| **Client Handlers**       | `RecvItemChange`, `RecvItemNum` |
 | **Direction**             | `S -> C` |
 | **OpCode**                | `0x001E` |
 | **Size**                  | `0x000C` |
