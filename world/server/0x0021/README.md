@@ -3,7 +3,7 @@
 | Information               | Notes |
 |---                        |---    |
 | **Command Name**          | `GP_SERV_COMMAND_ITEM_TRADE_REQ` |
-| **Client Handlers**       | `CTkTrade::TkRecvItemTradeReq`, `RecvItemTradeReq` |
+| **Client Handlers**       | `RecvItemTradeReq`, `CTkTrade::TkRecvItemTradeReq` |
 | **Direction**             | `S -> C` |
 | **OpCode**                | `0x0021` |
 | **Size**                  | `0x000C` |

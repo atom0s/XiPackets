@@ -3,7 +3,7 @@
 | Information               | Notes |
 |---                        |---    |
 | **Command Name**          | `GP_SERV_COMMAND_BAZAAR_SELL` |
-| **Client Handler**        | `RecvSell` |
+| **Client Handlers**       | `RecvSell`, `RecvBazarSell` |
 | **Direction**             | `S -> C` |
 | **OpCode**                | `0x0109` |
 | **Size**                  | `Todo` |

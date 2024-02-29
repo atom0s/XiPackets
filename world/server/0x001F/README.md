@@ -3,7 +3,7 @@
 | Information               | Notes |
 |---                        |---    |
 | **Command Name**          | `GP_SERV_COMMAND_ITEM_LIST` |
-| **Client Handler**        | `RecvItemChange`, `RecvItemList` |
+| **Client Handlers**       | `RecvItemList`, `RecvItemChange` |
 | **Direction**             | `S -> C` |
 | **OpCode**                | `0x001F` |
 | **Size**                  | `0x0010` |

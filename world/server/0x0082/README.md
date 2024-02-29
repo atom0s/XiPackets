@@ -3,7 +3,7 @@
 | Information               | Notes |
 |---                        |---    |
 | **Command Name**          | `GP_SERV_COMMAND_GUILD_BUY` |
-| **Client Handlers**       | `RecvGuildBuy`, `gcRecvGuildBuy` |
+| **Client Handlers**       | `gcRecvGuildBuy`, `RecvGuildBuy` |
 | **Direction**             | `S -> C` |
 | **OpCode**                | `0x0082` |
 | **Size**                  | `0x0008` |

@@ -3,7 +3,7 @@
 | Information               | Notes |
 |---                        |---    |
 | **Command Name**          | `GP_SERV_COMMAND_ITEM_TRADE_LIST` |
-| **Client Handlers**       | `CTkTrade::TkRecvItemTradeList`, `RecvItemTradeList` |
+| **Client Handlers**       | `RecvItemTradeList`, `CTkTrade::TkRecvItemTradeList` |
 | **Direction**             | `S -> C` |
 | **OpCode**                | `0x0023` |
 | **Size**                  | `0x0028` |

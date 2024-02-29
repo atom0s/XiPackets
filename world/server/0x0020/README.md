@@ -3,7 +3,7 @@
 | Information               | Notes |
 |---                        |---    |
 | **Command Name**          | `GP_SERV_COMMAND_ITEM_ATTR` |
-| **Client Handlers**       | `RecvItemAttrChange`, `RecvItemAttr` |
+| **Client Handlers**       | `RecvItemAttr`, `RecvItemAttrChange` |
 | **Direction**             | `S -> C` |
 | **OpCode**                | `0x0020` |
 | **Size**                  | `0x002C` |

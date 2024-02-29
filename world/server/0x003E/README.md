@@ -3,7 +3,7 @@
 | Information               | Notes |
 |---                        |---    |
 | **Command Name**          | `GP_SERV_COMMAND_SHOP_OPEN` |
-| **Client Handlers**       | `YkWndShopMain::RecvShopOpen`, `RecvShopOpen` |
+| **Client Handlers**       | `RecvShopOpen`, `YkWndShopMain::RecvShopOpen` |
 | **Direction**             | `S -> C` |
 | **OpCode**                | `0x003E` |
 | **Size**                  | `0x0008` |
