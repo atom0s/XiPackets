@@ -21,6 +21,7 @@ The following list is the various packets that are currently sent from the serve
 | [`0x000B`](/world/server/0x000B/README.md) | `GP_SERV_COMMAND_LOGOUT`             | `RecvLogOut`              | :white_check_mark: |
 | [`0x000D`](/world/server/0x000D/README.md) | `GP_SERV_COMMAND_CHAR_PC`            | `RecvCharPc`              | :x: |
 | [`0x000E`](/world/server/0x000E/README.md) | `GP_SERV_COMMAND_CHAR_NPC`           | `RecvCharNpc`             | :x: |
+| [`0x0011`](/world/server/0x0011/README.md) | `GP_SERV_COMMAND_CHAR_DEL`           | `RecvCharDel`             | :white_check_mark: |
 | [`0x0012`](/world/server/0x0012/README.md) | `GP_SERV_COMMAND_GM`                 | `RecvGm`                  | :white_check_mark: |
 | [`0x0013`](/world/server/0x0013/README.md) | `GP_SERV_COMMAND_GMCOMMAND`          | `RecvGmCommand`           | :white_check_mark: |
 | [`0x0014`](/world/server/0x0014/README.md) | `GP_SERV_COMMAND_TELL`               | `RecvMessageTell`         | :white_check_mark: |

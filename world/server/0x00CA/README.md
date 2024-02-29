@@ -3,7 +3,7 @@
 | Information               | Notes |
 |---                        |---    |
 | **Command Name**          | `GP_SERV_COMMAND_INSPECT_MESSAGE` |
-| **Client Handlers**       | `RecvInspectMessage`, `CTkInspect::RecvBazar` |
+| **Client Handlers**       | `CTkInspect::RecvBazar`, `RecvInspectMessage` |
 | **Direction**             | `S -> C` |
 | **OpCode**                | `0x00CA` |
 | **Size**                  | `0x0094` |

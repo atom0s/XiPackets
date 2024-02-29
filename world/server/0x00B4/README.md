@@ -3,7 +3,7 @@
 | Information               | Notes |
 |---                        |---    |
 | **Command Name**          | `GP_SERV_COMMAND_CONFIG` |
-| **Client Handlers**       | `RecvConf`, `FsChatFilterServerCallback` |
+| **Client Handlers**       | `FsChatFilterServerCallback`, `RecvConf` |
 | **Direction**             | `S -> C` |
 | **OpCode**                | `0x00B4` |
 | **Size**                  | `0x0018` |
