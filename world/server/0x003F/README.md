@@ -3,7 +3,7 @@
 | Information               | Notes |
 |---                        |---    |
 | **Command Name**          | `GP_SERV_COMMAND_SHOP_BUY` |
-| **Client Handler**        | `RecvShopBuy` |
+| **Client Handlers**       | `(UnnamedHandler)`, `RecvShopBuy` |
 | **Direction**             | `S -> C` |
 | **OpCode**                | `0x003F` |
 | **Size**                  | `0x000C` |

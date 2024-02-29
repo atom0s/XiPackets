@@ -3,7 +3,7 @@
 | Information               | Notes |
 |---                        |---    |
 | **Command Name**          | `GP_SERV_COMMAND_SHOP_LIST` |
-| **Client Handler**        | `RecvShopList` |
+| **Client Handlers**       | `(UnnamedHandler)`, `RecvShopList` |
 | **Direction**             | `S -> C` |
 | **OpCode**                | `0x003C` |
 | **Size**                  | `(varies)` |
