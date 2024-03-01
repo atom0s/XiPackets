@@ -91,7 +91,7 @@ _The linkshell message timestamp._
 
 ### `modifier`
 
-_The name of the player who last edited the linkshel message._
+_The name of the player who last edited the linkshell message._
 
 ### `opType`
 
