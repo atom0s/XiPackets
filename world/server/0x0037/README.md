@@ -383,9 +383,9 @@ This value is used to set the entities gender. This is used during events when a
 
 ### `unknown_1_9`
 
-_Unknown._
+_Flag set if the entity is within a zone-wide treasure pool area or party._
 
-If this flag is set, it will cause the entities `ZoneNo` field to be set with the current `pGlobalNowZone->ZoneNo` value.
+If this flag is set, it will cause the entities `ZoneNo` field to be set with the current `pGlobalNowZone->ZoneNo` value. The client uses this value to determine if the client is within a zone-wide based treasure pool area or party. When set, it will cause the client to display the extended treasure pool window.
 
 ### `unknown_1_10`
 
