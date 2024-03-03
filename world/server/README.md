@@ -145,7 +145,7 @@ The following list is the various packets that are currently sent from the serve
 | [`0x00CC`](/world/server/0x00CC/README.md) | `GP_SERV_COMMAND_LINKSHELL_MESSAGE`  | `RecvComlinkMessage`          | _None._                               | :white_check_mark: |
 | [`0x00D2`](/world/server/0x00D2/README.md) | `GP_SERV_COMMAND_TROPHY_LIST`        | `RecvTrophyList`              | _None._                               | :white_check_mark: |
 | [`0x00D3`](/world/server/0x00D3/README.md) | `GP_SERV_COMMAND_TROPHY_SOLUTION`    | `RecvTrophySolution`          | _None._                               | :white_check_mark: |
-| [`0x00DC`](/world/server/0x00DC/README.md) | `GP_SERV_COMMAND_GROUP_SOLICIT_REQ`  | `RecvGroupSolicitreq`         | `YkWndPartyList::RecvGroupSolicitReq` | :x: |
+| [`0x00DC`](/world/server/0x00DC/README.md) | `GP_SERV_COMMAND_GROUP_SOLICIT_REQ`  | `RecvGroupSolicitreq`         | `YkWndPartyList::RecvGroupSolicitReq` | :white_check_mark: |
 | [`0x00DD`](/world/server/0x00DD/README.md) | `GP_SERV_COMMAND_GROUP_LIST`         | `RecvGroupList`               | _None._                               | :x: |
 | [`0x00DE`](/world/server/0x00DE/README.md) | `GP_SERV_COMMAND_GROUP_SOLICIT_NO`   | `RecvGroupSolicitNo`          | _None._                               | :x: |
 | [`0x00DF`](/world/server/0x00DF/README.md) | `GP_SERV_COMMAND_GROUP_ATTR`         | `RecvGroupAttr`               | _None._                               | :x: |
