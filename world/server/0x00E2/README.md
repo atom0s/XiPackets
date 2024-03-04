@@ -10,7 +10,7 @@
 
 ## Description
 
-This packet is sent by the server to update a party members information.
+This packet is sent by the server to initialize (and update) a party members information.
 
 ## Packet Layout
 
