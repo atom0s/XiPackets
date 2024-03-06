@@ -48,7 +48,7 @@ struct flags1_t
     uint32_t    FreezeFlag      : 1;
     uint32_t    unknown_1_14    : 1;
     uint32_t    InvisFlag       : 1;
-    uint32_t    unknown_2_16    : 1;
+    uint32_t    GateBreachFlg   : 1;
     uint32_t    SpeedBase       : 8;
     uint32_t    unknown_3_25    : 4;
     uint32_t    BazaarFlag      : 1;
@@ -64,7 +64,7 @@ struct flags2_t
     uint32_t    PetIndex        : 16;
     uint32_t    MotStopFlag     : 1;
     uint32_t    CliPriorityFlag : 1;
-    uint32_t    unknown_2_21    : 8;
+    uint32_t    BallistaFlg     : 8;
     uint32_t    unknown_3_29    : 3;
 };
 
@@ -78,7 +78,7 @@ struct flags3_t
     uint32_t    unknown_0_5     : 1;
     uint32_t    unknown_0_6     : 1;
     uint32_t    unknown_0_7     : 1;
-    uint32_t    unknown_1_8     : 8;
+    uint32_t    BallistaTeam    : 8;
     uint32_t    unknown_2_16    : 16;
 };
 
@@ -484,11 +484,11 @@ This flag is previously known as `GMInvisFlag` on the PS2 beta.
 
 _Flag set if the entity is invisible._
 
-### `unknown_2_16`
+### `GateBreachFlg`
 
-_Unknown._
+_Flag set if the entity has Gate Breach status during Ballista._
 
-This flag is previously known as `PvPFlag` on the PS2 beta.
+This flag is used during Ballista to mark the player as having Gate Breach status. _(Shows the star icon on the scoreboard.)_
 
 ### `SpeedBase`
 
@@ -556,11 +556,53 @@ _Flag set if the entity is considered priority._
 
 When this flag is set, it will override the internal limit when rendering entities to screen. Usually the client will loop through the entity array and draw each valid entity until a limit is reached. This flag will allow the entity to be drawn regardless of this limit being reached each frame.
 
-### `unknown_2_21`
+### `BallistaFlg`
 
 _The entities ballista information._
 
-The client uses this as the clients Ballista flags. _(The values for this are not currently reversed.)_
+The client uses this as the clients Ballista flags.
+
+| Id | Purpose |
+| `0x00` | _(unused)_ |
+| `0x01` | _None (Default)_ |
+| `0x02` | _Ballista (San d'Oria)_ |
+| `0x03` | _Ballista (Bastok)_ |
+| `0x04` | _Ballista (Windurst)_ |
+| `0x05` | _Ballista (Wyverns)_ |
+| `0x06` | _Ballista (Griffons)_ |
+| `0x07` | _Unused_ |
+| `0x08` | _Belligerency (Sword/Shield)_ |
+| `0x09` | _Belligerency (Sword/Shield)_ |
+| `0x0A` | _Unused_ |
+| `0x0B` | _Unused_ |
+| `0x0C` | _Unused_ |
+| `0x0D` | _Unused_ |
+| `0x0E` | _Unused_ |
+| `0x0F` | _Unused_ |
+| `0x10` | _Unused_ |
+| `0x11` | _Unused_ |
+| `0x12` | _Unused_ |
+| `0x13` | _Unused_ |
+| `0x14` | _Unused_ |
+| `0x15` | _Unused_ |
+| `0x16` | _Unused_ |
+| `0x17` | _Unused_ |
+| `0x18` | _Unused_ |
+| `0x19` | _Unused_ |
+| `0x1A` | _Unused_ |
+| `0x1B` | _Unused_ |
+| `0x1C` | _Unused_ |
+| `0x1D` | _Unused_ |
+| `0x1E` | _Unused_ |
+| `0x1F` | _Unused_ |
+| `0x20` | _Pankration (Red)_ |
+| `0x21` | _Pankration (Blue)_ |
+| `0x22` | _Pankration (Red)_ |
+| `0x23` | _Pankration (Blue)_ |
+| `0x24` | _Pankration (Red)_ |
+| `0x25` | _Pankration (Blue)_ |
+| `0x26` | _Pankration (Red)_ |
+| `0x27` | _Pankration (Blue)_ |
 
 ### `unknown_3_29`
 
@@ -610,11 +652,24 @@ _Unknown._
 
 _Unknown._
 
-### `unknown_1_8`
+### `BallistaTeam`
 
-_Unknown._
+_The entities current Ballista team id._
 
-This value is used with Ballista and Pankration related events. _(The values for this are not currently reversed.)_
+This value is used to set the clients current Ballista team id under certain conditions.
+
+| Id | Purpose |
+| --- | --- |
+| `0` | _None_ |
+| `1` | _San d'Oria (Square Flag)_ |
+| `2` | _Bastok (Square Flag)_ |
+| `3` | _Windurst (Square Flag)_ |
+| `4` | _Wyverns (Blue Flag)_ |
+| `5` | _Griffons (Green Flag)_ |
+| `6` | _Wyverns (Blue Flag)_ |
+| `7` | _Griffons (Green Flag)_ |
+
+The values 6 amd 7 are special cases used in Brenner when the entity is currently holding a captured Flamme. These values are required in order to change the nameplate icon to the flamme rock. _(Requires additional packets to fully work.)_
 
 ### `unknown_2_16`
 
