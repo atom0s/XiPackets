@@ -152,7 +152,7 @@ The following list is the various packets that are currently sent from the serve
 | [`0x00E0`](/world/server/0x00E0/README.md) | `GP_SERV_COMMAND_GROUP_COMLINK`      | `RecvComlink`                 | _None._                               | :white_check_mark: |
 | [`0x00E1`](/world/server/0x00E1/README.md) | `GP_SERV_COMMAND_GROUP_CHECKID`      | `RecvCheckID`                 | _None._                               | :white_check_mark: |
 | [`0x00E2`](/world/server/0x00E2/README.md) | `GP_SERV_COMMAND_GROUP_LIST2`        | `RecvGroupList2`              | _None._                               | :white_check_mark: |
-| [`0x00E6`](/world/server/0x00E6/README.md) | `(UnknownName)`                      | _None._                       | `(UnknownName)`                       | :x: |
+| [`0x00E6`](/world/server/0x00E6/README.md) | `(UnknownName)`                      | _None._                       | `(UnknownName)`                       | :white_check_mark: |
 | [`0x00F4`](/world/server/0x00F4/README.md) | `GP_SERV_COMMAND_TRACKING_LIST`      | `RecvList`                    | _None._                               | :x: |
 | [`0x00F5`](/world/server/0x00F5/README.md) | `GP_SERV_COMMAND_TRACKING_POS`       | `RecvPos`                     | _None._                               | :x: |
 | [`0x00F6`](/world/server/0x00F6/README.md) | `GP_SERV_COMMAND_TRACKING_STATE`     | `RecvState`                   | `YkWndTrack::RecvListEnd`             | :x: |
