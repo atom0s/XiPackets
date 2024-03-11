@@ -173,7 +173,7 @@ The following list is the various packets that are currently sent from the serve
 | [`0x0115`](/world/server/0x0115/README.md) | `(UnknownName)`                      | _None._                       | `(UnknownName)`                       | :white_check_mark: |
 | [`0x0116`](/world/server/0x0116/README.md) | `(UnknownName)`                      | `(UnknownName)`               | _None._                               | :white_check_mark: |
 | [`0x0117`](/world/server/0x0117/README.md) | `(UnknownName)`                      | `(UnknownName)`               | _None._                               | :white_check_mark: |
-| [`0x0118`](/world/server/0x0118/README.md) | `(UnknownName)`                      | _None._                       | `(UnknownName)`                       | :x: |
+| [`0x0118`](/world/server/0x0118/README.md) | `(UnknownName)`                      | _None._                       | `(UnknownName)`                       | :white_check_mark: |
 | [`0x0119`](/world/server/0x0119/README.md) | `(UnknownName)`                      | _None._                       | `(UnknownName)`                       | :x: |
 | [`0x011A`](/world/server/0x011A/README.md) | `(UnknownName)`                      | _None._                       | `(UnknownName)`                       | :x: |
 | [`0x011B`](/world/server/0x011B/README.md) | `(UnknownName)`                      | `(UnknownName)`               | _None._                               | :x: |
