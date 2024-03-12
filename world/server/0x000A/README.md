@@ -53,7 +53,7 @@ enum class SAVE_LOGIN_STATE : uint32_t
 };
 
 // PS2: GP_MYROOM_DANCER
-struct GP_MYROOM_DANCER
+struct GP_MYROOM_DANCER_PKT
 {
     uint16_t            mon_no;             // PS2: mon_no
     uint16_t            face_no;            // PS2: face_no
@@ -72,7 +72,7 @@ struct GP_MYROOM_DANCER
 };
 
 // PS2: SAVE_CONF
-struct SAVE_CONF
+struct SAVE_CONF_PKT
 {
     uint32_t            unknown00[3];       // PS2: (Multiple fields; bits.)
 };
@@ -80,48 +80,46 @@ struct SAVE_CONF
 // PS2: GP_SERV_LOGIN
 struct GP_SERV_LOGIN
 {
-    uint16_t            id: 9;
-    uint16_t            size: 7;
-    uint16_t            sync;
-
-    GP_SERV_POS_HEAD    PosHead;            // PS2: PosHead
-
-    uint32_t            ZoneNo;             // PS2: ZoneNo
-    uint32_t            ntTime;             // PS2: ntTime
-    uint32_t            ntTimeSec;          // PS2: ntTimeSec
-    uint32_t            GameTime;           // PS2: GameTime
-    uint16_t            EventNo;            // PS2: EventNo
-    uint16_t            MapNumber;          // PS2: MapNumber
-    uint16_t            GrapIDTbl[9];       // PS2: GrapIDTbl
-    uint16_t            MusicNum[5];        // PS2: MusicNum
-    uint16_t            SubMapNumber;       // PS2: SubMapNumber
-    uint16_t            EventNum;           // PS2: EventNum
-    uint16_t            EventPara;          // PS2: EventPara
-    uint16_t            EventMode;          // PS2: EventMode
-    uint16_t            WeatherNumber;      // PS2: WeatherNumber
-    uint16_t            WeatherNumber2;     // PS2: WeatherNumber2
-    uint32_t            WeatherTime;        // PS2: WeatherTime
-    uint32_t            WeatherTime2;       // PS2: WeatherTime2
-    uint32_t            WeatherOffsetTime;  // PS2: WeatherOffsetTime
-    uint32_t            ShipStart;          // PS2: ShipStart
-    uint16_t            ShipEnd;            // PS2: ShipEnd
-    uint16_t            IsMonstrosity;      // PS2: (New; did not exist.)
-    SAVE_LOGIN_STATE    LoginState;         // PS2: LoginState
-    char                name[16];           // PS2: name
-    int32_t             certificate[2];     // PS2: certificate
-    uint16_t            unknown00;          // Unknown
-    uint16_t            ZoneSubNo;          // PS2: (New; did not exist.)
-    uint32_t            PlayTime;           // PS2: PlayTime
-    uint32_t            DeadCounter;        // PS2: DeadCounter
-    uint8_t             MyroomSubMapNumber; // PS2: (New; did not exist.)
-    uint8_t             unknown01;          // Unknown
-    uint16_t            MyroomMapNumber;    // PS2: MyroomMapNumber
-    uint16_t            SendCount;          // PS2: SendCount
-    uint8_t             MyRoomExitBit;      // PS2: MyRoomExitBit
-    uint8_t             MogZoneFlag;        // PS2: MogZoneFlag
-    GP_MYROOM_DANCER    Dancer;             // PS2: Dancer
-    SAVE_CONF           ConfData;           // PS2: ConfData
-    uint32_t            Ex;                 // PS2: (New; did not exist.)
+    uint16_t                id: 9;
+    uint16_t                size: 7;
+    uint16_t                sync;
+    GP_SERV_POS_HEAD        PosHead;            // PS2: PosHead
+    uint32_t                ZoneNo;             // PS2: ZoneNo
+    uint32_t                ntTime;             // PS2: ntTime
+    uint32_t                ntTimeSec;          // PS2: ntTimeSec
+    uint32_t                GameTime;           // PS2: GameTime
+    uint16_t                EventNo;            // PS2: EventNo
+    uint16_t                MapNumber;          // PS2: MapNumber
+    uint16_t                GrapIDTbl[9];       // PS2: GrapIDTbl
+    uint16_t                MusicNum[5];        // PS2: MusicNum
+    uint16_t                SubMapNumber;       // PS2: SubMapNumber
+    uint16_t                EventNum;           // PS2: EventNum
+    uint16_t                EventPara;          // PS2: EventPara
+    uint16_t                EventMode;          // PS2: EventMode
+    uint16_t                WeatherNumber;      // PS2: WeatherNumber
+    uint16_t                WeatherNumber2;     // PS2: WeatherNumber2
+    uint32_t                WeatherTime;        // PS2: WeatherTime
+    uint32_t                WeatherTime2;       // PS2: WeatherTime2
+    uint32_t                WeatherOffsetTime;  // PS2: WeatherOffsetTime
+    uint32_t                ShipStart;          // PS2: ShipStart
+    uint16_t                ShipEnd;            // PS2: ShipEnd
+    uint16_t                IsMonstrosity;      // PS2: (New; did not exist.)
+    SAVE_LOGIN_STATE        LoginState;         // PS2: LoginState
+    char                    name[16];           // PS2: name
+    int32_t                 certificate[2];     // PS2: certificate
+    uint16_t                unknown00;          // Unknown
+    uint16_t                ZoneSubNo;          // PS2: (New; did not exist.)
+    uint32_t                PlayTime;           // PS2: PlayTime
+    uint32_t                DeadCounter;        // PS2: DeadCounter
+    uint8_t                 MyroomSubMapNumber; // PS2: (New; did not exist.)
+    uint8_t                 unknown01;          // Unknown
+    uint16_t                MyroomMapNumber;    // PS2: MyroomMapNumber
+    uint16_t                SendCount;          // PS2: SendCount
+    uint8_t                 MyRoomExitBit;      // PS2: MyRoomExitBit
+    uint8_t                 MogZoneFlag;        // PS2: MogZoneFlag
+    GP_MYROOM_DANCER_PKT    Dancer;             // PS2: Dancer
+    SAVE_CONF_PKT           ConfData;           // PS2: ConfData
+    uint32_t                Ex;                 // PS2: (New; did not exist.)
 };
 ```
 
@@ -574,7 +572,7 @@ This feature has been deprecated and no longer functions.
 
 _N/A._
 
-## Structure Fields (`GP_MYROOM_DANCER`)
+## Structure Fields (`GP_MYROOM_DANCER_PKT`)
 
 ### `mon_no`
 
@@ -636,7 +634,7 @@ _Unknown._
 
 It is assumed this array is padding and unused.
 
-## Structure Fields (`SAVE_CONF`)
+## Structure Fields (`SAVE_CONF_PKT`)
 
 ### `unknown00`
 
@@ -656,3 +654,7 @@ Based on the PS2 exported data:
   - `unknown00[0]` - _Holds various bit flags and bit data for invite flag, away flag, anon flag, language, GM level, auto-target, etc.._
   - `unknown00[1]` - _Chat filter bits._
   - `unknown00[2]` - _Chat filter bits._
+
+## Additional Information
+
+The `GP_MYROOM_DANCER_PKT` and `SAVE_CONF_PKT` structures are postfixed with the `_PKT` naming as these do not align to the actual internal structures that share the same name. This packet has changed since the PS2 beta and does not directly align to the non-packet variants of the same named structures. Instead, they are only partial copies from the packet into memory.
