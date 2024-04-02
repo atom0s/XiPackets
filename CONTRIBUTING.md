@@ -35,7 +35,7 @@ This repository and its work is for educational purposes only.
 We (contributors) do not claim ownership of any copyright content related to, or associated with, Final Fantasy XI.
 
 ```
-(c) 2002-2023 SQUARE ENIX CO., LTD. All Rights Reserved. Title Design by Yoshitaka Amano.
+(c) 2002-2024 SQUARE ENIX CO., LTD. All Rights Reserved. Title Design by Yoshitaka Amano.
 FINAL FANTASY, TETRA MASTER and VANA'DIEL are registered trademarks of Square Enix Co., Ltd. SQUARE ENIX, 
 PLAYONLINE and the PlayOnline logo are trademarks of Square Enix Co., Ltd.
 ```
