@@ -13,13 +13,13 @@ The following list is the various packets that are currently sent from the clien
 
 | Id | Packet Command Name | First Pass Documented |
 | --- | --- | --- |
-| [`0x000A`](/world/client/0x000A/README.md) | `GP_CLI_COMMAND_LOGIN`               | :x: |
-| [`0x000B`](/world/client/0x000B/README.md) | `GP_CLI_COMMAND_LOGOUT`              | :x: |
-| [`0x000C`](/world/client/0x000C/README.md) | `GP_CLI_COMMAND_GAMEOK`              | :x: |
-| [`0x000D`](/world/client/0x000D/README.md) | `GP_CLI_COMMAND_NETEND`              | :x: |
-| [`0x000F`](/world/client/0x000F/README.md) | `GP_CLI_COMMAND_CLSTAT`              | :x: |
-| [`0x0011`](/world/client/0x0011/README.md) | `(UnknownName)`                      | :x: |
-| [`0x0015`](/world/client/0x0015/README.md) | `GP_CLI_COMMAND_POS`                 | :x: |
+| [`0x000A`](/world/client/0x000A/README.md) | `GP_CLI_COMMAND_LOGIN`               | :white_check_mark: |
+| [`0x000B`](/world/client/0x000B/README.md) | `GP_CLI_COMMAND_LOGOUT`              | :white_check_mark: |
+| [`0x000C`](/world/client/0x000C/README.md) | `GP_CLI_COMMAND_GAMEOK`              | :white_check_mark: |
+| [`0x000D`](/world/client/0x000D/README.md) | `GP_CLI_COMMAND_NETEND`              | :white_check_mark: |
+| [`0x000F`](/world/client/0x000F/README.md) | `GP_CLI_COMMAND_CLSTAT`              | :white_check_mark: |
+| [`0x0011`](/world/client/0x0011/README.md) | `(UnknownName)`                      | :white_check_mark: |
+| [`0x0015`](/world/client/0x0015/README.md) | `GP_CLI_COMMAND_POS`                 | :white_check_mark: |
 | [`0x0016`](/world/client/0x0016/README.md) | `GP_CLI_COMMAND_CHARREQ`             | :x: |
 | [`0x0017`](/world/client/0x0017/README.md) | `GP_CLI_COMMAND_CHARREQ2`            | :x: |
 | [`0x001A`](/world/client/0x001A/README.md) | `GP_CLI_COMMAND_ACTION`              | :x: |
