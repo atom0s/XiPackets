@@ -20,9 +20,9 @@ The following list is the various packets that are currently sent from the clien
 | [`0x000F`](/world/client/0x000F/README.md) | `GP_CLI_COMMAND_CLSTAT`              | :white_check_mark: |
 | [`0x0011`](/world/client/0x0011/README.md) | `(UnknownName)`                      | :white_check_mark: |
 | [`0x0015`](/world/client/0x0015/README.md) | `GP_CLI_COMMAND_POS`                 | :white_check_mark: |
-| [`0x0016`](/world/client/0x0016/README.md) | `GP_CLI_COMMAND_CHARREQ`             | :x: |
-| [`0x0017`](/world/client/0x0017/README.md) | `GP_CLI_COMMAND_CHARREQ2`            | :x: |
-| [`0x001A`](/world/client/0x001A/README.md) | `GP_CLI_COMMAND_ACTION`              | :x: |
+| [`0x0016`](/world/client/0x0016/README.md) | `GP_CLI_COMMAND_CHARREQ`             | :white_check_mark: |
+| [`0x0017`](/world/client/0x0017/README.md) | `GP_CLI_COMMAND_CHARREQ2`            | :white_check_mark: |
+| [`0x001A`](/world/client/0x001A/README.md) | `GP_CLI_COMMAND_ACTION`              | :white_check_mark: |
 | [`0x001B`](/world/client/0x001B/README.md) | `GP_CLI_COMMAND_FRIENDPASS`          | :x: |
 | [`0x001C`](/world/client/0x001C/README.md) | `(UnknownName)`                      | :x: |
 | [`0x001E`](/world/client/0x001E/README.md) | `GP_CLI_COMMAND_GM`                  | :x: |
