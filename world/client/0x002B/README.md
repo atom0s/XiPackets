@@ -16,7 +16,7 @@ This packet is sent by the client when using the `/translate` command.
 The layout of this packet is the following:
 
 ```cpp
-struct packet_c2s_02B_t
+struct packet_t
 {
     uint16_t    id: 9;
     uint16_t    size: 7;
@@ -32,7 +32,7 @@ struct packet_c2s_02B_t
 
 The following information describes the structures outlined above.
 
-## Structure Fields (`packet_c2s_02B_t`)
+## Structure Fields (`packet_t`)
 
 ### `id`, `size`, `sync`
 
