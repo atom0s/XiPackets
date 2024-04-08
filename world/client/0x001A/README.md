@@ -21,10 +21,10 @@ struct GP_CLI_ACTION
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
-    uint32_t    UniqueNo;
-    uint16_t    ActIndex;
-    uint16_t    ActionID;
-    uint32_t    ActionBuf[4];
+    uint32_t    UniqueNo;       // PS2: UniqueNo
+    uint16_t    ActIndex;       // PS2: ActIndex
+    uint16_t    ActionID;       // PS2: ActionID
+    uint32_t    ActionBuf[4];   // PS2: ActionBuf
 };
 ```
 

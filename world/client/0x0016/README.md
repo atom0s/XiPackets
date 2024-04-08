@@ -23,8 +23,8 @@ struct GP_CLI_CHARREQ
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
-    uint16_t    ActIndex;
-    uint16_t    padding00;
+    uint16_t    ActIndex;   // PS2: ActIndex
+    uint16_t    padding00;  // PS2: Dammy
 };
 ```
 

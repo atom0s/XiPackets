@@ -21,12 +21,12 @@ struct GP_CLI_CHARREQ2
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
-    uint16_t    ActIndex;
-    uint16_t    padding00;
-    uint32_t    UniqueNo2;
-    uint32_t    UniqueNo3;
-    uint16_t    Flg;
-    uint16_t    Flg2;
+    uint16_t    ActIndex;   // PS2: ActIndex
+    uint16_t    padding00;  // PS2: dammy
+    uint32_t    UniqueNo2;  // PS2: UniqueNo2
+    uint32_t    UniqueNo3;  // PS2: UniqueNo3
+    uint16_t    Flg;        // PS2: Flg
+    uint16_t    Flg2;       // PS2: Flg2
 };
 ```
 
