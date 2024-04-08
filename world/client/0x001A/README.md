@@ -16,6 +16,7 @@ This packet is sent by the client when it is requesting to perform an action.
 The layout of this packet is the following:
 
 ```cpp
+// PS2: GP_CLI_ACTION
 struct GP_CLI_ACTION
 {
     uint16_t    id: 9;

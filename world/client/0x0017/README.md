@@ -16,6 +16,7 @@ This packet is sent by the client if it is attempting to access an entity that i
 The layout of this packet is the following:
 
 ```cpp
+// PS2: GP_CLI_CHARREQ2
 struct GP_CLI_CHARREQ2
 {
     uint16_t    id: 9;

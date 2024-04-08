@@ -16,6 +16,7 @@ This packet is sent by the client when requesting to log into a zone. This is th
 The layout of this packet is the following:
 
 ```cpp
+// PS2: GP_CLI_LOGIN
 struct GP_CLI_LOGIN
 {
     uint16_t    id: 9;

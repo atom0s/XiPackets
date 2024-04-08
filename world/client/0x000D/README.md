@@ -16,6 +16,7 @@ This packet is sent by the client when it is being logged out of a zone.
 The layout of this packet is the following:
 
 ```cpp
+// PS2: GP_CLI_NETEND
 struct GP_CLI_NETEND
 {
     uint16_t    id: 9;

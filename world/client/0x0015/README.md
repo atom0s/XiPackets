@@ -16,6 +16,7 @@ This packet is sent by the client to update its position, and other general stat
 The layout of this packet is the following:
 
 ```cpp
+// PS2: GP_CLI_POS
 struct GP_CLI_POS
 {
     uint16_t    id: 9;

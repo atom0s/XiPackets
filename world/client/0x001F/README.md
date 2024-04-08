@@ -19,6 +19,7 @@ This packet is sent by the client in response to a remote GM command execution r
 The layout of this packet is the following:
 
 ```cpp
+// PS2: GP_CLI_GMCOMMAND
 struct GP_CLI_GMCOMMAND
 {
     uint16_t    id: 9;

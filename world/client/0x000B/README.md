@@ -19,6 +19,7 @@ This packet was originally used during the PS2 beta when logging out and with a 
 The layout of this packet is the following:
 
 ```cpp
+// PS2: GP_CLI_LOGOUT
 struct GP_CLI_LOGOUT
 {
     uint16_t    id: 9;

@@ -16,6 +16,7 @@ This packet is sent by the client when it is requesting to trade with another pl
 The layout of this packet is the following:
 
 ```cpp
+// PS2: GP_CLI_ITEM_TRADE_REQ
 struct GP_CLI_ITEM_TRADE_REQ
 {
     uint16_t    id: 9;

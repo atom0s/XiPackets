@@ -18,6 +18,7 @@ The client will send this packet each time the player uses a job ability while h
 The layout of this packet is the following:
 
 ```cpp
+// PS2: (New; did not exist.)
 struct packet_t
 {
     uint16_t    id: 9;

@@ -16,6 +16,7 @@ This packet is sent by the client when using the `/itemsearch` command.
 The layout of this packet is the following:
 
 ```cpp
+// PS2: (New; did not exist.)
 struct packet_t
 {
     uint16_t    id: 9;

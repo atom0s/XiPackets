@@ -16,6 +16,7 @@ This packet is sent by the client when it has a zero-value state for its own equ
 The layout of this packet is the following:
 
 ```cpp
+// PS2: GP_CLI_CLSTAT
 struct GP_CLI_CLSTAT
 {
     uint16_t    id: 9;

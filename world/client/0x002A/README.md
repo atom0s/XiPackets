@@ -17,6 +17,7 @@
 The layout of this packet is the following:
 
 ```cpp
+// PS2: GP_CLI_ITEM_ATTR
 struct GP_CLI_ITEM_ATTR
 {
     uint16_t    id: 9;

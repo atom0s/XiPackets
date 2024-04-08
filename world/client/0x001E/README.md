@@ -21,6 +21,7 @@ _**Note:** The system to actually make use of this packet is no longer implement
 The layout of this packet is the following:
 
 ```cpp
+// PS2: GP_CLI_GM
 struct GP_CLI_GM
 {
     uint16_t    id: 9;

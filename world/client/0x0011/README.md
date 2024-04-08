@@ -16,6 +16,7 @@ This packet is sent by the client when it has successfully entered the requested
 The layout of this packet is the following:
 
 ```cpp
+// PS2: (New; did not exist.)
 struct packet_t
 {
     uint16_t    id: 9;

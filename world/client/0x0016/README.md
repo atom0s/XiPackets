@@ -18,6 +18,7 @@ This packet is used to request that the server send an entity update _(`0x000E`)
 The layout of this packet is the following:
 
 ```cpp
+// PS2: GP_CLI_CHARREQ
 struct GP_CLI_CHARREQ
 {
     uint16_t    id: 9;

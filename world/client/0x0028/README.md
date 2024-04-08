@@ -16,6 +16,7 @@ This packet is sent by the client when it drops an item.
 The layout of this packet is the following:
 
 ```cpp
+// PS2: GP_CLI_ITEM_DUMP
 struct GP_CLI_ITEM_DUMP
 {
     uint16_t    id: 9;

@@ -16,6 +16,7 @@ This packet is sent by the client when the client is in a state, after zoning, t
 The layout of this packet is the following:
 
 ```cpp
+// PS2: GP_CLI_GAMEOK
 struct GP_CLI_GAMEOK
 {
     uint16_t    id: 9;

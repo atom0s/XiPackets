@@ -16,6 +16,7 @@ This packet is sent by the client when moving items around containers.
 The layout of this packet is the following:
 
 ```cpp
+// PS2: GP_CLI_ITEM_MOVE
 struct GP_CLI_ITEM_MOVE
 {
     uint16_t    id: 9;
