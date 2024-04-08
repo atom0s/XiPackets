@@ -31,9 +31,9 @@ The following list is the various packets that are currently sent from the clien
 | [`0x0029`](/world/client/0x0029/README.md) | `GP_CLI_COMMAND_ITEM_MOVE`           | :white_check_mark: |
 | [`0x002A`](/world/client/0x002A/README.md) | `GP_CLI_COMMAND_ITEM_ATTR`           | :white_check_mark: |
 | [`0x002B`](/world/client/0x002B/README.md) | `(UnknownName)`                      | :white_check_mark: |
-| [`0x002C`](/world/client/0x002C/README.md) | `(UnknownName)`                      | :x: |
-| [`0x0032`](/world/client/0x0032/README.md) | `GP_CLI_COMMAND_ITEM_TRADE_REQ`      | :x: |
-| [`0x0033`](/world/client/0x0033/README.md) | `GP_CLI_COMMAND_ITEM_TRADE_RES`      | :x: |
+| [`0x002C`](/world/client/0x002C/README.md) | `(UnknownName)`                      | :white_check_mark: |
+| [`0x0032`](/world/client/0x0032/README.md) | `GP_CLI_COMMAND_ITEM_TRADE_REQ`      | :white_check_mark: |
+| [`0x0033`](/world/client/0x0033/README.md) | `GP_CLI_COMMAND_ITEM_TRADE_RES`      | :white_check_mark: |
 | [`0x0034`](/world/client/0x0034/README.md) | `GP_CLI_COMMAND_ITEM_TRADE_LIST`     | :x: |
 | [`0x0035`](/world/client/0x0035/README.md) | `GP_CLI_COMMAND_ITEM_PRESENT`        | :x: |
 | [`0x0036`](/world/client/0x0036/README.md) | `GP_CLI_COMMAND_ITEM_TRANSFER`       | :x: |
