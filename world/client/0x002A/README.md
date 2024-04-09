@@ -12,6 +12,11 @@
 > [!NOTE]
 > Deprecated: This packet is no longer used.
 
+> [!NOTE]
+> This is a special GM-related packet!
+
+This packet was used with the GM command `//itemattr`.
+
 ## Packet Layout
 
 The layout of this packet is the following:
