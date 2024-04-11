@@ -49,9 +49,9 @@ The following list is the various packets that are currently sent from the clien
 | [`0x004B`](/world/client/0x004B/README.md) | `GP_CLI_COMMAND_FRAGMENTS`           | :white_check_mark: |
 | [`0x004D`](/world/client/0x004D/README.md) | `GP_CLI_COMMAND_PBX`                 | :white_check_mark: |
 | [`0x004E`](/world/client/0x004E/README.md) | `GP_CLI_COMMAND_AUC`                 | :white_check_mark: |
-| [`0x0050`](/world/client/0x0050/README.md) | `GP_CLI_COMMAND_EQUIP_SET`           | :x: |
-| [`0x0051`](/world/client/0x0051/README.md) | `(UnknownName)`                      | :x: |
-| [`0x0052`](/world/client/0x0052/README.md) | `(UnknownName)`                      | :x: |
+| [`0x0050`](/world/client/0x0050/README.md) | `GP_CLI_COMMAND_EQUIP_SET`           | :white_check_mark: |
+| [`0x0051`](/world/client/0x0051/README.md) | `(UnknownName)`                      | :white_check_mark: |
+| [`0x0052`](/world/client/0x0052/README.md) | `(UnknownName)`                      | :white_check_mark: |
 | [`0x0053`](/world/client/0x0053/README.md) | `(UnknownName)`                      | :x: |
 | [`0x0058`](/world/client/0x0058/README.md) | `GP_CLI_COMMAND_RECIPE`              | :x: |
 | [`0x0059`](/world/client/0x0059/README.md) | `GP_CLI_COMMAND_EFFECTEND`           | :x: |
