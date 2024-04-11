@@ -44,11 +44,11 @@ The following list is the various packets that are currently sent from the clien
 | [`0x003B`](/world/client/0x003B/README.md) | `(UnknownName)`                      | :white_check_mark: |
 | [`0x003C`](/world/client/0x003C/README.md) | `GP_CLI_COMMAND_BLACK_LIST`          | :white_check_mark: |
 | [`0x003D`](/world/client/0x003D/README.md) | `GP_CLI_COMMAND_BLACK_EDIT`          | :white_check_mark: |
-| [`0x0041`](/world/client/0x0041/README.md) | `GP_CLI_COMMAND_TROPHY_ENTRY`        | :x: |
-| [`0x0042`](/world/client/0x0042/README.md) | `GP_CLI_COMMAND_TROPHY_ABSENCE`      | :x: |
-| [`0x004B`](/world/client/0x004B/README.md) | `GP_CLI_COMMAND_FRAGMENTS`           | :x: |
-| [`0x004D`](/world/client/0x004D/README.md) | `GP_CLI_COMMAND_PBX`                 | :x: |
-| [`0x004E`](/world/client/0x004E/README.md) | `GP_CLI_COMMAND_AUC`                 | :x: |
+| [`0x0041`](/world/client/0x0041/README.md) | `GP_CLI_COMMAND_TROPHY_ENTRY`        | :white_check_mark: |
+| [`0x0042`](/world/client/0x0042/README.md) | `GP_CLI_COMMAND_TROPHY_ABSENCE`      | :white_check_mark: |
+| [`0x004B`](/world/client/0x004B/README.md) | `GP_CLI_COMMAND_FRAGMENTS`           | :white_check_mark: |
+| [`0x004D`](/world/client/0x004D/README.md) | `GP_CLI_COMMAND_PBX`                 | :white_check_mark: |
+| [`0x004E`](/world/client/0x004E/README.md) | `GP_CLI_COMMAND_AUC`                 | :white_check_mark: |
 | [`0x0050`](/world/client/0x0050/README.md) | `GP_CLI_COMMAND_EQUIP_SET`           | :x: |
 | [`0x0051`](/world/client/0x0051/README.md) | `(UnknownName)`                      | :x: |
 | [`0x0052`](/world/client/0x0052/README.md) | `(UnknownName)`                      | :x: |
