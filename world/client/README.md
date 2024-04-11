@@ -53,7 +53,7 @@ The following list is the various packets that are currently sent from the clien
 | [`0x0051`](/world/client/0x0051/README.md) | `(UnknownName)`                      | :white_check_mark: |
 | [`0x0052`](/world/client/0x0052/README.md) | `(UnknownName)`                      | :white_check_mark: |
 | [`0x0053`](/world/client/0x0053/README.md) | `(UnknownName)`                      | :white_check_mark: |
-| [`0x0058`](/world/client/0x0058/README.md) | `GP_CLI_COMMAND_RECIPE`              | :x: |
+| [`0x0058`](/world/client/0x0058/README.md) | `GP_CLI_COMMAND_RECIPE`              | :white_check_mark: |
 | [`0x0059`](/world/client/0x0059/README.md) | `GP_CLI_COMMAND_EFFECTEND`           | :x: |
 | [`0x005A`](/world/client/0x005A/README.md) | `GP_CLI_COMMAND_REQCONQUEST`         | :x: |
 | [`0x005B`](/world/client/0x005B/README.md) | `GP_CLI_COMMAND_EVENTEND`            | :x: |
