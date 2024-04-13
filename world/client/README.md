@@ -65,11 +65,11 @@ The following list is the various packets that are currently sent from the clien
 | [`0x0063`](/world/client/0x0063/README.md) | `GP_CLI_COMMAND_DIG`                 | :white_check_mark: |
 | [`0x0064`](/world/client/0x0064/README.md) | `GP_CLI_COMMAND_SCENARIOITEM`        | :white_check_mark: |
 | [`0x0066`](/world/client/0x0066/README.md) | `GP_CLI_COMMAND_FISHING`             | :white_check_mark: |
-| [`0x006E`](/world/client/0x006E/README.md) | `GP_CLI_COMMAND_GROUP_SOLICIT_REQ`   | :x: |
-| [`0x006F`](/world/client/0x006F/README.md) | `GP_CLI_COMMAND_GROUP_LEAVE`         | :x: |
-| [`0x0070`](/world/client/0x0070/README.md) | `GP_CLI_COMMAND_GROUP_BREAKUP`       | :x: |
-| [`0x0071`](/world/client/0x0071/README.md) | `GP_CLI_COMMAND_GROUP_STRIKE`        | :x: |
-| [`0x0072`](/world/client/0x0072/README.md) | `GP_CLI_COMMAND_GROUP_KICK`          | :x: |
+| [`0x006E`](/world/client/0x006E/README.md) | `GP_CLI_COMMAND_GROUP_SOLICIT_REQ`   | :white_check_mark: |
+| [`0x006F`](/world/client/0x006F/README.md) | `GP_CLI_COMMAND_GROUP_LEAVE`         | :white_check_mark: |
+| [`0x0070`](/world/client/0x0070/README.md) | `GP_CLI_COMMAND_GROUP_BREAKUP`       | :white_check_mark: |
+| [`0x0071`](/world/client/0x0071/README.md) | `GP_CLI_COMMAND_GROUP_STRIKE`        | :white_check_mark: |
+| [`0x0072`](/world/client/0x0072/README.md) | `GP_CLI_COMMAND_GROUP_KICK`          | :white_check_mark: |
 | [`0x0073`](/world/client/0x0073/README.md) | `GP_CLI_COMMAND_GROUP_CHANGE`        | :x: |
 | [`0x0074`](/world/client/0x0074/README.md) | `GP_CLI_COMMAND_GROUP_SOLICIT_RES`   | :x: |
 | [`0x0075`](/world/client/0x0075/README.md) | `GP_CLI_COMMAND_GROUP_TALK`          | :x: |
