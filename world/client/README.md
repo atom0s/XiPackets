@@ -60,10 +60,11 @@ The following list is the various packets that are currently sent from the clien
 | [`0x005C`](/world/client/0x005C/README.md) | `GP_CLI_COMMAND_EVENTENDXZY`         | :white_check_mark: |
 | [`0x005D`](/world/client/0x005D/README.md) | `GP_CLI_COMMAND_MOTION`              | :white_check_mark: |
 | [`0x005E`](/world/client/0x005E/README.md) | `GP_CLI_COMMAND_MAPRECT`             | :white_check_mark: |
-| [`0x0060`](/world/client/0x0060/README.md) | `GP_CLI_COMMAND_PASSWARDS`           | :x: |
-| [`0x0061`](/world/client/0x0061/README.md) | `GP_CLI_COMMAND_CLISTATUS`           | :x: |
-| [`0x0063`](/world/client/0x0063/README.md) | `GP_CLI_COMMAND_DIG`                 | :x: |
-| [`0x0064`](/world/client/0x0064/README.md) | `GP_CLI_COMMAND_SCENARIOITEM`        | :x: |
+| [`0x0060`](/world/client/0x0060/README.md) | `GP_CLI_COMMAND_PASSWARDS`           | :white_check_mark: |
+| [`0x0061`](/world/client/0x0061/README.md) | `GP_CLI_COMMAND_CLISTATUS`           | :white_check_mark: |
+| [`0x0063`](/world/client/0x0063/README.md) | `GP_CLI_COMMAND_DIG`                 | :white_check_mark: |
+| [`0x0064`](/world/client/0x0064/README.md) | `GP_CLI_COMMAND_SCENARIOITEM`        | :white_check_mark: |
+| [`0x0066`](/world/client/0x0066/README.md) | `(UnknownName)`                      | :x: |
 | [`0x006E`](/world/client/0x006E/README.md) | `GP_CLI_COMMAND_GROUP_SOLICIT_REQ`   | :x: |
 | [`0x006F`](/world/client/0x006F/README.md) | `GP_CLI_COMMAND_GROUP_LEAVE`         | :x: |
 | [`0x0070`](/world/client/0x0070/README.md) | `GP_CLI_COMMAND_GROUP_BREAKUP`       | :x: |
