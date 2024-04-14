@@ -70,7 +70,7 @@ The following list is the various packets that are currently sent from the clien
 | [`0x0070`](/world/client/0x0070/README.md) | `GP_CLI_COMMAND_GROUP_BREAKUP`       | :white_check_mark: |
 | [`0x0071`](/world/client/0x0071/README.md) | `GP_CLI_COMMAND_GROUP_STRIKE`        | :white_check_mark: |
 | [`0x0072`](/world/client/0x0072/README.md) | `GP_CLI_COMMAND_GROUP_KICK`          | :white_check_mark: |
-| [`0x0073`](/world/client/0x0073/README.md) | `GP_CLI_COMMAND_GROUP_CHANGE`        | :x: |
+| [`0x0073`](/world/client/0x0073/README.md) | `GP_CLI_COMMAND_GROUP_CHANGE`        | :white_check_mark: |
 | [`0x0074`](/world/client/0x0074/README.md) | `GP_CLI_COMMAND_GROUP_SOLICIT_RES`   | :x: |
 | [`0x0075`](/world/client/0x0075/README.md) | `GP_CLI_COMMAND_GROUP_TALK`          | :x: |
 | [`0x0076`](/world/client/0x0076/README.md) | `GP_CLI_COMMAND_GROUP_LIST_REQ`      | :x: |
