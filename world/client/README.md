@@ -73,10 +73,10 @@ The following list is the various packets that are currently sent from the clien
 | [`0x0073`](/world/client/0x0073/README.md) | `GP_CLI_COMMAND_GROUP_CHANGE`        | :white_check_mark: |
 | [`0x0074`](/world/client/0x0074/README.md) | `GP_CLI_COMMAND_GROUP_SOLICIT_RES`   | :white_check_mark: |
 | [`0x0075`](/world/client/0x0075/README.md) | `GP_CLI_COMMAND_GROUP_TALK`          | :white_check_mark: |
-| [`0x0076`](/world/client/0x0076/README.md) | `GP_CLI_COMMAND_GROUP_LIST_REQ`      | :x: |
-| [`0x0077`](/world/client/0x0077/README.md) | `GP_CLI_COMMAND_GROUP_CHANGE2`       | :x: |
-| [`0x0078`](/world/client/0x0078/README.md) | `GP_CLI_COMMAND_GROUP_CHECKID`       | :x: |
-| [`0x0082`](/world/client/0x0082/README.md) | `GP_CLI_COMMAND_SHOP_REQ`            | :x: |
+| [`0x0076`](/world/client/0x0076/README.md) | `GP_CLI_COMMAND_GROUP_LIST_REQ`      | :white_check_mark: |
+| [`0x0077`](/world/client/0x0077/README.md) | `GP_CLI_COMMAND_GROUP_CHANGE2`       | :white_check_mark: |
+| [`0x0078`](/world/client/0x0078/README.md) | `GP_CLI_COMMAND_GROUP_CHECKID`       | :white_check_mark: |
+| [`0x0082`](/world/client/0x0082/README.md) | `GP_CLI_COMMAND_SHOP_REQ`            | :white_check_mark: |
 | [`0x0083`](/world/client/0x0083/README.md) | `GP_CLI_COMMAND_SHOP_BUY`            | :x: |
 | [`0x0084`](/world/client/0x0084/README.md) | `GP_CLI_COMMAND_SHOP_SELL_REQ`       | :x: |
 | [`0x0085`](/world/client/0x0085/README.md) | `GP_CLI_COMMAND_SHOP_SELL_SET`       | :x: |
