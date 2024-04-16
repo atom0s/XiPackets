@@ -86,7 +86,7 @@ The following list is the various packets that are currently sent from the clien
 | [`0x009B`](/world/client/0x009B/README.md) | `(UnknownName)`                      | :white_check_mark: |
 | [`0x00A0`](/world/client/0x00A0/README.md) | `GP_CLI_COMMAND_SWITCH_PROPOSAL`     | :white_check_mark: |
 | [`0x00A1`](/world/client/0x00A1/README.md) | `GP_CLI_COMMAND_SWITCH_VOTE`         | :white_check_mark: |
-| [`0x00A2`](/world/client/0x00A2/README.md) | `GP_CLI_COMMAND_DICE`                | :x: |
+| [`0x00A2`](/world/client/0x00A2/README.md) | `GP_CLI_COMMAND_DICE`                | :white_check_mark: |
 | [`0x00AA`](/world/client/0x00AA/README.md) | `GP_CLI_COMMAND_GUILD_BUY`           | :x: |
 | [`0x00AB`](/world/client/0x00AB/README.md) | `GP_CLI_COMMAND_GUILD_BUYLIST`       | :x: |
 | [`0x00AC`](/world/client/0x00AC/README.md) | `GP_CLI_COMMAND_GUILD_SELL`          | :x: |
