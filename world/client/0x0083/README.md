@@ -9,7 +9,7 @@
 
 ## Description
 
-This packet is sent by the client when purchasing an item from a shop.
+This packet is sent by the client when purchasing items from a shop.
 
 ## Packet Layout
 
