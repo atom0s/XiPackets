@@ -91,8 +91,8 @@ The following list is the various packets that are currently sent from the clien
 | [`0x00AB`](/world/client/0x00AB/README.md) | `GP_CLI_COMMAND_GUILD_BUYLIST`       | :white_check_mark: |
 | [`0x00AC`](/world/client/0x00AC/README.md) | `GP_CLI_COMMAND_GUILD_SELL`          | :white_check_mark: |
 | [`0x00AD`](/world/client/0x00AD/README.md) | `GP_CLI_COMMAND_GUILD_SELLLIST`      | :white_check_mark: |
-| [`0x00B5`](/world/client/0x00B5/README.md) | `GP_CLI_COMMAND_CHAT_STD`            | :x: |
-| [`0x00B6`](/world/client/0x00B6/README.md) | `GP_CLI_COMMAND_CHAT_NAME`           | :x: |
+| [`0x00B5`](/world/client/0x00B5/README.md) | `GP_CLI_COMMAND_CHAT_STD`            | :white_check_mark: |
+| [`0x00B6`](/world/client/0x00B6/README.md) | `GP_CLI_COMMAND_CHAT_NAME`           | :white_check_mark: |
 | [`0x00B7`](/world/client/0x00B7/README.md) | `(UnknownName)`                      | :x: |
 | [`0x00BE`](/world/client/0x00BE/README.md) | `(UnknownName)`                      | :x: |
 | [`0x00BF`](/world/client/0x00BF/README.md) | `(UnknownName)`                      | :x: |
