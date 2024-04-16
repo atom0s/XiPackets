@@ -15,7 +15,7 @@
 > [!NOTE]
 > This is a special GM-related packet!
 
-This packet was used with the GM command `//itempresent`.
+This packet is used with the GM command `//itempresent`.
 
 ```cpp
 // PS2: GP_CLI_ITEM_PRESENT

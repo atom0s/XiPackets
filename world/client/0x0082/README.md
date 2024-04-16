@@ -15,7 +15,7 @@
 > [!NOTE]
 > This is a special GM-related packet!
 
-This packet was used with the GM command `//slist`. The purpose of this packet is unknown.
+This packet is used with the GM command `//slist`. The purpose of this packet is unknown.
 
 ## Packet Layout
 

@@ -15,7 +15,7 @@
 > [!NOTE]
 > This is a special GM-related packet!
 
-This packet was used with the GM command `//itemmake`.
+This packet is used with the GM command `//itemmake`.
 
 ## Packet Layout
 

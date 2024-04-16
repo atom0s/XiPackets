@@ -15,7 +15,7 @@
 > [!NOTE]
 > This is a special GM-related packet!
 
-This packet was used with the GM command `//itemlist`.
+This packet is used with the GM command `//itemlist`.
 
 ## Packet Layout
 
