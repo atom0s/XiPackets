@@ -83,7 +83,7 @@ The following list is the various packets that are currently sent from the clien
 | [`0x008C`](/world/client/0x008C/README.md) | `GP_CLI_COMMAND_PREFERENCE_READ`     | :white_check_mark: |
 | [`0x008D`](/world/client/0x008D/README.md) | `GP_CLI_COMMAND_PREFERENCE_SAVE`     | :white_check_mark: |
 | [`0x0096`](/world/client/0x0096/README.md) | `GP_CLI_COMMAND_COMBINE_ASK`         | :white_check_mark: |
-| [`0x009B`](/world/client/0x009B/README.md) | `(UnknownName)`                      | :x: |
+| [`0x009B`](/world/client/0x009B/README.md) | `(UnknownName)`                      | :white_check_mark: |
 | [`0x00A0`](/world/client/0x00A0/README.md) | `GP_CLI_COMMAND_SWITCH_PROPOSAL`     | :x: |
 | [`0x00A1`](/world/client/0x00A1/README.md) | `GP_CLI_COMMAND_SWITCH_VOTE`         | :x: |
 | [`0x00A2`](/world/client/0x00A2/README.md) | `GP_CLI_COMMAND_DICE`                | :x: |
