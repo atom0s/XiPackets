@@ -101,7 +101,7 @@ The following list is the various packets that are currently sent from the clien
 | [`0x00C4`](/world/client/0x00C4/README.md) | `GP_CLI_COMMAND_GROUP_COMLINK_ACTIVE`| :white_check_mark: |
 | [`0x00C9`](/world/client/0x00C9/README.md) | `GP_CLI_COMMAND_MYROOM_ENTER`        | :white_check_mark: |
 | [`0x00CA`](/world/client/0x00CA/README.md) | `GP_CLI_COMMAND_MYROOM_EXIT`         | :white_check_mark: |
-| [`0x00CB`](/world/client/0x00CB/README.md) | `GP_CLI_COMMAND_MYROOM_IS`           | :x: |
+| [`0x00CB`](/world/client/0x00CB/README.md) | `GP_CLI_COMMAND_MYROOM_IS`           | :white_check_mark: |
 | [`0x00CD`](/world/client/0x00CD/README.md) | `GP_CLI_COMMAND_MYROOM_PLANT`        | :x: |
 | [`0x00CE`](/world/client/0x00CE/README.md) | `GP_CLI_COMMAND_MYROOM_RAISE`        | :x: |
 | [`0x00CF`](/world/client/0x00CF/README.md) | `GP_CLI_COMMAND_MYROOM_HARVEST`      | :x: |
