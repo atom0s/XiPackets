@@ -93,10 +93,10 @@ The following list is the various packets that are currently sent from the clien
 | [`0x00AD`](/world/client/0x00AD/README.md) | `GP_CLI_COMMAND_GUILD_SELLLIST`      | :white_check_mark: |
 | [`0x00B5`](/world/client/0x00B5/README.md) | `GP_CLI_COMMAND_CHAT_STD`            | :white_check_mark: |
 | [`0x00B6`](/world/client/0x00B6/README.md) | `GP_CLI_COMMAND_CHAT_NAME`           | :white_check_mark: |
-| [`0x00B7`](/world/client/0x00B7/README.md) | `(UnknownName)`                      | :x: |
-| [`0x00BE`](/world/client/0x00BE/README.md) | `(UnknownName)`                      | :x: |
-| [`0x00BF`](/world/client/0x00BF/README.md) | `(UnknownName)`                      | :x: |
-| [`0x00C0`](/world/client/0x00C0/README.md) | `(UnknownName)`                      | :x: |
+| [`0x00B7`](/world/client/0x00B7/README.md) | `(UnknownName)`                      | :white_check_mark: |
+| [`0x00BE`](/world/client/0x00BE/README.md) | `(UnknownName)`                      | :white_check_mark: |
+| [`0x00BF`](/world/client/0x00BF/README.md) | `(UnknownName)`                      | :white_check_mark: |
+| [`0x00C0`](/world/client/0x00C0/README.md) | `(UnknownName)`                      | :white_check_mark: |
 | [`0x00C3`](/world/client/0x00C3/README.md) | `GP_CLI_COMMAND_GROUP_COMLINK_MAKE`  | :x: |
 | [`0x00C4`](/world/client/0x00C4/README.md) | `GP_CLI_COMMAND_GROUP_COMLINK_ACTIVE`| :x: |
 | [`0x00C9`](/world/client/0x00C9/README.md) | `GP_CLI_COMMAND_MYROOM_ENTER`        | :x: |
