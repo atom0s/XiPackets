@@ -106,11 +106,11 @@ The following list is the various packets that are currently sent from the clien
 | [`0x00CE`](/world/client/0x00CE/README.md) | `GP_CLI_COMMAND_MYROOM_RAISE`        | :white_check_mark: |
 | [`0x00CF`](/world/client/0x00CF/README.md) | `GP_CLI_COMMAND_MYROOM_HARVEST`      | :white_check_mark: |
 | [`0x00D0`](/world/client/0x00D0/README.md) | `GP_CLI_COMMAND_MYROOM_DIARY`        | :white_check_mark: |
-| [`0x00D1`](/world/client/0x00D1/README.md) | `GP_CLI_COMMAND_MYROOM_PLACE`        | :x: |
-| [`0x00D2`](/world/client/0x00D2/README.md) | `GP_CLI_COMMAND_MAP_GROUP`           | :x: |
-| [`0x00D3`](/world/client/0x00D3/README.md) | `GP_CLI_COMMAND_FAQ_GMCALL`          | :x: |
-| [`0x00D4`](/world/client/0x00D4/README.md) | `GP_CLI_COMMAND_FAQ_GMPARAM`         | :x: |
-| [`0x00D5`](/world/client/0x00D5/README.md) | `GP_CLI_COMMAND_ACK_GMMSG`           | :x: |
+| [`0x00D1`](/world/client/0x00D1/README.md) | `GP_CLI_COMMAND_MYROOM_PLACE`        | :white_check_mark: |
+| [`0x00D2`](/world/client/0x00D2/README.md) | `GP_CLI_COMMAND_MAP_GROUP`           | :white_check_mark: |
+| [`0x00D3`](/world/client/0x00D3/README.md) | `GP_CLI_COMMAND_FAQ_GMCALL`          | :white_check_mark: |
+| [`0x00D4`](/world/client/0x00D4/README.md) | `GP_CLI_COMMAND_FAQ_GMPARAM`         | :white_check_mark: |
+| [`0x00D5`](/world/client/0x00D5/README.md) | `GP_CLI_COMMAND_ACK_GMMSG`           | :white_check_mark: |
 | [`0x00D8`](/world/client/0x00D8/README.md) | `(UnknownName)`                      | :x: |
 | [`0x00DB`](/world/client/0x00DB/README.md) | `(UnknownName)`                      | :white_check_mark: |
 | [`0x00DC`](/world/client/0x00DC/README.md) | `GP_CLI_COMMAND_CONFIG`              | :x: |
