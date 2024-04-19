@@ -119,7 +119,7 @@ struct SAVE_CONF
     uint8_t     unused              : 2;    // PS2: (New; previously padding byte.)
 
     filters1_t  MassageFilter;              // PS2: MassageFilter
-    filters2_t  MassageFilter2              // PS2: MassageFilter2
+    filters2_t  MassageFilter2;             // PS2: MassageFilter2
     uint16_t    PvpFlg;                     // PS2: (New; did not exist.)
     uint8_t     AreaCode;                   // PS2: (New; did not exist.)
 };
