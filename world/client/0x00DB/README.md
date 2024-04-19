@@ -22,8 +22,8 @@ struct packet_t
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
-    uint8_t     unknown04;
-    uint8_t     unknown05;
+    uint8_t     unknown00;
+    uint8_t     unknown01;
     uint8_t     Kind;
     uint8_t     padding00;
     uint32_t    ConfigSys[3];
@@ -44,13 +44,13 @@ _These fields are part of the packet header._
 
 _You can find more information about the header fields here: [**Header**](/world/HEADER.md)_
 
-### `unknown04`
+### `unknown00`
 
 _Unknown._
 
 The client always sets this value to `0`.
 
-### `unknown05`
+### `unknown01`
 
 _Unknown._
 
