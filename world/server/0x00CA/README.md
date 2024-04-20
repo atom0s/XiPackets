@@ -48,7 +48,7 @@ _You can find more information about the header fields here: [**Header**](/world
 
 _The checked players bazaar message._
 
-This value holds the checked players full bazaar message, broken into its three lines. Each line takes up 41 characters of space. There is no null terminator used with this string and all unused characters will use spaces _(`0x20`)_ instead of null characters.
+This value holds the checked players full bazaar message, broken into its three lines. Each line takes up 40 characters of space. There is no null terminator used with this string and all unused characters will use spaces _(`0x20`)_ instead of null characters.
 
 ### `BazaarFlag`
 
