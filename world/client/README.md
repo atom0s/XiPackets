@@ -126,9 +126,9 @@ The following list is the various packets that are currently sent from the clien
 | [`0x00EA`](/world/client/0x00EA/README.md) | `GP_CLI_COMMAND_SIT`                 | :white_check_mark: |
 | [`0x00EB`](/world/client/0x00EB/README.md) | `GP_CLI_COMMAND_REQSUBMAPNUM`        | :white_check_mark: |
 | [`0x00EC`](/world/client/0x00EC/README.md) | `GP_CLI_COMMAND_REQLOGOUTINFO`       | :white_check_mark: |
-| [`0x00F0`](/world/client/0x00F0/README.md) | `GP_CLI_COMMAND_RESCUE`              | :x: |
-| [`0x00F1`](/world/client/0x00F1/README.md) | `GP_CLI_COMMAND_BUFFCANCEL`          | :x: |
-| [`0x00F2`](/world/client/0x00F2/README.md) | `GP_CLI_COMMAND_SUBMAPCHANGE`        | :x: |
+| [`0x00F0`](/world/client/0x00F0/README.md) | `GP_CLI_COMMAND_RESCUE`              | :white_check_mark: |
+| [`0x00F1`](/world/client/0x00F1/README.md) | `GP_CLI_COMMAND_BUFFCANCEL`          | :white_check_mark: |
+| [`0x00F2`](/world/client/0x00F2/README.md) | `GP_CLI_COMMAND_SUBMAPCHANGE`        | :white_check_mark: |
 | [`0x00F4`](/world/client/0x00F4/README.md) | `GP_CLI_COMMAND_TRACKING_LIST`       | :x: |
 | [`0x00F5`](/world/client/0x00F5/README.md) | `GP_CLI_COMMAND_TRACKING_START`      | :x: |
 | [`0x00F6`](/world/client/0x00F6/README.md) | `GP_CLI_COMMAND_TRACKING_END`        | :x: |
