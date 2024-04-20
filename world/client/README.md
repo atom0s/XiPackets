@@ -122,10 +122,10 @@ The following list is the various packets that are currently sent from the clien
 | [`0x00E4`](/world/client/0x00E4/README.md) | `GP_CLI_COMMAND_GET_LSPRIV`          | :white_check_mark: |
 | [`0x00E7`](/world/client/0x00E7/README.md) | `GP_CLI_COMMAND_REQLOGOUT`           | :white_check_mark: |
 | [`0x00E8`](/world/client/0x00E8/README.md) | `GP_CLI_COMMAND_CAMP`                | :white_check_mark: |
-| [`0x00E9`](/world/client/0x00E9/README.md) | `GP_CLI_COMMAND_GLOBALUNIQUENO_REQ`  | :x: |
-| [`0x00EA`](/world/client/0x00EA/README.md) | `GP_CLI_COMMAND_SIT`                 | :x: |
-| [`0x00EB`](/world/client/0x00EB/README.md) | `GP_CLI_COMMAND_REQSUBMAPNUM`        | :x: |
-| [`0x00EC`](/world/client/0x00EC/README.md) | `GP_CLI_COMMAND_REQLOGOUTINFO`       | :x: |
+| [`0x00E9`](/world/client/0x00E9/README.md) | `GP_CLI_COMMAND_GLOBALUNIQUENO_REQ`  | :white_check_mark: |
+| [`0x00EA`](/world/client/0x00EA/README.md) | `GP_CLI_COMMAND_SIT`                 | :white_check_mark: |
+| [`0x00EB`](/world/client/0x00EB/README.md) | `GP_CLI_COMMAND_REQSUBMAPNUM`        | :white_check_mark: |
+| [`0x00EC`](/world/client/0x00EC/README.md) | `GP_CLI_COMMAND_REQLOGOUTINFO`       | :white_check_mark: |
 | [`0x00F0`](/world/client/0x00F0/README.md) | `GP_CLI_COMMAND_RESCUE`              | :x: |
 | [`0x00F1`](/world/client/0x00F1/README.md) | `GP_CLI_COMMAND_BUFFCANCEL`          | :x: |
 | [`0x00F2`](/world/client/0x00F2/README.md) | `GP_CLI_COMMAND_SUBMAPCHANGE`        | :x: |
