@@ -129,10 +129,10 @@ The following list is the various packets that are currently sent from the clien
 | [`0x00F0`](/world/client/0x00F0/README.md) | `GP_CLI_COMMAND_RESCUE`              | :white_check_mark: |
 | [`0x00F1`](/world/client/0x00F1/README.md) | `GP_CLI_COMMAND_BUFFCANCEL`          | :white_check_mark: |
 | [`0x00F2`](/world/client/0x00F2/README.md) | `GP_CLI_COMMAND_SUBMAPCHANGE`        | :white_check_mark: |
-| [`0x00F4`](/world/client/0x00F4/README.md) | `GP_CLI_COMMAND_TRACKING_LIST`       | :x: |
-| [`0x00F5`](/world/client/0x00F5/README.md) | `GP_CLI_COMMAND_TRACKING_START`      | :x: |
-| [`0x00F6`](/world/client/0x00F6/README.md) | `GP_CLI_COMMAND_TRACKING_END`        | :x: |
-| [`0x00FA`](/world/client/0x00FA/README.md) | `GP_CLI_COMMAND_MYROOM_LAYOUT`       | :x: |
+| [`0x00F4`](/world/client/0x00F4/README.md) | `GP_CLI_COMMAND_TRACKING_LIST`       | :white_check_mark: |
+| [`0x00F5`](/world/client/0x00F5/README.md) | `GP_CLI_COMMAND_TRACKING_START`      | :white_check_mark: |
+| [`0x00F6`](/world/client/0x00F6/README.md) | `GP_CLI_COMMAND_TRACKING_END`        | :white_check_mark: |
+| [`0x00FA`](/world/client/0x00FA/README.md) | `GP_CLI_COMMAND_MYROOM_LAYOUT`       | :white_check_mark: |
 | [`0x00FB`](/world/client/0x00FB/README.md) | `GP_CLI_COMMAND_MYROOM_BANKIN`       | :x: |
 | [`0x00FC`](/world/client/0x00FC/README.md) | `GP_CLI_COMMAND_MYROOM_PLANT_ADD`    | :x: |
 | [`0x00FD`](/world/client/0x00FD/README.md) | `GP_CLI_COMMAND_MYROOM_PLANT_CHECK`  | :x: |
