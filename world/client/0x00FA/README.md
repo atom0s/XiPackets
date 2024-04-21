@@ -151,7 +151,7 @@ Mog House: Second Floor Wall Space
     |                      |
  12 |                      | 12
   C |                      | I
-    +          (M)         +
+    +                      +
     |                      |
  12 |                      | 12
   B |                      | H
@@ -180,7 +180,6 @@ Mog House: Second Floor Wall Space Slots
 
   - _**Note:** Numbers indicate the available slots that items can be placed on the given wall._
   - _**Note:** `(Door)` indicates the door to exit the mog house. (This space is also unusable.)_
-  - _**Note:** `(M)` indicates the moogle location._
   - _**Note:** `(X)` indicates an unusable wall surface._
   - _**Note:** `*A` indicates the surface where the client begins indexing the wall items._
 
