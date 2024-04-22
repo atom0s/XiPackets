@@ -140,7 +140,7 @@ The following list is the various packets that are currently sent from the clien
 | [`0x00FF`](/world/client/0x00FF/README.md) | `GP_CLI_COMMAND_MYROOM_PLANT_STOP`   | :white_check_mark: |
 | [`0x0100`](/world/client/0x0100/README.md) | `GP_CLI_COMMAND_MYROOM_JOB`          | :white_check_mark: |
 | [`0x0101`](/world/client/0x0101/README.md) | `GP_CLI_COMMAND_MYROOM_DANCER`       | :white_check_mark: |
-| [`0x0102`](/world/client/0x0102/README.md) | `(UnknownName)`                      | :x: |
+| [`0x0102`](/world/client/0x0102/README.md) | `(UnknownName)`                      | :white_check_mark: |
 | [`0x0104`](/world/client/0x0104/README.md) | `GP_CLI_COMMAND_BAZAAR_EXIT`         | :x: |
 | [`0x0105`](/world/client/0x0105/README.md) | `GP_CLI_COMMAND_BAZAAR_LIST`         | :x: |
 | [`0x0106`](/world/client/0x0106/README.md) | `GP_CLI_COMMAND_BAZAAR_BUY`          | :x: |
