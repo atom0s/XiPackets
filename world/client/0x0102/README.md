@@ -107,7 +107,7 @@ _The array of spell slots._
 
 This array is used to determine which slot is being modified by the client when equipping or unequipping blue magic spells. When the client is changing a spell slot, the slot that is being modified will have its value set to the spell id that is either being equipped or unequipped. _(When unequipping, the packets `SpellId` value will be `0`, but this arrays value for the given slot will still be the spell id value.)_
 
-When unequipping all currently equipped spells, this packets `SpellId` value will be set to `0` and each blue magic slot that has a spell currently equipped will have its `Spells` array entry set to the equipped spell id.
+When unequipping all currently equipped spells, this packets `SpellId` value will be set to `0` and each blue magic slot that has a spell currently equipped will have its `Spells` array entry set to the normalized equipped spell id.
 
 ### `unused00`
 
@@ -199,7 +199,7 @@ The slots are in the following order:
 
 _**Note:** The attachment slots are ordered left to right starting from the top row._
 
-When unequipping all equipment on an Automaton, this packets `ItemId` value will be set to `0` and each equipment slot on the Automaton that has something currently equipped will have its `Slots` array entry set to the equipment id.
+When unequipping all attachments on an Automaton, this packets `ItemId` value will be set to `0` and each attachment slot on the Automaton that has something currently equipped will have its `Slots` array entry set to the normalized equipment id.
 
 ### `unused00`
 
