@@ -5,7 +5,7 @@
 | **Command Name**          | `(Unknown)` |
 | **Client Handler**        | `(Unknown)` |
 | **Direction**             | `S -> C` |
-| **OpCode**                | `0x00F6` |
+| **OpCode**                | `0x00E6` |
 | **Size**                  | `(varies)` |
 
 ## Description
