@@ -53,7 +53,7 @@ _You can find more information about the header fields here: [**Header**](/world
 _The state of the purchase._
 
 | State | Name | Purpose |
-| --- | --- | ---
+| --- | --- | --- |
 | `0` | `GP_BAZAAR_BUY_STATE_OK`    | _The purchase was successful._ |
 | `1` | `GP_BAZAAR_BUY_STATE_ERR`   | _There was an error attempting the purchase._ |
 

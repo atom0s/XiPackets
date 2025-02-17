@@ -61,7 +61,7 @@ _The viewing players server id._
 _The players viewing state._
 
 | State | Name | Purpose |
-| --- | --- |
+| --- | --- | --- |
 | `0` | `GP_BAZAAR_SHOPPING_STATE_ENTER`    | _Player has entered the local clients bazaar._ |
 | `1` | `GP_BAZAAR_SHOPPING_STATE_EXIT`     | _Player has exited the local clients bazaar._ |
 
