@@ -168,7 +168,7 @@ The indexes into this table are as follows:
   - `6` - `Main (weapon) model id.`
   - `7` - `Sub (weapon) model id.`
 
-The first slot is a calculated model id using the characters choosen race, face and hair ids.\
+The first slot is a calculated model id using the characters chosen race, face and hair ids.\
 That calculation is done as:
 
 ```cpp

@@ -81,7 +81,7 @@ Below is a list of normal traffic flows between the client and server under the 
 
 | Direction | Packet | Notes |
 |--- |--- |--- |
-| `C -> S` | `RequestCreateChrPre`  | The client sends the pre-creation request packet. This packet is used to validate the choosen name and gold world pass. _(If one was given.)_ |
+| `C -> S` | `RequestCreateChrPre`  | The client sends the pre-creation request packet. This packet is used to validate the chosen name and gold world pass. _(If one was given.)_ |
 | `S -> C` | `ResponseOk`           | The server responds with 'ok' to tell the client its request was valid and completed. |
 | `C -> S` | `RequestCreateChr`     | The client sends the final creation request packet. This packet contains their other creation choices. _(ie. race, face, size, job, nation, etc.)_ |
 | `S -> C` | `ResponseOk`           | The server responds with 'ok' to tell the client its request was valid and completed. |
@@ -120,14 +120,14 @@ _Client requests a name that is already taken, invalid due to vulgar words, etc.
 
 | Direction | Packet | Notes |
 |--- |--- |--- |
-| `C -> S` | `RequestCreateChrPre`  | The client sends the pre-creation request packet. This packet is used to validate the choosen name and gold world pass. _(If one was given.)_ |
+| `C -> S` | `RequestCreateChrPre`  | The client sends the pre-creation request packet. This packet is used to validate the chosen name and gold world pass. _(If one was given.)_ |
 | `S -> C` | `ResponseError`        | The server responds with an error code. |
 
 _Client requests to create a character with invalid information, such as an invalid/unavailable job id:_
 
 | Direction | Packet | Notes |
 |--- |--- |--- |
-| `C -> S` | `RequestCreateChrPre`  | The client sends the pre-creation request packet. This packet is used to validate the choosen name and gold world pass. _(If one was given.)_ |
+| `C -> S` | `RequestCreateChrPre`  | The client sends the pre-creation request packet. This packet is used to validate the chosen name and gold world pass. _(If one was given.)_ |
 | `S -> C` | `ResponseOk`           | The server responds with 'ok' to tell the client its request was valid and completed. |
 | `C -> S` | `RequestCreateChr`     | The client sends the final creation request packet. This packet contains their other creation choices. _(ie. race, face, size, job, nation, etc.)_ |
 | `S -> C` | `ResponseError`        | The server responds with an error code. |
@@ -188,7 +188,7 @@ The error codes that are used with this lookup table are as follows:
 | `3111` | `Gold World Pass too short to be valid.` |
 | `3112` | `Unless you enter a Gold World Pass,\nyou can only specify a world server\nwhere you already have a character.` |
 | `3113` | `Protocol time out error.` |
-| `3114` | `Inconsistency occured with handle information.` |
+| `3114` | `Inconsistency occurred with handle information.` |
 | `3115` | `Connection to the FINAL FANTASY XI server lost.\nReturning to the PlayOnline FINAL FANTASY XI top page.` |
 | `3116` | `Cannot select this character.\nCharacter's content ID is no longer valid.\nPlease restore the content ID to select this character.` |
 | `3117` | `Failed to carry out user file operations.` |
