@@ -46,7 +46,7 @@ _You can find more information about the header fields here: [**Header**](/world
 
 ### `RectID`
 
-_The fourcc tag of the zoneline that has been touched._
+_The fourcc tag of the zone line that has been touched._
 
 When exiting the mog house, this will be set to `zmrq` _(`0x71726D7A`)_.
 
@@ -109,7 +109,7 @@ If the client has not completed the given areas exit quest and only has the opti
 If the client has completed the given areas exit quest, then this value will change based on the menu option they select.
 
   - Selecting `Area you entered from.` will set this value to `0`.
-  - Selecting `Select an area to exit to.` will set this value based on the menu option choosen.
+  - Selecting `Select an area to exit to.` will set this value based on the menu option chosen.
 
 For example, when exiting the mog house of San d'Oria and selecting `Select an area to exit to.`, the following values are used for the available menu options:
 

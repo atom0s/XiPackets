@@ -103,7 +103,7 @@ The first floor of the mog house offers the least amount of usable space for bot
   - **Floor:** `19 x 23` grid with an `8 x 18` unusable rectangle from the door to the center of the room.
   - **Walls:** `5` usable wall slots.
 
-The first floor has a large `8 x 18` rectangle in front of the door, including the area where the permanent rug is located, which is completely unsuable. The walls on the first floor of the mog house are also restricted in that you can only store `1` item per wall with a total of `5` walls being usable. _(There are four other wall spaces on the first floor that are not usable at all.)_
+The first floor has a large `8 x 18` rectangle in front of the door, including the area where the permanent rug is located, which is completely unusable. The walls on the first floor of the mog house are also restricted in that you can only store `1` item per wall with a total of `5` walls being usable. _(There are four other wall spaces on the first floor that are not usable at all.)_
 
 The first floor wall spaces are offset differently than the second floors as well. Please view the below diagram for an example of how the wall placements work.
 

@@ -49,7 +49,7 @@ _The clients server id._
 
 _The clients seen key item information for the table that contains the key item that was viewed._
 
-This value holds bits that mark key items as seen by the client. The key item information for both obtained and seen values makes use of table offsetting to allow for smaller amounts of data being transfered instead of sending the full object list in either direction. The `TableIndex` value is used to determine the starting point of where the `LookItemFlag` data begins.
+This value holds bits that mark key items as seen by the client. The key item information for both obtained and seen values makes use of table offsetting to allow for smaller amounts of data being transferred instead of sending the full object list in either direction. The `TableIndex` value is used to determine the starting point of where the `LookItemFlag` data begins.
 
 ### `ActIndex`
 

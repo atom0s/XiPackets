@@ -97,7 +97,7 @@ This value is set based on the packet `Kind`.
 
 When the packet `Kind` is `0`, this value will be set to the clients `PTR_pGlobalNowZone->ConfSys.SearchLanguage` value.
 
-When the packet `Kind` is `1`, this value will be set to the clients current party search languages. _(`Main Menu > Party > Languages`)_ This is a flag based value as more than one language can be choosen at once:
+When the packet `Kind` is `1`, this value will be set to the clients current party search languages. _(`Main Menu > Party > Languages`)_ This is a flag based value as more than one language can be chosen at once:
 
   - `0x01` - _Japanese_
   - `0x02` - _English_
