@@ -28,7 +28,7 @@ _**Note:** The hardware tag is not always enforced in the expected manner. For e
 When communicating with the `patch` server, the client will include the id of the given application _(also known as a product)_. This allows the server to know which product the client is requesting information for. _(Product ids are formatted as `%04d` when used.)_
 
 | Product Id | Flag | Tag Name | Unicode Name | Ascii Name | Unk. Name |
-| :---: | :---: | --- | --- | --- | --- | --- |
+| :---: | :---: | --- | --- | --- | --- |
 | `0`       | `0` | `UNDEFINED`             | `UNDEFINED CONTENTS`              | `UNDEFINED CONTENTS`                  | `UNSUPPORTED PROFILE` |
 | `1`       | `1` | `FINALFANTASY_XI`       | `FINAL FANTASY XI`                | `FINAL FANTASY XI`                    | `FINAL FANTASY XI` |
 | `2`       | `1` | `TETRAMASTER`           | `Tetra Master`                    | `Tetra Master`                        | `Tetra Master` |
