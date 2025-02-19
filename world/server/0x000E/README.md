@@ -263,7 +263,7 @@ This value is used as a means to determine the kind of entity that is being upda
 | `0` | _Used with fixed-model npcs._ |
 | `1` | _Used with equipped npcs. (Wearing player equipment models.)_ |
 | `2` | _Used with doors._ |
-| `3` | _Used with elavators and other movables._ |
+| `3` | _Used with elevators and other movables._ |
 | `4` | _Used with airships, boats, and similar npcs. (Some gardening plants use this `SubKind` as well.)_ |
 | `5` | _Used with misc npcs._ |
 | `6` | _Used with misc npcs. (ie. Automatons)_ |
@@ -649,7 +649,7 @@ The purpose of this flag is unknown at this time.
 
 _Flag set if the entity motion scheduler should be paused._
 
-This flag is used when the entity is petrified or terrored. It will cause the entity to pause their current animation and freeze in place. _(Additional flags are set to lock the entity in place.)_
+This flag is used when the entity is petrified or terrorized. It will cause the entity to pause their current animation and freeze in place. _(Additional flags are set to lock the entity in place.)_
 
 ### `CliPriorityFlag`
 
@@ -962,7 +962,7 @@ The client will perform the following checks and adjustments to the entity:
 
 ## Additional Information - `SubKind` - `3`
 
-When this `SubKind` is used, the packet is used to update and/or prepare an elavator or similar movable entities.
+When this `SubKind` is used, the packet is used to update and/or prepare an elevator or similar movable entities.
 
 The packet `Data` will contain the following:
 

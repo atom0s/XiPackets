@@ -31,7 +31,7 @@ _The packet id._
 
 This value is used to determine the purpose of the packet and how the client will handle it. _(This is also often referred to as an opcode when dealing with packets.)_
 
-Due to the manner in which the `id` and `size` values are bitpacked, the maxmium packet id that can be used is `511`.
+Due to the manner in which the `id` and `size` values are bitpacked, the maximum packet id that can be used is `511`.
 
 _**Note:** The client has a hardcoded id limit of `286`._
 
@@ -41,7 +41,7 @@ _The packet size._
 
 This value is used to determine the total size of the packet.
 
-Due to the manner in which the `id` and `size` values are bitpacked, the maxmium value that can be used is `127`. However, it is important to note that the client does not use this value directly, it is instead multiplied by `4`.
+Due to the manner in which the `id` and `size` values are bitpacked, the maximum value that can be used is `127`. However, it is important to note that the client does not use this value directly, it is instead multiplied by `4`.
 
 _**Note:** The client has a hardcoded size limit of `260`._
 

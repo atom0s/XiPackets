@@ -412,7 +412,7 @@ In the event the client fails to load the expected `SendCount` number of entitie
 
 _Value that controls the exit menu type when leaving the mog house._
 
-The naming of this variable has likely changed since PS2 beta as it no longer is treated as a single bit flag. Instead, it is now a value _(ranging from `0` to `9`)_ which determines the kind of menu that will be displayed when leaving each of the various residental areas of the game.
+The naming of this variable has likely changed since PS2 beta as it no longer is treated as a single bit flag. Instead, it is now a value _(ranging from `0` to `9`)_ which determines the kind of menu that will be displayed when leaving each of the various residential areas of the game.
 
 | Value | Description |
 | --- | --- |
@@ -471,7 +471,7 @@ This value originally was used as the `SendFlg`. However, this packet no longer 
 
 _The local players rotation direction._
 
-This value is packed when being sent in packets and is convertable to its proper FFXI based radian as follows:
+This value is packed when being sent in packets and is convertible to its proper FFXI based radian as follows:
 
 ```cpp
 double __cdecl FUNC_enDirNetToCli(uint8_t dir)

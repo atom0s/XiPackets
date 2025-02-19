@@ -99,7 +99,7 @@ _The proposal question and options._
 
 This value is used to hold both the original question and the options that were made available with the proposal along with the number of votes casted for that option. This value is specially formatted to allow the client to be able to properly parse out the question and available options that can be voted for.
 
-  - The question will be surrounded with backets. _(`[`, `]`)_
+  - The question will be surrounded with brackets. _(`[`, `]`)_
   - The question will end with a `0x0A` character.
   - The options are formatted as follows:
     - The options are prefixed with a number, starting at `1` and increments.

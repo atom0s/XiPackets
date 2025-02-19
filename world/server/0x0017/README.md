@@ -205,7 +205,7 @@ _This kind of message setup expects additional client values to be already set f
 
 This packet contains two string values, `sName` and `Mes`, which are both **NOT** null-terminated. Due to the way string values in packets are handled, these must be read properly in order for their contents to not overflow into other values or cause incorrect termination.
 
-The sender name (`sName`) can hold upto a maxmium of 15 characters. If a sender name is this length, then there will be no valid null character in the buffer. Because of this, the name should be read as its full 15 characters always and then trimmed based on if any nulls are present. If not, then the name will be the full 15 characters instead.
+The sender name (`sName`) can hold up to a maximum of 15 characters. If a sender name is this length, then there will be no valid null character in the buffer. Because of this, the name should be read as its full 15 characters always and then trimmed based on if any nulls are present. If not, then the name will be the full 15 characters instead.
 
 The message string (`Mes`) is variable length and based on the message being sent. Due to how packet alignment is handled in FFXI, this value is also not null-terminated and is instead alignment-terminated as well as 'clamped' to a maximum length of 150 characters.
 

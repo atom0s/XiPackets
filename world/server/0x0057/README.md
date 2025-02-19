@@ -51,7 +51,7 @@ The client uses this value by multiplying it by `60`.
 
 _The weather id._
 
-The weather number corrosponds to the following table of weather tags:
+The weather number corresponds to the following table of weather tags:
 
 | Id | Resource Tag | Weather Icon(s) |
 | --- | --- | --- |

@@ -72,7 +72,7 @@ This system allows for a message of up to 1024 characters long. However, packets
 
 When the client first begins to receive this packet, it will check to see if the `msgId` matches its local last-seen `msgId` value. _(This will be `0` if the client has not received a previous GM message since zoning.)_ If the ids do not match, then the client will treat this packet as a brand new message and reset the current local buffer state that holds the message information. If the ids do match, then the client assumes that the packet is part of a larger message that requires multiple packets. When this happens, it will reuse its local `recvOffset` value to know where to begin writing the new packets `Msg` value into its local buffer.
 
-Next, the client will check and see if any of the following checks fail. _(If they do, the handler will exit ignoreing the remaining data. When this happens, the client will attempt to receive the message again at a later time.)_
+Next, the client will check and see if any of the following checks fail. _(If they do, the handler will exit ignoring the remaining data. When this happens, the client will attempt to receive the message again at a later time.)_
 
   - `pkt->msgId != PTR_FDtGmNotice.noticeId` _(Ensures the incoming message id matches the current known id.)_
   - `pkt->seqId <= PTR_FDtGmNotice.recvSeq` _(Ensures the sequence count is valid and above the previously seen sequence id. When handling a new message, `recvSeq` will be set to `0`.)_

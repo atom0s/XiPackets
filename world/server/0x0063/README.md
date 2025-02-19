@@ -113,7 +113,7 @@ The client uses this value to hold the monstrosity item and race information abo
 
 ### `flags`
 
-_The flags related to the current monstrosity informaiton._
+_The flags related to the current monstrosity information._
 
 The client uses this value to determine the current monstrosity tier and rank.
 

@@ -126,11 +126,11 @@ This value will be 0 if there is no key item requirement.
 
 ### `itemnum`
 
-_An array of item ids that represent the required ingrediants to make this recipe._
+_An array of item ids that represent the required ingredients to make this recipe._
 
 ### `itemcount`
 
-_An array of item counts that represent the required ingrediants to make this recipe._
+_An array of item counts that represent the required ingredients to make this recipe._
 
 ### `Type`
 

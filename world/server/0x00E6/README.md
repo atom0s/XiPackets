@@ -141,7 +141,7 @@ _The local clients current Petra count._
 
 _The array of team scores._
 
-This array holds the current score information for the active teams within the Ballista match. The order these are stored in are the always in the order of the team ids. While one of the `Scoreboard` values features a team swap flag, the order of the score infomration in this array does not change.
+This array holds the current score information for the active teams within the Ballista match. The order these are stored in are the always in the order of the team ids. While one of the `Scoreboard` values features a team swap flag, the order of the score information in this array does not change.
 
 ### `Scoreboard`
 
@@ -235,7 +235,7 @@ skip_ahead:
 
 _The array of team match points._
 
-This array holds the current match points for the active teams within the Ballista match. The order these are stored in are the always in the order of the team ids. While one of the `Scoreboard` values features a team swap flag, the order of the score infomration in this array does not change.
+This array holds the current match points for the active teams within the Ballista match. The order these are stored in are the always in the order of the team ids. While one of the `Scoreboard` values features a team swap flag, the order of the score information in this array does not change.
 
 _These values are for the yellow balls that show the match wins per team in multi-match games._
 

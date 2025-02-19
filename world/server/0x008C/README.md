@@ -119,7 +119,7 @@ The packet will contain a single `merit` entry with `merit_count` being set to `
 
 However, the client also has a special case that it will handle when the merit has been fully downgraded back to `0`. When this condition happens, the server will set the merit point entry `index` value in the packet to the index value + 1. _(This effectively sets the lowest bit in the value.)_ This tells the client that the merit has no points spent in it anymore and can be removed from the local clients merit storage. As mentioned above, the client only keeps track of merits that have actual points spent in them. This condition is used to remove merits who no longer have points spent in them.
 
-_Any time the client receives this packet, it will loop through the `merit` entries and check the `index` value to see if this bit is set in order to remove the merit entry from its lcoal cache._
+_Any time the client receives this packet, it will loop through the `merit` entries and check the `index` value to see if this bit is set in order to remove the merit entry from its local cache._
 
 ## Additional Information - DAT Information & Merit Point Index Values
 

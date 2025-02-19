@@ -57,4 +57,4 @@ _Padding; unused._
 
 ## Additional Information
 
-When populating the clients Records of Eminence quest log, the server will send multiple copies of this packet _(up to 4)_. Each packet will contain a different `Offset` value to index the given quest `Data` into the overall RoE quest information within the client. The information stored within the `Data` field holds the bits that represent the quests for the RoE system. If a given bit is set to 1, then the coorosponding quest that aligns to that bit is considered completed.
+When populating the clients Records of Eminence quest log, the server will send multiple copies of this packet _(up to 4)_. Each packet will contain a different `Offset` value to index the given quest `Data` into the overall RoE quest information within the client. The information stored within the `Data` field holds the bits that represent the quests for the RoE system. If a given bit is set to 1, then the corresponding quest that aligns to that bit is considered completed.

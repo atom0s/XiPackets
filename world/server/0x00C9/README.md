@@ -281,7 +281,7 @@ This value holds the entities current chevron flags. This value currently holds 
   - `0x01` - _Displays the star icon next to the entities chevron count._
   - `0x02` - _If set and `MsgNo` is also set, then tells the packet handler to print the given system message._
 
-Flag `0x02` is mainly used to print the checked entities Chevron count information to the chat log. When this is used, the `MsgNo` will be `0x03`. The `Params` values will be populated with the specific individual chevon counts to format the message.
+Flag `0x02` is mainly used to print the checked entities Chevron count information to the chat log. When this is used, the `MsgNo` will be `0x03`. The `Params` values will be populated with the specific individual chevron counts to format the message.
 
 This value is only used during Ballista.
 

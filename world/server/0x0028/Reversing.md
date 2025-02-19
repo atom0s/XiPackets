@@ -271,7 +271,7 @@ When the client is handling an action, calls made to `CXiSchStatus::PutMessage` 
 
 _Index used when determining which result index was last handled._
 
-When the client is handling an action, calls made to `CXiSchStatus::PutMessage` will set this value. Calls made to `PutBattleMessage`, which is used to ouput a current results information to the chatlog, make use of this value to determine the proper target and result information to reference when building the action / combat messages.
+When the client is handling an action, calls made to `CXiSchStatus::PutMessage` will set this value. Calls made to `PutBattleMessage`, which is used to output a current results information to the chatlog, make use of this value to determine the proper target and result information to reference when building the action / combat messages.
 
 ### m_pclsData
 

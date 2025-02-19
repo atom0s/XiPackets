@@ -236,7 +236,7 @@ Each result entry counts as a separate effect that will happen against the targe
 
 ## Structure Fields (`BattleResult`)
 
-**Note:** Not all action commands (`cmd_no`) make use of every value contained inside of the `BattleResult` structure.  Because of this, you may notice some actions contaiing odd/unexpected values for certain things. _For example, the `miss` value may retain a value from a previous action when receiving a 'Starting' type of action._
+**Note:** Not all action commands (`cmd_no`) make use of every value contained inside of the `BattleResult` structure.  Because of this, you may notice some actions containing odd/unexpected values for certain things. _For example, the `miss` value may retain a value from a previous action when receiving a 'Starting' type of action._
 
 ### `miss`
 
@@ -401,7 +401,7 @@ This value is used differently depending on the type of `cmd_no` and additional 
     - For Steps, this value is set to the current level affecting the target.
     - For Flourishes that deal damage, this value is set to the amount of damage dealt.
     - For Flourishes that cause an effect, this value is set to the status effect id granted. _(ie. Desperate Flourish causes weight `12`)_
-  - `cmd_no: 15` - This vlaue is set depending on the type of RUN ability used.
+  - `cmd_no: 15` - This value is set depending on the type of RUN ability used.
     - For Ward > Vallation, this value is set to the status effect id granted. _(ie. Vallation is `531`)_
     - For Effusion > Swipe/Lunge, this value is set to the amount of damage dealt.
 

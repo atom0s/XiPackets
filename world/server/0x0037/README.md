@@ -548,7 +548,7 @@ This value is used to hold the target index of the entities pet.
 
 _Flag set if the entities motion scheduler should be paused._
 
-This flag is used when the entity is petrified or terrored. It will cause the entity to pause their current animation and freeze in place. _(Additional flags are set to lock the entity in place.)_
+This flag is used when the entity is petrified or terrorized. It will cause the entity to pause their current animation and freeze in place. _(Additional flags are set to lock the entity in place.)_
 
 ### `CliPriorityFlag`
 

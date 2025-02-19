@@ -10,7 +10,7 @@
 
 ## Description
 
-This packet is sent by the server when an item has been found and would be added to the treasure pool or be split amongst the party. _(This is used for items and gold found when defeating an enemy, opening a chest, identifying group based items, etc. Anything that would cause an item to be placed into the treasure pool or be split amoungst the party will use this packet.)_
+This packet is sent by the server when an item has been found and would be added to the treasure pool or be split amongst the party. _(This is used for items and gold found when defeating an enemy, opening a chest, identifying group based items, etc. Anything that would cause an item to be placed into the treasure pool or be split amongst the party will use this packet.)_
 
 ## Packet Layout
 
@@ -174,7 +174,7 @@ When this flag is set, it will cause any references to the entity (or object) th
 
 _Unknown._
 
-These flag values are used by the client when handling different verbage for certain languages. This is mainly used for the discontinued French and German languages. _(Due to the European languages being discontinued, testing for what this values all are is not worth spending time on currently.)_
+These flag values are used by the client when handling different verbiage for certain languages. This is mainly used for the discontinued French and German languages. _(Due to the European languages being discontinued, testing for what this values all are is not worth spending time on currently.)_
 
 ### `padding02`
 

@@ -10,7 +10,7 @@
 
 ## Description
 
-This packet is sent by the server after the client has equipped an equpset. _(ie. `/equipset 1`)_ It is used to validate if any pieces of gear within the set failed to equip.
+This packet is sent by the server after the client has equipped an equipset. _(ie. `/equipset 1`)_ It is used to validate if any pieces of gear within the set failed to equip.
 
 ## Packet Layout
 

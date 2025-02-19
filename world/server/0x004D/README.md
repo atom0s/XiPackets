@@ -10,7 +10,7 @@
 
 ## Description
 
-This packet is sent by the server to respond to a client fragment request. The main usage of this packet is for sending the client fragements of the server message as the client requests them.
+This packet is sent by the server to respond to a client fragment request. The main usage of this packet is for sending the client fragments of the server message as the client requests them.
 
 ## Packet Layout
 
@@ -88,7 +88,7 @@ When the client creates the requesting `YmFragmentsRequestTask`, it will use the
 
   - When the task has been completed, the client will cleanup the task state and reset the value to `0x00`.
   - When the client is requesting the current server message, it will set this value to `0x01`.
-  - When the client is requesting event related data, it will set this value to `0x02`. _(For example, the fisking rank NPC in Selbina, Chenon.)_
+  - When the client is requesting event related data, it will set this value to `0x02`. _(For example, the fishing rank NPC in Selbina, Chenon.)_
 
 ### `value2`
 
@@ -151,7 +151,7 @@ The fragment `data_size` value is used to determine the length of data contained
 
 When this packet is used in response to a server message request, then the `data_size` value will be the actual true size of content stored within the `data` field. The packets `value1` value will also be set to `1` indicating that the content of the packet is considered a string and that the client should treat it as one block of data. The server message can still be fragmented across multiple packets, which will cause the client to rebuild the total string into a new buffer before processing it. It does this by rebuild the data making use of the `offset` value to determine where to copy the current fragments content into this new buffer.
 
-If the server message exceeds the maximum size of `data` that a fragmnet can hold _(236 bytes)_ then the string will be fragmented into multiple parts. The client makes use of the `offset` value again when making requests back to the server for the next piece of the fragmented string. It is important to note that when this does happen, all fragments except the last one are **NOT** null-terminated. The `data` array will be completely full and have no actual null-termination until the last fragment. Because of this, it is important that the string being rebuilt on the client side is done so without making use of string APIs that expect a null-terminated string. The client does this rebuild using `memcpy` for this reason. The final message fragment will contain a proper null-terminated remainder of the string that is also byte aligned following the FFXI packet alignment rules.
+If the server message exceeds the maximum size of `data` that a fragment can hold _(236 bytes)_ then the string will be fragmented into multiple parts. The client makes use of the `offset` value again when making requests back to the server for the next piece of the fragmented string. It is important to note that when this does happen, all fragments except the last one are **NOT** null-terminated. The `data` array will be completely full and have no actual null-termination until the last fragment. Because of this, it is important that the string being rebuilt on the client side is done so without making use of string APIs that expect a null-terminated string. The client does this rebuild using `memcpy` for this reason. The final message fragment will contain a proper null-terminated remainder of the string that is also byte aligned following the FFXI packet alignment rules.
 
 ### Ranking Data
 
