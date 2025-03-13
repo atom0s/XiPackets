@@ -456,7 +456,7 @@ For general and ranged attacks (`cmd_no: 1, 2`), this value is used to play the 
   - `8` - Element Damage (Dark) _(ie. Endark)_
   - `9` - Sleep
   - `10` - Poison
-  - `11` - _Unknown effect._
+  - `11` - Paralyze
   - `12` - Blind
   - `13` - Silence
   - `14` - Petrify
