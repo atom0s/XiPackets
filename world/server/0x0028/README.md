@@ -38,7 +38,7 @@ The client uses this packet to do various tasks related to actions such as:
 
 This packet does not follow a traditional structured layout.
 
-For more information on this packets layout, please see: **[Reversing Information](REVERSING.md)**
+For more information on this packets layout, please see: **[Reversing Information](/world/server/0x0028/Reversing.md)**
 
 Once the client has unpacked and parsed the content of this packet, its information is stored into a block of structures.\
 Those structures are defined as follows:
