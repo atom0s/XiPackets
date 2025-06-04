@@ -31,7 +31,9 @@ struct lpkt_chr_info_sub2
     uint16_t            ffxi_id_world;              // PS2: ffxi_id_world
     uint16_t            worldid;                    // PS2: worldid
     uint16_t            status;                     // PS2: status
-    uint8_t             renamef;                    // PS2: renamef
+    uint8_t             renamef         : 1;        // PS2: renamef
+    uint8_t             race_change     : 1;        // PS2: (New; did not exist.)
+    uint8_t             unused          : 6;        // PS2: (New; did not exist.)
     uint8_t             ffxi_id_world_tbl;          // PS2: (New; did not exist.)
     char                character_name[16];         // PS2: character_name
     char                world_name[16];             // PS2: world_name
@@ -109,6 +111,13 @@ _Flag that states if the character is required to be renamed before it can be pl
 
   - `0` - `No Rename Required` _(All slots will use this value by default.)_
   - `1` - `Rename Required` _(The character will be prompted to rename before it can be played again. Name will show yellow in the character list as well.)_
+
+### race_change
+
+_Flag that states if the character is flagged for the ability to change races._
+
+  - `0` - `False` _(All slots will use this value by default.)_
+  - `1` - `True` _(The character is able to change races by speaking to the appropriate NPC. There will be a star drawn next to the player name when enabled.)_
 
 ### ffxi_id_world_tbl
 
