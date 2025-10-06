@@ -18,6 +18,7 @@ struct GP_CLI_ITEM_USE
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
+
     uint32_t    UniqueNo;           // PS2: UniqueNo
     uint32_t    ItemNum;            // PS2: ItemNum
     uint16_t    ActIndex;           // PS2: ActIndex

@@ -22,6 +22,7 @@ struct GP_CLI_GROUP_COMLINK_ACTIVE
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
+
     uint16_t    r : 4;              // PS2: r
     uint16_t    g : 4;              // PS2: g
     uint16_t    b : 4;              // PS2: b

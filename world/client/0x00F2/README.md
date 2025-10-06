@@ -22,6 +22,7 @@ struct GP_CLI_SUBMAPCHANGE
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
+
     uint16_t    State;          // PS2: State
     uint16_t    SubMapNumber;   // PS2: SubMapNumber
 };

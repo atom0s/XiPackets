@@ -22,6 +22,7 @@ struct GP_CLI_MYROOM_PLANT_CHECK
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
+
     uint16_t    MyroomPlantItemNo;      // PS2: MyroomPlantItemNo
     uint8_t     MyroomPlantItemIndex;   // PS2: MyroomPlantItemIndex
     uint8_t     MyroomPlantCategory;    // PS2: (New; did not exist.)

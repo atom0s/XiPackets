@@ -22,6 +22,7 @@ struct GP_CLI_BAZAAR_BUY
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
+
     uint8_t     BazaarItemIndex;// PS2: BazaarItemIndex
     uint8_t     padding00[3];   // PS2: Dammy
     uint32_t    BuyNum;         // PS2: BuyNum

@@ -22,6 +22,7 @@ struct GP_CLI_SWITCH_VOTE
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
+
     uint8_t     Index;   // PS2: Index
     uint8_t     Name[];  // PS2: Name
 };

@@ -28,6 +28,7 @@ struct GP_CLI_SHOP_REQ
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
+
     uint16_t    ShopNo;             // PS2: ShopNo
     uint8_t     ShopItemOffsetIndex;// PS2: ShopItemOffsetIndex
     uint8_t     padding00;          // PS2: padding00

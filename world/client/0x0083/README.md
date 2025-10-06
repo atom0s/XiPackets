@@ -22,6 +22,7 @@ struct GP_CLI_SHOP_BUY
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
+
     uint32_t    ItemNum;            // PS2: ItemNum
     uint16_t    ShopNo;             // PS2: ShopNo
     uint16_t    ShopItemIndex;      // PS2: ShopItemIndex

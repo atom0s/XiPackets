@@ -22,6 +22,7 @@ struct GP_CLI_MYROOM_LAYOUT
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
+
     uint16_t    MyroomItemNo;   // PS2: MyroomItemNo
     uint8_t     MyroomItemIndex;// PS2: MyroomItemIndex
     uint8_t     MyroomCategory; // PS2: (New; did not exist.)

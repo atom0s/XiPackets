@@ -22,6 +22,7 @@ struct GP_CLI_GAMEOK
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
+
     uint32_t    ClientState;            // PS2: ClientState
     uint32_t    DebugClientFlg  : 1;    // PS2: DebugClientFlg
     uint32_t    unused          : 31;   // PS2: unused

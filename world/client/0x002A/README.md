@@ -28,6 +28,7 @@ struct GP_CLI_ITEM_ATTR
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
+
     uint8_t     Category;   // PS2: Category
     uint8_t     ItemIndex;  // PS2: ItemIndex
 };

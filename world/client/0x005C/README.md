@@ -22,6 +22,7 @@ struct GP_CLI_EVENTENDXZY
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
+
     float       x;          // PS2: x
     float       y;          // PS2: y
     float       z;          // PS2: z

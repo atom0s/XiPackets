@@ -22,6 +22,7 @@ struct GP_CLI_RESCUE
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
+
     uint32_t    State; // PS2: State
 };
 ```

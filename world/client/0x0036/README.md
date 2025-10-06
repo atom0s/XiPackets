@@ -18,6 +18,7 @@ struct GP_CLI_ITEM_TRANSFER
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
+
     uint32_t    UniqueNo;                   // PS2: UniqueNo
     uint32_t    ItemNumTbl[10];             // PS2: ItemNumTbl
     uint8_t     PropertyItemIndexTbl[10];   // PS2: PropertyItemIndexTbl

@@ -28,6 +28,7 @@ struct GP_CLI_PREFERENCE_SAVE
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
+
     int32_t     ContentLen;         // PS2: ContentLen
     int32_t     SegmentIndex;       // PS2: SegmentIndex
     char        PreferenceData[50]; // PS2: PreferenceData

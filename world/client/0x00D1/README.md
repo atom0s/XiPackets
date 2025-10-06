@@ -25,6 +25,7 @@ struct _GP_MYROOM_PLACE_REQ
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
+
     uint16_t    ItemNo;     // PS2: ItemNo
     int8_t      X;          // PS2: X
     int8_t      Y;          // PS2: Y

@@ -22,6 +22,7 @@ struct GP_CLI_CONFIG
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
+
     uint8_t     InviteFlg           : 1;    // PS2: InviteFlg
     uint8_t     AwayFlg             : 1;    // PS2: AwayFlg
     uint8_t     AnonymityFlg        : 1;    // PS2: AnonymityFlg

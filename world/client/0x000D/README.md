@@ -22,6 +22,7 @@ struct GP_CLI_NETEND
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
+
     uint16_t    State;      // PS2: State
     uint16_t    padding00;  // PS2: Dammy
 };

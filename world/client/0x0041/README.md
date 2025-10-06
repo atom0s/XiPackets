@@ -22,6 +22,7 @@ struct GP_CLI_TROPHY_ENTRY
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
+
     uint8_t     TrophyItemIndex;    // PS2: TrophyItemIndex
     uint8_t     PropertyItemIndex;  // PS2: PropertyItemIndex
     uint8_t     padding00[2];       // PS2: (New; did not exist.)

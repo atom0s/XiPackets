@@ -22,6 +22,7 @@ struct GP_CLI_EFFECTEND
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
+
     uint32_t    effectpara;     // PS2: effectpara
     uint8_t     padding00[8];   // PS2: (New; did not exist.)
 };

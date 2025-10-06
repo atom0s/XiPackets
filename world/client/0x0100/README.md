@@ -22,6 +22,7 @@ struct GP_CLI_MYROOM_JOB
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
+
     uint8_t     MainJobIndex;   // PS2: MainJobIndex
     uint8_t     SupportJobIndex;// PS2: SupportJobIndex
 };

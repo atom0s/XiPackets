@@ -22,6 +22,7 @@ struct GP_CLI_SWITCH_PROPOSAL
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
+
     uint8_t     Kind;   // PS2: Kind
     uint8_t     Str[];  // PS2: Str
 };

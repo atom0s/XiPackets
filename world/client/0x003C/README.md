@@ -22,6 +22,7 @@ struct packet_t
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
+
     uint32_t    unknown00;      // PS2: (Unknown field name.)
     uint32_t    unknown01;      // PS2: (Unknown field name.)
     uint32_t    unknown02;      // PS2: (Unknown field name.)

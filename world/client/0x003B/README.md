@@ -22,6 +22,7 @@ struct packet_t
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
+
     uint32_t    Kind;
     uint32_t    Category1;
     uint8_t     ItemIndex1;

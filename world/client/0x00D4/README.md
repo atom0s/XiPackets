@@ -22,6 +22,7 @@ struct GP_CLI_FAQ_GMPARAM
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
+
     uint16_t    Id;     // PS2: Id
     uint16_t    Option; // PS2: Option
 };

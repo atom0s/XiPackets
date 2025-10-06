@@ -22,6 +22,7 @@ struct GP_CLI_ITEM_MOVE
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
+
     uint32_t    ItemNum;    // PS2: ItemNum
     uint8_t     Category1;  // PS2: Category1
     uint8_t     Category2;  // PS2: Category2

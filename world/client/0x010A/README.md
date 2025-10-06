@@ -22,6 +22,7 @@ struct GP_CLI_BAZAAR_ITEMSET
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
+
     uint8_t     ItemIndex;      // PS2: ItemIndex
     uint8_t     padding00[3];   // PS2: Dammy
     uint32_t    Price;          // PS2: Price

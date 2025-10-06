@@ -22,6 +22,7 @@ struct GP_CLI_REQLOGOUT
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
+
     uint16_t    Mode; // PS2: Mode
     uint16_t    Kind; // PS2: (New; did not exist.)
 };

@@ -22,6 +22,7 @@ struct GP_CLI_FAQ_GMCALL
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
+
     uint16_t    type    : 4;    // PS2: type
     uint16_t    vers    : 4;    // PS2: vers
     uint16_t    pktId   : 8;    // PS2: pktId

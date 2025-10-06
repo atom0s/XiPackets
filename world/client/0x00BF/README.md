@@ -22,6 +22,7 @@ struct packet_t
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
+
     uint16_t    Index;
     uint16_t    padding00;
 };

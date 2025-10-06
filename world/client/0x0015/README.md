@@ -22,6 +22,7 @@ struct GP_CLI_POS
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
+
     float       x;                  // PS2: x
     float       z;                  // PS2: z
     float       y;                  // PS2: y

@@ -22,6 +22,7 @@ struct GP_CLI_INSPECT_MESSAGE
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
+
     uint8_t     sInspectMessage[123];   // PS2: sInspectMessage
     uint8_t     padding00;              // PS2: (New; did not exist.)
 };

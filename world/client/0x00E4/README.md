@@ -22,6 +22,7 @@ struct GP_CLI_LINKSHELL_MESSAGE
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
+
     uint8_t     unknown00       : 4;    // PS2: stat
     uint8_t     unknown01       : 1;    // PS2: attr (Was originally a single 4 bit value.)
     uint8_t     unknown02       : 1;    // PS2: attr (Was originally a single 4 bit value.)

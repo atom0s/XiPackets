@@ -28,6 +28,7 @@ struct _GP_MYROOM_GATE_REQ
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
+
     uint16_t    No;         // PS2: No
     uint16_t    unknown00;  // PS2: (New; did not exist.)
 };

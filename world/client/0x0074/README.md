@@ -22,6 +22,7 @@ struct GP_CLI_GROUP_SOLICIT_RES
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
+
     uint8_t     Res;        // PS2: Res
     uint8_t     padding00;  // PS2: (New; did not exist.)
 };

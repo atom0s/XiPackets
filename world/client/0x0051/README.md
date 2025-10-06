@@ -31,6 +31,7 @@ struct packet_t
     uint16_t        id: 9;
     uint16_t        size: 7;
     uint16_t        sync;
+
     uint8_t         Count;
     uint8_t         padding00[3];
     equipsetitem_t  Equipment[16];

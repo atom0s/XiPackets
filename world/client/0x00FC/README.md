@@ -22,6 +22,7 @@ struct GP_CLI_MYROOM_PLANT_ADD
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
+
     uint16_t    MyroomPlantItemNo;      // PS2: MyroomPlantItemNo
     uint16_t    MyroomAddItemNo;        // PS2: MyroomAddItemNo
     uint8_t     MyroomPlantItemIndex;   // PS2: MyroomPlantItemIndex

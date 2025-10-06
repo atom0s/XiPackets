@@ -22,6 +22,7 @@ struct GP_CLI_RECIPE
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
+
     uint16_t    skill;      // PS2: skill
     uint16_t    level;      // PS2: level
     uint16_t    Param0;     // PS2: itemnum

@@ -37,6 +37,7 @@ struct GP_CLI_ITEM_TRADE_RES
     uint16_t                id: 9;
     uint16_t                size: 7;
     uint16_t                sync;
+
     GP_ITEM_TRADE_RES_KIND  Kind;           // PS2: Kind
     uint16_t                TradeCounter;   // PS2: TradeCounter
 };

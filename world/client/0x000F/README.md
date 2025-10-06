@@ -22,6 +22,7 @@ struct GP_CLI_CLSTAT
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
+
     uint32_t    stat[8]; // PS2: stat
 };
 ```

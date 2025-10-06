@@ -28,6 +28,7 @@ struct GP_CLI_PREFERENCE_READ
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
+
     uint16_t    padding00; // PS2: Dummy
 };
 ```

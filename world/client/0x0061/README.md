@@ -22,6 +22,7 @@ struct GP_CLI_CLISTATUS
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
+
     uint8_t     unknown00; // PS2: (New; did not exist.)
     uint8_t     padding00; // PS2: (New; did not exist.)
 };

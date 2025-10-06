@@ -22,6 +22,7 @@ struct GP_CLI_LOGIN
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
+
     uint8_t     LoginPacketCheck;   // PS2: LoginPacketCheck
     uint8_t     padding00;          // PS2: dam__
     uint16_t    unknown00;          // PS2: MyPort

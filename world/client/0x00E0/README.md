@@ -59,6 +59,7 @@ struct GP_CLI_USER_MESSAGE
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
+
     uint8_t     sMessage[128];  // PS2: sMessage
     uint32_t    installTime;    // PS2: installTime
     uint8_t     platform[4];    // PS2: platform

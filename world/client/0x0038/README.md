@@ -28,6 +28,7 @@ struct GP_CLI_ITEM_MAKE
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
+
     uint32_t    ItemNum;    // PS2: ItemNum
     uint16_t    ItemNo;     // PS2: ItemNo
     uint16_t    padding00;  // PS2: padding00

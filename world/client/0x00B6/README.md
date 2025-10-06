@@ -22,6 +22,7 @@ struct GP_CLI_CHAT_NAME
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
+
     uint8_t     unknown00;
     uint8_t     unknown01;
     uint8_t     sName[15];

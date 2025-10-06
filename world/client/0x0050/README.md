@@ -22,6 +22,7 @@ struct GP_CLI_EQUIP_SET
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
+
     uint8_t     PropertyItemIndex;  // PS2: PropertyItemIndex
     uint8_t     EquipKind;          // PS2: EquipKind
     uint8_t     Category;           // PS2: (New; did not exist.)

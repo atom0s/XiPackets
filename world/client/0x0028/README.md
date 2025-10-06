@@ -22,6 +22,7 @@ struct GP_CLI_ITEM_DUMP
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
+
     uint32_t    ItemNum;    // PS2: ItemNum
     uint8_t     Category;   // PS2: Category
     uint8_t     ItemIndex;  // PS2: ItemIndex

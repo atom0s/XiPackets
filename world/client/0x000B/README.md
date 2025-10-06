@@ -25,6 +25,7 @@ struct GP_CLI_LOGOUT
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
+
     uint32_t    ZoneNo;     // PS2: ZoneNo
     uint32_t    MapNo;      // PS2: MapNo
     int32_t     x;          // PS2: x
