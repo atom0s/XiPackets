@@ -25,7 +25,7 @@ struct GP_CLI_ITEM_TRADE_REQ
 
     uint32_t    UniqueNo;   // PS2: UniqueNo
     uint16_t    ActIndex;   // PS2: ActIndex
-    uint16_t    padding00;  // PS2: dammy2
+    uint16_t    padding0A;  // PS2: dammy2
 };
 ```
 
@@ -49,6 +49,6 @@ _The server id of the player to trade with._
 
 _The target index of the player to trade with._
 
-### `padding00`
+### `padding0A`
 
 _Padding; unused._

@@ -23,17 +23,17 @@ struct packet_t
     uint16_t    size: 7;
     uint16_t    sync;
 
-    uint32_t    Kind;
-    uint32_t    Category1;
-    uint8_t     ItemIndex1;
-    uint8_t     ContainerIndex;
-    uint16_t    padding00;
-    uint32_t    Category2;
-    uint8_t     ItemIndex2;
-    uint8_t     padding01[3];
-    uint32_t    unknown00;
-    uint8_t     unknown01;
-    uint8_t     padding02[3];
+    uint32_t    Kind;           // PS2: (New; did not exist.)
+    uint32_t    Category1;      // PS2: (New; did not exist.)
+    uint8_t     ItemIndex1;     // PS2: (New; did not exist.)
+    uint8_t     ContainerIndex; // PS2: (New; did not exist.)
+    uint16_t    padding0E;      // PS2: (New; did not exist.)
+    uint32_t    Category2;      // PS2: (New; did not exist.)
+    uint8_t     ItemIndex2;     // PS2: (New; did not exist.)
+    uint8_t     padding15[3];   // PS2: (New; did not exist.)
+    uint32_t    Category3;      // PS2: (New; did not exist.)
+    uint8_t     ItemIndex3;     // PS2: (New; did not exist.)
+    uint8_t     padding1D[3];   // PS2: (New; did not exist.)
 };
 ```
 
@@ -92,7 +92,7 @@ For mannequins, this value will represent the equipment slot being modified.
 
 When unequipping all items on a mannequin, this will be set to `0`.
 
-### `padding00`
+### `padding0E`
 
 _Padding; unused._
 
@@ -108,22 +108,22 @@ _The index within the container that holds the item._
 
 When unequipping items _(individually and all)_ from a mannequin, this value will be `0`.
 
-### `padding01`
+### `padding15`
 
 _Padding; unused._
 
-### `unknown00`
+### `Category3`
 
 _Unknown._
 
 This value is treated like a container. It is always set to `18`.
 
-### `unknown01`
+### `ItemIndex3`
 
 _Unknown._
 
 This value is treated like an item index within a container. It is always set to `0`.
 
-### `padding02`
+### `padding1D`
 
 _Padding; unused._

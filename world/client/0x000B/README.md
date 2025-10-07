@@ -32,7 +32,7 @@ struct GP_CLI_LOGOUT
     int32_t     y;          // PS2: y
     int32_t     z;          // PS2: z
     uint16_t    State;      // PS2: State
-    uint8_t     padding00;  // PS2: padding00
+    uint8_t     padding1A;  // PS2: Dammy
     uint8_t     dir;        // PS2: dir
 };
 ```
@@ -89,7 +89,7 @@ The following enumeration is believed to be used with this state value.
 | `9`   | `GP_GAME_LOGOUT_STATE_GMLOGOUT` |
 | `10`  | `GP_GAME_LOGOUT_STATE_END` |
 
-### `padding00`
+### `padding1A`
 
 _Padding; unused._
 

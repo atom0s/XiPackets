@@ -27,7 +27,7 @@ struct GP_CLI_DIG
     uint32_t    para;       // PS2: para
     uint16_t    ActIndex;   // PS2: ActIndex
     uint8_t     mode;       // PS2: mode
-    uint8_t     padding00;  // PS2: dammy
+    uint8_t     padding0F;  // PS2: dammy
 };
 ```
 
@@ -63,6 +63,6 @@ _The packet mode._
 
 The client always sets this value to `0x11` for this packet. _(This value matches the beginning action id sent by the client when requesting to dig.)_
 
-### `padding00`
+### `padding0F`
 
 _Padding; unused._

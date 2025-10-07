@@ -25,7 +25,7 @@ struct GP_CLI_TROPHY_ENTRY
 
     uint8_t     TrophyItemIndex;    // PS2: TrophyItemIndex
     uint8_t     PropertyItemIndex;  // PS2: PropertyItemIndex
-    uint8_t     padding00[2];       // PS2: (New; did not exist.)
+    uint8_t     padding06[2];       // PS2: (New; did not exist.)
 };
 ```
 
@@ -51,6 +51,6 @@ _The clients local inventory index where it assumed the item can be placed._
 
 The client obtains this value using its `gcItemOneSpeaceGet` function. It walks the clients inventory _(starting at index 1 to skip gil)_ to locate the first item entry that has no set valid item. This value is the incremented index found to be empty.
 
-### `padding00`
+### `padding06`
 
 _Padding; unused._

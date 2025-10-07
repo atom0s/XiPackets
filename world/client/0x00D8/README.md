@@ -23,12 +23,12 @@ struct packet_t
     uint16_t    size: 7;
     uint16_t    sync;
 
-    uint16_t    ActIndex;
-    uint16_t    Param1;
-    uint8_t     Param2;
-    uint8_t     padding00[3];
-    uint32_t    UniqueNo;
-    uint8_t     Data[24];
+    uint16_t    ActIndex;       // PS2: (New; did not exist.)
+    uint16_t    Param1;         // PS2: (New; did not exist.)
+    uint8_t     Param2;         // PS2: (New; did not exist.)
+    uint8_t     padding09[3];   // PS2: (New; did not exist.)
+    uint32_t    UniqueNo;       // PS2: (New; did not exist.)
+    uint8_t     Data[24];       // PS2: (New; did not exist.)
 };
 ```
 
@@ -60,7 +60,7 @@ _The packet parameter. (2)_
 
 This value is populated from an event VM script.
 
-### `padding00`
+### `padding09`
 
 _Padding; unused._
 

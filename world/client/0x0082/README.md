@@ -31,7 +31,7 @@ struct GP_CLI_SHOP_REQ
 
     uint16_t    ShopNo;             // PS2: ShopNo
     uint8_t     ShopItemOffsetIndex;// PS2: ShopItemOffsetIndex
-    uint8_t     padding00;          // PS2: padding00
+    uint8_t     padding07;          // PS2: dammy
 };
 ```
 
@@ -57,6 +57,6 @@ The client does not use or set this value.
 
 _The shop item index._
 
-### `padding00`
+### `padding07`
 
 _Padding; unused._

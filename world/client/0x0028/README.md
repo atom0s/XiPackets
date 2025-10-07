@@ -23,9 +23,10 @@ struct GP_CLI_ITEM_DUMP
     uint16_t    size: 7;
     uint16_t    sync;
 
-    uint32_t    ItemNum;    // PS2: ItemNum
-    uint8_t     Category;   // PS2: Category
-    uint8_t     ItemIndex;  // PS2: ItemIndex
+    uint32_t    ItemNum;        // PS2: ItemNum
+    uint8_t     Category;       // PS2: Category
+    uint8_t     ItemIndex;      // PS2: ItemIndex
+    uint8_t     padding0A[2];   // PS2: (New; did not exist.)
 };
 ```
 
@@ -52,3 +53,7 @@ _The container holding the item._
 ### `ItemIndex`
 
 _The index inside of the container this item is located._
+
+### `padding0A`
+
+_Padding; unused._

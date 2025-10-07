@@ -46,7 +46,7 @@ struct GP_CLI_CONFIG
     uint32_t    unused00;                   // PS2: (Other misc data.)
     uint32_t    unused01;                   // PS2: (Other misc data.)
     uint8_t     SetFlg;                     // Ps2: SetFlg
-    uint8_t     padding00[3];               // PS2: (New; did not exist.)
+    uint8_t     padding11[3];               // PS2: (New; did not exist.)
 };
 ```
 
@@ -110,6 +110,10 @@ _Flag that states if the given setting has been turned on or off._
 
   - `1` - _The setting has been turned on._
   - `2` - _The setting has been turned off._
+
+### `padding11`
+
+_Padding; unused._
 
 ## Additional Information
 

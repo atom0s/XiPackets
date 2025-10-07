@@ -28,7 +28,7 @@ struct GP_CLI_GLOBALUNIQUENO_REQ
 
     uint32_t    UniqueNo;   // PS2: UniqueNo
     uint16_t    ActIndex;   // PS2: ActIndex
-    uint16_t    padding00;  // PS2: dammy
+    uint16_t    padding0A;  // PS2: dammy
 };
 ```
 

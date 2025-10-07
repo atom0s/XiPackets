@@ -23,8 +23,8 @@ struct packet_t
     uint16_t    size: 7;
     uint16_t    sync;
 
-    uint16_t    ObjectiveId;
-    uint16_t    padding00;
+    uint16_t    ObjectiveId;    // PS2: (New; did not exist.)
+    uint16_t    padding06;      // PS2: (New; did not exist.)
 };
 ```
 
@@ -46,6 +46,6 @@ _The Records of Eminence object id._
 
 This value holds the normalized Records of Eminence objective id the client is requesting to remove. This value is normalized by subtracting `57344` from the id before writing it to the packet. _(The client also masks the id to 12 bits, leaving the remaining 4 bits unused.)_
 
-### `padding00`
+### `padding06`
 
 _Padding; unused._

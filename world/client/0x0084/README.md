@@ -26,7 +26,7 @@ struct GP_CLI_SHOP_SELL_REQ
     uint32_t    ItemNum;    // PS2: ItemNum
     uint16_t    ItemNo;     // PS2: ItemNo
     uint8_t     ItemIndex;  // PS2: ItemIndex
-    uint8_t     padding00;  // PS2: dammy
+    uint8_t     padding0B;  // PS2: dammy
 };
 ```
 
@@ -54,6 +54,6 @@ _The item id being sold._
 
 _The index within the clients inventory that holds the item to be sold._
 
-### `padding00`
+### `padding0B`
 
 _Padding; unused._

@@ -23,7 +23,7 @@ struct GP_CLI_GROUP_BREAKUP
     uint16_t    size: 7;
     uint16_t    sync;
 
-    uint8_t     Kind;       // PS2: Kind
+    uint8_t     Kind; // PS2: Kind
 };
 ```
 

@@ -24,7 +24,7 @@ struct GP_CLI_GROUP_SOLICIT_RES
     uint16_t    sync;
 
     uint8_t     Res;        // PS2: Res
-    uint8_t     padding00;  // PS2: (New; did not exist.)
+    uint8_t     padding05;  // PS2: (New; did not exist.)
 };
 ```
 
@@ -50,3 +50,7 @@ This value is the clients response to the current pending invite.
 | --- | --- |
 | `0` | _The client has declined the invite. (`/decline`)_ |
 | `1` | _The client has accepted the invite. (`/join`)_ |
+
+### `padding05`
+
+_Padding; unused._

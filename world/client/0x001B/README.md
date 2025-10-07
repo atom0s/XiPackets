@@ -23,8 +23,8 @@ struct GP_CLI_FRIENDPASS
     uint16_t    size: 7;
     uint16_t    sync;
 
-    uint16_t    Para;       // PS2: Para
-    uint16_t    padding00;  // PS2: Dammy
+    uint16_t    Para;           // PS2: Para
+    uint8_t     padding06[22];  // PS2: Dammy
 };
 ```
 
@@ -53,6 +53,6 @@ _The parameter of the packet._
 
 _**Note:** If the client rejects the confirmation for either world pass type, it will simply exit the event. It does not send a packet to the server._
 
-### `padding00`
+### `padding06`
 
 _Padding; unused._

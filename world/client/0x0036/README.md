@@ -24,7 +24,7 @@ struct GP_CLI_ITEM_TRANSFER
     uint8_t     PropertyItemIndexTbl[10];   // PS2: PropertyItemIndexTbl
     uint16_t    ActIndex;                   // PS2: ActIndex
     uint8_t     ItemNum;                    // PS2: ItemNum
-    uint8_t     padding00[3];               // PS2: padding00
+    uint8_t     padding3D[3];               // PS2: dammy2
 };
 ```
 
@@ -62,6 +62,6 @@ _The target index of the NPC being traded with._
 
 _The number of slots populated in the trade._
 
-### `padding00`
+### `padding3D`
 
 _Padding; unused._

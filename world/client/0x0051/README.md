@@ -22,7 +22,7 @@ struct equipsetitem_t
     uint8_t     ItemIndex;
     uint8_t     EquipKind;
     uint8_t     Category;
-    uint8_t     padding00;
+    uint8_t     padding03;
 };
 
 // PS2: (New; did not exist.)
@@ -32,9 +32,9 @@ struct packet_t
     uint16_t        size: 7;
     uint16_t        sync;
 
-    uint8_t         Count;
-    uint8_t         padding00[3];
-    equipsetitem_t  Equipment[16];
+    uint8_t         Count;          // PS2: (New; did not exist.)
+    uint8_t         padding05[3];   // PS2: (New; did not exist.)
+    equipsetitem_t  Equipment[16];  // PS2: (New; did not exist.)
 };
 ```
 
@@ -54,7 +54,7 @@ _You can find more information about the header fields here: [**Header**](/world
 
 _The number of slots populated in the `Equipment` array._
 
-### `padding00`
+### `padding05`
 
 _Padding; unused._
 
@@ -76,6 +76,6 @@ _The equipment slot enumeration id._
 
 _The container holding the item being equipped._
 
-### `padding00`
+### `padding03`
 
 _Padding; unused._

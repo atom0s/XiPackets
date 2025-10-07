@@ -23,9 +23,9 @@ struct packet_t
     uint16_t    size: 7;
     uint16_t    sync;
 
-    uint8_t     Language;
-    uint8_t     padding00[3];
-    uint8_t     Name[64];
+    uint8_t     Language;       // PS2: (New; did not exist.)
+    uint8_t     padding05[3];   // PS2: (New; did not exist.)
+    uint8_t     Name[64];       // PS2: (New; did not exist.)
 };
 ```
 
@@ -50,7 +50,7 @@ _The clients language id._
   - `2` - _French (Deprecated)_
   - `3` - _German (Deprecated)_
 
-### `padding00`
+### `padding05`
 
 _Padding; unused._
 

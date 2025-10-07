@@ -29,7 +29,7 @@ struct GP_CLI_PREFERENCE_READ
     uint16_t    size: 7;
     uint16_t    sync;
 
-    uint16_t    padding00; // PS2: Dummy
+    uint16_t    padding04; // PS2: Dummy
 };
 ```
 
@@ -44,3 +44,7 @@ The following information describes the structures outlined above.
 _These fields are part of the packet header._
 
 _You can find more information about the header fields here: [**Header**](/world/HEADER.md)_
+
+### `padding04`
+
+_Padding; unused._

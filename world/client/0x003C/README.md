@@ -23,13 +23,13 @@ struct packet_t
     uint16_t    size: 7;
     uint16_t    sync;
 
-    uint32_t    unknown00;      // PS2: (Unknown field name.)
-    uint32_t    unknown01;      // PS2: (Unknown field name.)
-    uint32_t    unknown02;      // PS2: (Unknown field name.)
-    uint32_t    unknown03;      // PS2: (Unknown field name.)
     uint32_t    unknown04;      // PS2: (Unknown field name.)
-    uint8_t     unknown05;      // PS2: (Unknown field name.)
-    uint8_t     padding00[3];   // PS2: (Unknown field name.)
+    uint32_t    unknown08;      // PS2: (Unknown field name.)
+    uint32_t    unknown0C;      // PS2: (Unknown field name.)
+    uint32_t    unknown10;      // PS2: (Unknown field name.)
+    uint32_t    unknown14;      // PS2: (Unknown field name.)
+    uint8_t     unknown18;      // PS2: (Unknown field name.)
+    uint8_t     padding19[3];   // PS2: (Unknown field name.)
 };
 ```
 
@@ -45,31 +45,31 @@ _These fields are part of the packet header._
 
 _You can find more information about the header fields here: [**Header**](/world/HEADER.md)_
 
-### `unknown00`
-
-_Unknown._
-
-### `unknown01`
-
-_Unknown._
-
-### `unknown02`
-
-_Unknown._
-
-### `unknown03`
-
-_Unknown._
-
 ### `unknown04`
 
 _Unknown._
 
-### `unknown05`
+### `unknown08`
 
 _Unknown._
 
-### `padding00`
+### `unknown0C`
+
+_Unknown._
+
+### `unknown10`
+
+_Unknown._
+
+### `unknown14`
+
+_Unknown._
+
+### `unknown18`
+
+_Unknown._
+
+### `padding19`
 
 _Padding; unused._
 

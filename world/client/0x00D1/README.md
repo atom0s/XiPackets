@@ -32,7 +32,7 @@ struct _GP_MYROOM_PLACE_REQ
     int8_t      Z;          // PS2: Z
     int8_t      V;          // PS2: V
     uint8_t     TableNo;    // PS2: TableNo
-    uint8_t     padding00;  // PS2: (New; did not exist.)
+    uint8_t     padding0B;  // PS2: (New; did not exist.)
 };
 ```
 
@@ -72,6 +72,6 @@ _Unknown._
 
 _Unknown._
 
-### `padding00`
+### `padding0B`
 
 _Unknown._

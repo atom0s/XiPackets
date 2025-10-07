@@ -30,7 +30,7 @@ struct _GP_MYROOM_GATE_REQ
     uint16_t    sync;
 
     uint16_t    No;         // PS2: No
-    uint16_t    unknown00;  // PS2: (New; did not exist.)
+    uint16_t    unknown06;  // PS2: (New; did not exist.)
 };
 ```
 
@@ -52,7 +52,7 @@ _Unknown._
 
 This value is assumed to be the server id of the characters mog house to enter.
 
-### `unknown00`
+### `unknown06`
 
 _Unknown._
 

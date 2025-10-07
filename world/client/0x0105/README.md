@@ -25,7 +25,7 @@ struct GP_CLI_BAZAAR_LIST
 
     uint32_t    UniqueNo;   // PS2: UniqueNo
     uint16_t    ActIndex;   // PS2: ActIndex
-    uint16_t    padding00;  // PS2: Dammy
+    uint16_t    padding0A;  // PS2: Dammy
 };
 ```
 
@@ -49,6 +49,6 @@ _The server id of the player whos bazaar is being requested._
 
 _The target index of the player whos bazaar is being requested._
 
-### `padding00`
+### `padding0A`
 
 _Padding; unused._

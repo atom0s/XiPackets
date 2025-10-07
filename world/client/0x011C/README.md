@@ -23,10 +23,10 @@ struct packet_t
     uint16_t    size: 7;
     uint16_t    sync;
 
-    uint32_t    UniqueNo;
-    uint16_t    ActIndex;
-    uint8_t     Kind;
-    uint8_t     padding00;
+    uint32_t    UniqueNo;   // PS2: (New; did not exist.)
+    uint16_t    ActIndex;   // PS2: (New; did not exist.)
+    uint8_t     Kind;       // PS2: (New; did not exist.)
+    uint8_t     padding0B;  // PS2: (New; did not exist.)
 };
 ```
 
@@ -59,6 +59,6 @@ _The packet kind._
 | `0x00` | _Add - Request to join the target players party._ |
 | `0x01` | _Remove - Remove request to join the target players party._ |
 
-### `padding00`
+### `padding0B`
 
 _Padding; unused._

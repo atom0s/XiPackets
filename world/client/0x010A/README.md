@@ -24,7 +24,7 @@ struct GP_CLI_BAZAAR_ITEMSET
     uint16_t    sync;
 
     uint8_t     ItemIndex;      // PS2: ItemIndex
-    uint8_t     padding00[3];   // PS2: Dammy
+    uint8_t     padding05[3];   // PS2: Dammy
     uint32_t    Price;          // PS2: Price
 };
 ```
@@ -45,7 +45,7 @@ _You can find more information about the header fields here: [**Header**](/world
 
 _The index of the item in the clients inventory._
 
-### `padding00`
+### `padding05`
 
 _Padding; unused._
 

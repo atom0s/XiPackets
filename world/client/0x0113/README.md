@@ -23,8 +23,8 @@ struct packet_t
     uint16_t    size: 7;
     uint16_t    sync;
 
-    uint32_t    Mode;
-    uint32_t    ChairId;
+    uint32_t    Mode;       // PS2: (New; did not exist.)
+    uint32_t    ChairId;    // PS2: (New; did not exist.)
 };
 ```
 

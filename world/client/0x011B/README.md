@@ -23,8 +23,8 @@ struct packet_t
     uint16_t    size: 7;
     uint16_t    sync;
 
-    uint8_t     Mode;
-    uint8_t     padding00[3];
+    uint8_t     Mode;           // PS2: (New; did not exist.)
+    uint8_t     padding05[3];   // PS2: (New; did not exist.)
 };
 ```
 
@@ -51,6 +51,6 @@ This value is used to indicate the mode of the command.
 | `0x00` | _Mode: `off`_ |
 | `0x01` | _Mode: `on`_ |
 
-### `padding00`
+### `padding05`
 
 _Padding; unused._

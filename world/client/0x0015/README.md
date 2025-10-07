@@ -35,6 +35,7 @@ struct GP_CLI_POS
     uint8_t     unused      : 5;    // PS2: dummy
     uint16_t    facetarget;         // PS2: facetarget
     uint32_t    TimeNow;            // PS2: TimeNow
+    uint32_t    padding001C;        // PS2: (New; did not exist.)
 };
 ```
 
@@ -107,6 +108,10 @@ _The clients current input target index._
 _The clients current timestamp._
 
 This timestamp value is returned from `ntTimeNowGet`.
+
+### `padding001C`
+
+_Padding; unused._
 
 ## Additional Information
 

@@ -24,7 +24,7 @@ struct GP_CLI_BUFFCANCEL
     uint16_t    sync;
 
     uint16_t    BuffNo;     // PS2: BuffNo
-    uint16_t    padding00;  // PS2: Dammy
+    uint16_t    padding06;  // PS2: Dammy
 };
 ```
 
@@ -44,6 +44,6 @@ _You can find more information about the header fields here: [**Header**](/world
 
 _The id of the buff being cancelled._
 
-### `padding00`
+### `padding06`
 
 _Padding; unused._

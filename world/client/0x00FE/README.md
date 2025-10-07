@@ -27,7 +27,7 @@ struct GP_CLI_MYROOM_PLANT_CROP
     uint8_t     MyroomPlantItemIndex;   // PS2: MyroomPlantItemIndex
     uint8_t     MyroomPlantCategory;    // PS2: (New; did not exist.)
     uint8_t     CancellFlg;             // PS2: CancellFlg
-    uint8_t     padding00[3];           // PS2: (New; did not exist.)
+    uint8_t     padding09[3];           // PS2: (New; did not exist.)
 };
 ```
 
@@ -59,6 +59,6 @@ _The container that holds the plant/pot._
 
 _Flag set if the client is throwing away the harvest instead of keeping it._
 
-### `padding00`
+### `padding09`
 
 _Padding; unused._

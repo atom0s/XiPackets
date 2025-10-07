@@ -23,8 +23,8 @@ struct packet_t
     uint16_t    size: 7;
     uint16_t    sync;
 
-    uint8_t     unknown00;
-    uint8_t     unknown01;
+    uint8_t     unknown05; // PS2: (New; did not exist.)
+    uint8_t     unknown06; // PS2: (New; did not exist.)
 };
 ```
 
@@ -40,13 +40,13 @@ _These fields are part of the packet header._
 
 _You can find more information about the header fields here: [**Header**](/world/HEADER.md)_
 
-### `unknown00`
+### `unknown05`
 
 _Unknown._
 
 This value is always set to `2`.
 
-### `unknown01`
+### `unknown06`
 
 _Unknown._
 

@@ -23,7 +23,7 @@ struct packet_t
     uint16_t    size: 7;
     uint16_t    sync;
 
-    uint32_t    Kind;
+    uint32_t    Kind; // PS2: (New; did not exist.)
 };
 ```
 

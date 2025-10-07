@@ -23,8 +23,8 @@ struct packet_t
     uint16_t    size: 7;
     uint16_t    sync;
 
-    uint8_t     Kind;
-    uint8_t     padding00;
+    uint8_t     Kind;       // PS2: (New; did not exist.)
+    uint8_t     padding05;  // PS2: (New; did not exist.)
 };
 ```
 
@@ -52,7 +52,7 @@ This value is used to determine what kind of information the client is expecting
 | `0x01` | _The client is requesting sidebar information_ |
 | `0x02` | _The client is requesting map overlay information._ |
 
-### `padding00`
+### `padding05`
 
 _Padding; unused._
 

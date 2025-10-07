@@ -23,9 +23,9 @@ struct packet_t
     uint16_t    size: 7;
     uint16_t    sync;
 
-    uint16_t    ItemNo;
-    uint8_t     PropertyItemIndex;
-    uint8_t     ItemNum;
+    uint16_t    ItemNo;             // PS2: (Unamed.)
+    uint8_t     PropertyItemIndex;  // PS2: (Unamed.)
+    uint8_t     ItemNum;            // PS2: (Unamed.)
 };
 ```
 

@@ -19,12 +19,12 @@ The layout of this packet is the following:
 // PS2: (New; did not exist.)
 struct lockstyleitem_t
 {
-    uint8_t     ItemIndex;
-    uint8_t     EquipKind;
-    uint8_t     Category;
-    uint8_t     padding00;
-    uint16_t    ItemNo;
-    uint16_t    padding01;
+    uint8_t     ItemIndex;  // PS2: (New; did not exist.)
+    uint8_t     EquipKind;  // PS2: (New; did not exist.)
+    uint8_t     Category;   // PS2: (New; did not exist.)
+    uint8_t     padding03;  // PS2: (New; did not exist.)
+    uint16_t    ItemNo;     // PS2: (New; did not exist.)
+    uint16_t    padding06;  // PS2: (New; did not exist.)
 };
 
 // PS2: (New; did not exist.)
@@ -34,11 +34,11 @@ struct packet_t
     uint16_t        size: 7;
     uint16_t        sync;
 
-    uint8_t         Count;
-    uint8_t         Mode;
-    uint8_t         Flags;
-    uint8_t         padding00;
-    lockstyleitem_t Items[16];
+    uint8_t         Count;      // PS2: (New; did not exist.)
+    uint8_t         Mode;       // PS2: (New; did not exist.)
+    uint8_t         Flags;      // PS2: (New; did not exist.)
+    uint8_t         padding07;  // PS2: (New; did not exist.)
+    lockstyleitem_t Items[16];  // PS2: (New; did not exist.)
 };
 ```
 
@@ -96,7 +96,7 @@ _The packet flags._
 
 This value is used to hold the additional flags about the packet. The client only makes use of the lowest bit of this value to set the `/lockstyleset` sub-command, `echo`. When this argument is used, this bit will be set.
 
-### `padding00`
+### `padding07`
 
 _Padding; unused._
 

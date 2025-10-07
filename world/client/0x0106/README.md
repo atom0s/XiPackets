@@ -24,7 +24,7 @@ struct GP_CLI_BAZAAR_BUY
     uint16_t    sync;
 
     uint8_t     BazaarItemIndex;// PS2: BazaarItemIndex
-    uint8_t     padding00[3];   // PS2: Dammy
+    uint8_t     padding05[3];   // PS2: Dammy
     uint32_t    BuyNum;         // PS2: BuyNum
 };
 ```
@@ -45,7 +45,7 @@ _You can find more information about the header fields here: [**Header**](/world
 
 _The index within the bazaar where the item being requested for purchase is located._
 
-### `padding00`
+### `padding05`
 
 _Padding; unused._
 

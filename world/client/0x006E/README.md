@@ -26,7 +26,7 @@ struct GP_CLI_GROUP_SOLICIT_REQ
     uint32_t    UniqueNo;   // PS2: UniqueNo
     uint16_t    ActIndex;   // PS2: ActIndex
     uint8_t     Kind;       // PS2: Kind
-    uint8_t     padding00;  // PS2: dammy2
+    uint8_t     padding0B;  // PS2: dammy2
 };
 ```
 
@@ -60,6 +60,6 @@ _The kind of party invite._
 | `0` | _Party Invite_ |
 | `5` | _Alliance Invite_ |
 
-### `padding00`
+### `padding0B`
 
 _Padding; unused._

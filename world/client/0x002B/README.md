@@ -23,10 +23,10 @@ struct packet_t
     uint16_t    size: 7;
     uint16_t    sync;
 
-    uint8_t     FromIndex;
-    uint8_t     ToIndex;
-    uint16_t    padding00;
-    uint8_t     Name[64];
+    uint8_t     FromIndex;  // PS2: (New; did not exist.)
+    uint8_t     ToIndex;    // PS2: (New; did not exist.)
+    uint16_t    padding06;  // PS2: (New; did not exist.)
+    uint8_t     Name[64];   // PS2: (New; did not exist.)
 };
 ```
 
@@ -60,7 +60,7 @@ _The language index being translated to._
   - `2` - _German (Deprecated)_
   - `3` - _French (Deprecated)_
 
-### `padding00`
+### `padding06`
 
 _Padding; unused._
 

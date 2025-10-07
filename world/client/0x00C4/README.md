@@ -30,7 +30,7 @@ struct GP_CLI_GROUP_COMLINK_ACTIVE
     uint8_t     ItemIndex;          // PS2: ItemIndex
     uint8_t     Category;           // PS2: (New; did not exist.)
     uint8_t     ActiveFlg;          // PS2: ActiveFlg
-    uint8_t     padding00[3];       // PS2: (New; did not exist.)
+    uint8_t     padding09[3];       // PS2: (New; did not exist.)
     uint8_t     sComLinkName[15];   // PS2: sComLinkName
     uint8_t     LinkshellId;        // PS2: (New; did not exist.)
 };
@@ -87,7 +87,7 @@ _Flag state thats if the linkshell is being equipped or unequipped or if a new l
   - `0` - _Unequip_
   - `1` - _Equip (or Create)_
 
-### `padding00`
+### `padding09`
 
 _Padding; unused._
 

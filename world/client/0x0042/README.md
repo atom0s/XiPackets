@@ -24,7 +24,7 @@ struct GP_CLI_TROPHY_ABSENCE
     uint16_t    sync;
 
     uint8_t     TrophyItemIndex;    // PS2: TrophyItemIndex
-    uint8_t     padding00;          // PS2: (New; did not exist.)
+    uint8_t     padding05;          // PS2: (New; did not exist.)
 };
 ```
 
@@ -44,6 +44,6 @@ _You can find more information about the header fields here: [**Header**](/world
 
 _The treasure pool window index of the item being passed on._
 
-### `padding00`
+### `padding05`
 
 _Padding; unused._

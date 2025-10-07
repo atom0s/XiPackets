@@ -32,7 +32,7 @@ struct GP_BLACK_EDIT
 
     SAVE_BLACK  Data;           // PS2: Data
     int8_t      Mode;           // PS2: Mode
-    uint8_t     padding00[3];   // PS2: (New; did not exist.)
+    uint8_t     padding19[3];   // PS2: (New; did not exist.)
 };
 ```
 
@@ -63,7 +63,7 @@ This value is used to determine what action is being performed with the blacklis
 | `0` | _Adding a player to the blacklist._ |
 | `1` | _Removing a player from the blacklist._ |
 
-### `padding00`
+### `padding19`
 
 _Padding; unused._
 

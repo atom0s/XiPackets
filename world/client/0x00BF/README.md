@@ -23,8 +23,8 @@ struct packet_t
     uint16_t    size: 7;
     uint16_t    sync;
 
-    uint16_t    Index;
-    uint16_t    padding00;
+    uint16_t    Index;      // PS2: (New; did not exist.)
+    uint16_t    padding06;  // PS2: (New; did not exist.)
 };
 ```
 
@@ -44,6 +44,6 @@ _You can find more information about the header fields here: [**Header**](/world
 
 _The index of the job point being purchased._
 
-### `padding00`
+### `padding06`
 
 _Padding; unused._

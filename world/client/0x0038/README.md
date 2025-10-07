@@ -31,7 +31,7 @@ struct GP_CLI_ITEM_MAKE
 
     uint32_t    ItemNum;    // PS2: ItemNum
     uint16_t    ItemNo;     // PS2: ItemNo
-    uint16_t    padding00;  // PS2: padding00
+    uint16_t    padding0A;  // PS2: dammy
 };
 ```
 
@@ -55,6 +55,6 @@ _The count of items._
 
 _The item id._
 
-### `padding00`
+### `padding0A`
 
 _Padding; unused._

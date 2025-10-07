@@ -24,7 +24,7 @@ struct GP_CLI_CHAT_STD
     uint16_t    sync;
 
     uint8_t     Kind;       // Kind
-    uint8_t     unknown00;  // Dammy
+    uint8_t     unknown05;  // Dammy
     uint8_t     Str[];      // Str
 };
 ```
@@ -63,7 +63,7 @@ This value determines the kind of chat message that is being sent by the client.
 
 _**Note:** When the client is participating in PvP, the linkshell chat modes will be overridden and make use of the `0x18` mode instead. All members of the same team will be placed into a team-based chat that uses the Linkshell mode to communicate._
 
-### `unknown00`
+### `unknown05`
 
 _Unknown._
 

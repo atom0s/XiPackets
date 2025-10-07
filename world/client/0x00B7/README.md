@@ -23,10 +23,10 @@ struct packet_t
     uint16_t    size: 7;
     uint16_t    sync;
 
-    uint8_t     Kind;
-    uint8_t     unknown00;
-    uint8_t     sName[15];
-    uint8_t     Mes[];
+    uint8_t     Kind;       // PS2: (New; did not exist.)
+    uint8_t     unknown05;  // PS2: (New; did not exist.)
+    uint8_t     sName[15];  // PS2: (New; did not exist.)
+    uint8_t     Mes[];      // PS2: (New; did not exist.)
 };
 ```
 
@@ -53,7 +53,7 @@ _The packet kind._
 | `0x26` | _Add To Mute List_ |
 | `0x27` | _Remove From Mute List_ |
 
-### `unknown00`
+### `unknown05`
 
 _Unknown._
 

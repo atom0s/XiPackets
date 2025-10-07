@@ -27,7 +27,7 @@ struct packet_t
     uint16_t    size: 7;
     uint16_t    sync;
 
-    uint8_t     Data[160];
+    uint8_t     Data[160]; // PS2: (New; did not exist.)
 };
 ```
 

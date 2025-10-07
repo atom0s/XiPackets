@@ -19,11 +19,11 @@ The layout of this packet is the following:
 // PS2: (New; did not exist.)
 struct equipsetrequestitem_t
 {
-    uint8_t         HasItemFlg      : 1;
-    uint8_t         RemoveItemFlg   : 1;
-    uint8_t         Category        : 6;
-    uint8_t         ItemIndex;
-    uint16_t        ItemNo;
+    uint8_t         HasItemFlg      : 1;    // PS2: (New; did not exist.)
+    uint8_t         RemoveItemFlg   : 1;    // PS2: (New; did not exist.)
+    uint8_t         Category        : 6;    // PS2: (New; did not exist.)
+    uint8_t         ItemIndex;              // PS2: (New; did not exist.)
+    uint16_t        ItemNo;                 // PS2: (New; did not exist.)
 };
 
 // PS2: (New; did not exist.)
@@ -33,10 +33,10 @@ struct packet_t
     uint16_t                size: 7;
     uint16_t                sync;
 
-    uint8_t                 EquipKind;
-    uint8_t                 padding00[3];
-    equipsetrequestitem_t   ItemChange;
-    equipsetrequestitem_t   Equipment[16];
+    uint8_t                 EquipKind;      // PS2: (New; did not exist.)
+    uint8_t                 padding05[3];   // PS2: (New; did not exist.)
+    equipsetrequestitem_t   ItemChange;     // PS2: (New; did not exist.)
+    equipsetrequestitem_t   Equipment[16];  // PS2: (New; did not exist.)
 };
 ```
 
@@ -56,7 +56,7 @@ _You can find more information about the header fields here: [**Header**](/world
 
 _The equipment slot being changed._
 
-### `padding00`
+### `padding05`
 
 _Padding; unused._
 

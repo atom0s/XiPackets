@@ -30,7 +30,7 @@ struct GP_CLI_EQUIP_INSPECT
     uint32_t    UniqueNo;       // PS2: UniqueNo
     uint32_t    ActIndex;       // PS2: ActIndex
     uint8_t     Kind;           // PS2: (New; did not exist.)
-    uint8_t     padding00[3];   // PS2: (New; did not exist.)
+    uint8_t     padding0D[3];   // PS2: (New; did not exist.)
 };
 ```
 
@@ -64,6 +64,6 @@ _The kind of inspection being performed._
 | `0x01` | _Used with: `/checkname`_ |
 | `0x02` | _Used with: `/checkparam`_ |
 
-### `padding00`
+### `padding0D`
 
 _Padding; unused._

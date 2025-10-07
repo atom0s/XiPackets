@@ -26,7 +26,7 @@ struct GP_CLI_CHARREQ
     uint16_t    sync;
 
     uint16_t    ActIndex;   // PS2: ActIndex
-    uint16_t    padding00;  // PS2: Dammy
+    uint16_t    padding06;  // PS2: Dammy
 };
 ```
 
@@ -46,6 +46,6 @@ _You can find more information about the header fields here: [**Header**](/world
 
 _The target index of the entity being requested._
 
-### `padding00`
+### `padding06`
 
 _Padding; unused._

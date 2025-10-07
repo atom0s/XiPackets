@@ -23,7 +23,7 @@ struct GP_CLI_DICE
     uint16_t    size: 7;
     uint16_t    sync;
 
-    uint32_t    unknown00; // PS2: Dammy
+    uint32_t    unknown04; // PS2: Dammy
 };
 ```
 
@@ -39,7 +39,7 @@ _These fields are part of the packet header._
 
 _You can find more information about the header fields here: [**Header**](/world/HEADER.md)_
 
-### `unknown00`
+### `unknown04`
 
 _Unknown._
 

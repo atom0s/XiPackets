@@ -23,13 +23,13 @@ struct packet_t
     uint16_t    size: 7;
     uint16_t    sync;
 
-    uint8_t     unknown00;
-    uint8_t     unknown01;
-    uint8_t     Kind;
-    uint8_t     padding00;
-    uint32_t    ConfigSys[3];
-    uint32_t    padding01[4];
-    uint32_t    Param;
+    uint8_t     unknown04;      // PS2: (New; did not exist.)
+    uint8_t     unknown05;      // PS2: (New; did not exist.)
+    uint8_t     Kind;           // PS2: (New; did not exist.)
+    uint8_t     padding07;      // PS2: (New; did not exist.)
+    uint32_t    ConfigSys[3];   // PS2: (New; did not exist.)
+    uint32_t    padding14[4];   // PS2: (New; did not exist.)
+    uint32_t    Param;          // PS2: (New; did not exist.)
 };
 ```
 
@@ -45,13 +45,13 @@ _These fields are part of the packet header._
 
 _You can find more information about the header fields here: [**Header**](/world/HEADER.md)_
 
-### `unknown00`
+### `unknown04`
 
 _Unknown._
 
 The client always sets this value to `0`.
 
-### `unknown01`
+### `unknown05`
 
 _Unknown._
 
@@ -70,7 +70,7 @@ This value is used to determine the value that is set in the packets `Param` val
 | `2` | _Unknown. (The client has functions to generate this packet `Kind`, but nothing calls the function.)_ |
 | `3` | _Unknown. (The client has functions to generate this packet `Kind`, but nothing calls the function.)_ |
 
-### `padding00`
+### `padding07`
 
 _Padding; unused._
 
@@ -86,7 +86,7 @@ pkt->ConfigSys[1] = PTR_pGlobalNowZone->ConfSys.Configs[1];
 pkt->ConfigSys[2] = PTR_pGlobalNowZone->ConfSys.Configs[2];
 ```
 
-### `padding01`
+### `padding14`
 
 _Padding; unused._
 

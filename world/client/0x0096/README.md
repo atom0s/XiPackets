@@ -24,7 +24,7 @@ struct _GP_COMBINE_ASK
     uint16_t    sync;
 
     uint8_t     HashNo;     // PS2: HashNo
-    uint8_t     padding00;  // PS2: (New; did not exist.)
+    uint8_t     padding05;  // PS2: (New; did not exist.)
     uint16_t    Crystal;    // PS2: Crystal
     uint8_t     CrystalIdx; // PS2: CrystalIdx
     uint8_t     Items;      // PS2: Items
@@ -49,7 +49,7 @@ _You can find more information about the header fields here: [**Header**](/world
 
 _The calculated hash of the packet information to prevent and detect tampering._
 
-### `padding00`
+### `padding05`
 
 _Padding; unused._
 

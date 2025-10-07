@@ -26,7 +26,7 @@ struct GP_CLI_GROUP_TALK
     uint16_t    size: 7;
     uint16_t    sync;
 
-    uint16_t    padding00;  // PS2: dammy
+    uint16_t    padding04;  // PS2: dammy
     uint8_t     Kind;       // PS2: Kind
     uint8_t     Attr;       // PS2: Attr
     uint8_t     Str[];      // PS2: Str
@@ -45,7 +45,7 @@ _These fields are part of the packet header._
 
 _You can find more information about the header fields here: [**Header**](/world/HEADER.md)_
 
-### `padding00`
+### `padding04`
 
 _Padding; unused._
 

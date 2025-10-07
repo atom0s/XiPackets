@@ -24,7 +24,7 @@ struct GP_CLI_INSPECT_MESSAGE
     uint16_t    sync;
 
     uint8_t     sInspectMessage[123];   // PS2: sInspectMessage
-    uint8_t     padding00;              // PS2: (New; did not exist.)
+    uint8_t     padding7F;              // PS2: (New; did not exist.)
 };
 ```
 
@@ -46,6 +46,6 @@ _The bazaar message._
 
 This value holds the full bazaar message. While the client does show the bazaar message as three separate lines visually, the actual buffer that holds the lines is a single array. Each line takes up 40 characters within the array, with a remaining 3 characters at the end being unused. The manner in which this buffer works is also different than other normal strings. By default the client treats every unused character in this buffer as a space _(`0x20`)_ character.
 
-### `padding00`
+### `padding7F`
 
 _Padding; unused._

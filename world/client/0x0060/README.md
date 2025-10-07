@@ -25,7 +25,7 @@ struct GP_CLI_PASSWARDS
 
     uint32_t    UniqueNo;   // PS2: UniqueNo
     uint16_t    ActIndex;   // PS2: ActIndex
-    uint16_t    padding00;  // PS2: dammy
+    uint16_t    padding0A;  // PS2: dammy
     uint8_t     String[16]; // PS2: String
 };
 ```
@@ -54,7 +54,7 @@ _The event target index._
 
 This value is set to the clients local `PTR_CliEventIndex` value. This will generally be set to the local clients target index, however it can also be updated by the server with the various event related packets.
 
-### `padding00`
+### `padding0A`
 
 _Padding; unused._
 

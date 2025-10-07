@@ -25,9 +25,9 @@ struct packet_t
     uint16_t    size: 7;
     uint16_t    sync;
 
-    uint16_t    unknown00;
-    uint16_t    padding00;
-    uint32_t    unknown01;
+    uint16_t    unknown04; // PS2: (New; did not exist.)
+    uint16_t    padding06; // PS2: (New; did not exist.)
+    uint32_t    unknown08; // PS2: (New; did not exist.)
 };
 ```
 
@@ -43,17 +43,17 @@ _These fields are part of the packet header._
 
 _You can find more information about the header fields here: [**Header**](/world/HEADER.md)_
 
-### `unknown00`
+### `unknown04`
 
 _Unknown._
 
 This value is always set to the local players target index.
 
-### `padding00`
+### `padding06`
 
 _Padding; unused._
 
-### `unknown01`
+### `unknown08`
 
 _Unknown._
 

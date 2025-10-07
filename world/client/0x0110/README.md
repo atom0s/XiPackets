@@ -25,12 +25,12 @@ struct packet_t
     uint16_t    size: 7;
     uint16_t    sync;
 
-    uint32_t    UniqueNo;
-    int32_t     para;
-    uint16_t    ActIndex;
-    int8_t      mode;
-    uint8_t     padding00;
-    int32_t     para2;
+    uint32_t    UniqueNo;   // PS2: (New; did not exist.)
+    int32_t     para;       // PS2: (New; did not exist.)
+    uint16_t    ActIndex;   // PS2: (New; did not exist.)
+    int8_t      mode;       // PS2: (New; did not exist.)
+    uint8_t     padding0F;  // PS2: (New; did not exist.)
+    int32_t     para2;      // PS2: (New; did not exist.)
 };
 ```
 
@@ -75,7 +75,7 @@ This value is used to determine the current state the client is in while playing
 | `4` | _Request: Release_ |
 | `5` | _Request: Potential Timeout_ |
 
-### `padding00`
+### `padding0F`
 
 _Padding; unused._
 

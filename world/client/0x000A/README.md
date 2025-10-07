@@ -24,9 +24,9 @@ struct GP_CLI_LOGIN
     uint16_t    sync;
 
     uint8_t     LoginPacketCheck;   // PS2: LoginPacketCheck
-    uint8_t     padding00;          // PS2: dam__
-    uint16_t    unknown00;          // PS2: MyPort
-    uint32_t    unknown01;          // PS2: MyIP
+    uint8_t     padding05;          // PS2: dam__
+    uint16_t    unknown06;          // PS2: MyPort
+    uint32_t    unknown08;          // PS2: MyIP
     uint32_t    UniqueNo;           // PS2: UniqueNo
     uint16_t    GrapIDTbl[9];       // PS2: GrapIDTbl
     char        sName[15];          // PS2: sName
@@ -55,13 +55,13 @@ _You can find more information about the header fields here: [**Header**](/world
 
 _The packet data checksum._
 
-This value is a basic byte-sum value used as a checksum for the packet data to check for tampering. The client add the values of each byte in the packet _(starting at the `unknown01` field)_ and store the total in this value.
+This value is a basic byte-sum value used as a checksum for the packet data to check for tampering. The client add the values of each byte in the packet _(starting at the `unknown08` field)_ and store the total in this value.
 
-### `padding00`
+### `padding05`
 
 _Padding; unused._
 
-### `unknown00`
+### `unknown06`
 
 _Unknown._
 
@@ -73,7 +73,7 @@ This value is used as a state related value within the client. It will range bet
   - When the client receives packets from the server, this value will be set to `3`.
   - When the client receives the servers `0x000A` packet response, this value will be set to `4`.
 
-### `unknown01`
+### `unknown08`
 
 _Unknown._
 
@@ -239,4 +239,4 @@ This is the first packet that the client will send to the world server that it w
 
 The first method is used when the client has a debug name set, which is set by default to a single space character. This is the typical method the client will use when sending this packet. The second method is when the debug name is not set. Both of the methods used to send this packet are fairly similar with limited differences, the overall effect is the same though in regards to just requesting to log into the server.
 
-The main difference is how the client will make use of the value used to set the `pkt->unknown00` value. The main handler that is normally used sets this value to `1` when the call has completed, while the other will set it to `2` instead.
+The main difference is how the client will make use of the value used to set the `pkt->unknown06` value. The main handler that is normally used sets this value to `1` when the call has completed, while the other will set it to `2` instead.

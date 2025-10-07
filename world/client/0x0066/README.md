@@ -31,7 +31,7 @@ struct GP_CLI_FISHING
     int32_t     para;       // PS2: para
     uint16_t    ActIndex;   // PS2: ActIndex
     int8_t      mode;       // PS2: mode
-    uint8_t     unknown00;  // PS2: dammy
+    uint8_t     unknown0F;  // PS2: dammy
     int32_t     para2;      // PS2: (New; did not exist.)
 };
 ```
@@ -77,7 +77,7 @@ This value is used to determine the current state the client is in while playing
 | `4` | _Request: Release_ |
 | `5` | _Request: Potential Timeout_ |
 
-### `unknown00`
+### `unknown0F`
 
 _Unknown._
 

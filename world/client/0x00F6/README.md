@@ -23,7 +23,7 @@ struct GP_CLI_TRACKING_END
     uint16_t    size: 7;
     uint16_t    sync;
 
-    uint32_t    padding00; // PS2: Dammy
+    uint32_t    padding04; // PS2: Dammy
 };
 ```
 

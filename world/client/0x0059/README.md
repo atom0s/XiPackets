@@ -24,7 +24,7 @@ struct GP_CLI_EFFECTEND
     uint16_t    sync;
 
     uint32_t    effectpara;     // PS2: effectpara
-    uint8_t     padding00[8];   // PS2: (New; did not exist.)
+    uint8_t     padding08[8];   // PS2: (New; did not exist.)
 };
 ```
 
@@ -48,6 +48,6 @@ The client uses this value to inform the server of its local attempt to play out
 
 If the client fails to be properly set to the correct animation status while crafting, it will also cause this to be set to `1`. _(The client expects itself to be set to status `44` (`CAMP`).)_
 
-### `padding00`
+### `padding08`
 
 _Padding; unused._

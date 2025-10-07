@@ -40,6 +40,7 @@ struct GP_CLI_ITEM_TRADE_RES
 
     GP_ITEM_TRADE_RES_KIND  Kind;           // PS2: Kind
     uint16_t                TradeCounter;   // PS2: TradeCounter
+    uint8_t                 padding0A[2];   // PS2: (New; did not exist.)
 };
 ```
 
@@ -64,3 +65,7 @@ The client only makes use of values 0, 1, 2 and 3.
 ### `TradeCounter`
 
 _The clients trade counter._
+
+### `padding0A`
+
+_Padding; unused._

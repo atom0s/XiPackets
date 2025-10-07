@@ -27,7 +27,7 @@ struct GP_CLI_SHOP_BUY
     uint16_t    ShopNo;             // PS2: ShopNo
     uint16_t    ShopItemIndex;      // PS2: ShopItemIndex
     uint8_t     PropertyItemIndex;  // PS2: PropertyItemIndex
-    uint8_t     padding00[3];       // PS2: dammy
+    uint8_t     padding0D[3];       // PS2: dammy
 };
 ```
 
@@ -63,6 +63,6 @@ _The index within the clients inventory to store the item._
 
 This value is always set to `0`. The server is responsible for determining where to place the item.
 
-### `padding00`
+### `padding0D`
 
 _Padding; unused._

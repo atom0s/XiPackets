@@ -16,14 +16,14 @@ This packet is sent by the client when leaving a party or alliance.
 The layout of this packet is the following:
 
 ```cpp
-// PS2: GP_CLI_COMMAND_GROUP_LEAVE
-struct GP_CLI_COMMAND_GROUP_LEAVE
+// PS2: GP_CLI_GROUP_LEAVE
+struct GP_CLI_GROUP_LEAVE
 {
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
 
-    uint8_t     Kind;       // PS2: Kind
+    uint8_t     Kind; // PS2: Kind
 };
 ```
 
@@ -31,7 +31,7 @@ struct GP_CLI_COMMAND_GROUP_LEAVE
 
 The following information describes the structures outlined above.
 
-## Structure Fields (`GP_CLI_COMMAND_GROUP_LEAVE`)
+## Structure Fields (`GP_CLI_GROUP_LEAVE`)
 
 ### `id`, `size`, `sync`
 

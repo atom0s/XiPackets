@@ -24,17 +24,17 @@ struct GP_CLI_LINKSHELL_MESSAGE
     uint16_t    sync;
 
     uint8_t     unknown00       : 4;    // PS2: stat
-    uint8_t     unknown01       : 1;    // PS2: attr (Was originally a single 4 bit value.)
-    uint8_t     unknown02       : 1;    // PS2: attr (Was originally a single 4 bit value.)
-    uint8_t     unknown03       : 1;    // PS2: attr (Was originally a single 4 bit value.)
     uint8_t     unknown04       : 1;    // PS2: attr (Was originally a single 4 bit value.)
+    uint8_t     unknown05       : 1;    // PS2: attr (Was originally a single 4 bit value.)
+    uint8_t     unknown06       : 1;    // PS2: attr (Was originally a single 4 bit value.)
+    uint8_t     unknown07       : 1;    // PS2: attr (Was originally a single 4 bit value.)
     uint8_t     readLevel       : 2;    // PS2: readLevel
     uint8_t     writeLevel      : 2;    // PS2: writeLevel
     uint8_t     pubEditLevel    : 2;    // PS2: pubEditLevel
     uint8_t     LinkshellId     : 2;    // PS2: dummyBits
     uint8_t     Category;               // PS2: (New; did not exist.)
     uint8_t     ItemIndex;              // PS2: (New; did not exist.)
-    uint8_t     padding00[2];           // PS2: (New; did not exist.)
+    uint8_t     padding08[2];           // PS2: (New; did not exist.)
     uint16_t    seqId;                  // PS2: seqId
     uint32_t    uniqNo;                 // PS2: uniqNo
     uint8_t     sMessage[128];          // PS2: sMessage
@@ -59,25 +59,25 @@ _Unknown._
 
 This packet does not use this value.
 
-### `unknown01`
+### `unknown04`
 
 _Unknown._
 
 This flag is set when requesting the linkshell message access level.
 
-### `unknown02`
+### `unknown05`
 
 _Unknown._
 
 This flag is set when requesting the linkshell message access level.
 
-### `unknown03`
+### `unknown06`
 
 _Unknown._
 
 This packet does not use this value.
 
-### `unknown04`
+### `unknown07`
 
 _Unknown._
 
@@ -115,7 +115,7 @@ _The container holding the linkshell item._
 
 _The index inside of the container the linkshell item is located._
 
-### `padding00`
+### `padding08`
 
 _Padding; unused._
 

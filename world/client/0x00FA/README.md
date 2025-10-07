@@ -31,7 +31,7 @@ struct GP_CLI_MYROOM_LAYOUT
     uint8_t     y;              // PS2: y
     uint8_t     z;              // PS2: z
     uint8_t     v;              // PS2: v
-    uint8_t     padding00[3];   // PS2: (New; did not exist.)
+    uint8_t     padding0D[3];   // PS2: (New; did not exist.)
 };
 ```
 

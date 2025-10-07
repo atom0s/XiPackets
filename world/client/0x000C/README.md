@@ -25,7 +25,7 @@ struct GP_CLI_GAMEOK
 
     uint32_t    ClientState;            // PS2: ClientState
     uint32_t    DebugClientFlg  : 1;    // PS2: DebugClientFlg
-    uint32_t    unused          : 31;   // PS2: unused
+    uint32_t    unused          : 31;   // PS2: Dammy
 };
 ```
 

@@ -23,8 +23,8 @@ struct packet_t
     uint16_t    size: 7;
     uint16_t    sync;
 
-    uint8_t     Mode;
-    uint8_t     padding00[3];
+    uint8_t     Mode;           // PS2: (New; did not exist.)
+    uint8_t     padding05[3];   // PS2: (New; did not exist.)
 };
 ```
 
@@ -49,6 +49,6 @@ _The chat mode._
 | `0x00` | _Inactive_ |
 | `0x01` | _Active_ |
 
-### `padding00`
+### `padding05`
 
 _Padding; unused._

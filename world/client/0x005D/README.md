@@ -28,7 +28,7 @@ struct GP_CLI_MOTION
     uint8_t     Number;     // PS2: Number
     uint8_t     Mode;       // PS2: Mode
     uint16_t    Param;      // PS2: (New; did not exist.)
-    uint16_t    padding00;  // PS2: (New; did not exist.)
+    uint16_t    padding0E;  // PS2: (New; did not exist.)
 };
 ```
 
@@ -84,6 +84,6 @@ This value is used for certain emotes as an extra parameter value.
 | `/jobemote`   | _Set to the job id + 30. [ie. `/jobemote war` will be `31`.]_ |
 | `/aim`        | _Set to: `53`_ |
 
-### `padding00`
+### `padding0E`
 
 _Padding; unused._

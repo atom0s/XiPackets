@@ -23,7 +23,7 @@ struct GP_CLI_ITEM_USE
     uint32_t    ItemNum;            // PS2: ItemNum
     uint16_t    ActIndex;           // PS2: ActIndex
     uint8_t     PropertyItemIndex;  // PS2: PropertyItemIndex
-    uint8_t     padding00;          // PS2: dammy2
+    uint8_t     padding0F;          // PS2: dammy2
     uint32_t    Category;           // PS2: (New; did not exist.)
 };
 ```
@@ -58,7 +58,7 @@ _The target index of the entity the item is being used on._
 
 _The index within the container the item is located._
 
-### `padding00`
+### `padding0F`
 
 _Padding; unused._
 

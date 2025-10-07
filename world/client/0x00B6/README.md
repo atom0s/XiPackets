@@ -23,10 +23,10 @@ struct GP_CLI_CHAT_NAME
     uint16_t    size: 7;
     uint16_t    sync;
 
-    uint8_t     unknown00;
-    uint8_t     unknown01;
-    uint8_t     sName[15];
-    uint8_t     Mes[];
+    uint8_t     unknown04;  // PS2: Dammy
+    uint8_t     unknown05;  // PS2: (New; did not exist.)
+    uint8_t     sName[15];  // PS2: sName
+    uint8_t     Mes[];      // PS2: Mes
 };
 ```
 
@@ -42,13 +42,13 @@ _These fields are part of the packet header._
 
 _You can find more information about the header fields here: [**Header**](/world/HEADER.md)_
 
-### `unknown00`
+### `unknown04`
 
 _Unknown._
 
 This value is used as a flag, however the client always sets it to `3`.
 
-### `unknown01`
+### `unknown05`
 
 _Unknown._
 
