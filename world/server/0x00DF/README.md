@@ -23,6 +23,7 @@ struct GP_SERV_GROUP_ATTR
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
+
     uint32_t    UniqueNo;           // PS2: UniqueNo
     uint32_t    Hp;                 // PS2: Hp
     uint32_t    Mp;                 // PS2: Mp

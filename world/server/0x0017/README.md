@@ -23,6 +23,7 @@ struct GP_SERV_CHAT_STD
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
+
     uint8_t     Kind;       // PS2: Kind
     uint8_t     Attr;       // PS2: Attr
     uint16_t    Data;       // PS2: (New; did not exist.)

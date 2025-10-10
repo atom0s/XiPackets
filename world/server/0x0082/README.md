@@ -23,9 +23,10 @@ struct _GP_GUILD_TRADE
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
-    uint16_t    ItemNo;
-    uint8_t     Count;
-    int8_t      Trade;
+
+    uint16_t    ItemNo; // PS2: ItemNo
+    uint8_t     Count;  // PS2: Count
+    int8_t      Trade;  // PS2: Trade
 };
 ```
 

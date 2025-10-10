@@ -141,10 +141,11 @@ struct GP_SERV_CONFIG
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
+
     SAVE_CONF   ConfData;       // PS2: ConfData
     uint8_t     unknown00;      // PS2: GmLevel
     languages_t PartyLanguages; // PS2: (New; did not exist.)
-    uint8_t     unknown01[3];   // PS2: (New; did not exist.)
+    uint8_t     padding16[2];   // PS2: (New; did not exist.)
 };
 ```
 
@@ -164,11 +165,9 @@ _You can find more information about the header fields here: [**Header**](/world
 
 _The clients configuration data._
 
-### `unknown00`
+### `padding16`
 
-_Unknown._
-
-This array of unknown data is not used by the client at all. However, it does not align to normal padding so it is assumed it may hold actual data sent by the server under certain conditions. According to the PS2 beta information, one of the bytes in this array may hold the GM level but this is not testable.
+_Padding; unused._
 
 ## Structure Fields (`SAVE_CONF`)
 

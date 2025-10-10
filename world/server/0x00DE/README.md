@@ -23,8 +23,9 @@ struct GP_SERV_GROUP_SOLICIT_NO
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
+
     uint8_t     Reason;         // PS2: Reason
-    uint8_t     padding00[3];   // PS2: (New; did not exist.)
+    uint8_t     padding05[3];   // PS2: (New; did not exist.)
 };
 ```
 
@@ -53,7 +54,7 @@ _The party mode update reason._
 
 If the `Reason` is any other value, the `pGlobalNowZone->GroupSys.Mode` value is set to `GC_GROUP_MODE_SOLICIT_NO_NORMAL`.
 
-### `padding00`
+### `padding05`
 
 _Padding; unused._
 

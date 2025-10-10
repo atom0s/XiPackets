@@ -23,9 +23,10 @@ struct packet_t
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
-    uint8_t     Data[128];
-    uint16_t    Offset;
-    uint16_t    padding00;
+
+    uint8_t     Data[128];  // PS2: (New; did not exist.)
+    uint16_t    Offset;     // PS2: (New; did not exist.)
+    uint16_t    padding086; // PS2: (New; did not exist.)
 };
 ```
 
@@ -51,7 +52,7 @@ _The starting offset that the `Data` is used for._
 
 This value is used as an offset _(or index)_ into the Records of Eminence quest table where the `Data` information will be copied into. The client expects this to be a value of either 0, 1, 2 or 3. When used, the client will recalculate its value as follows: `offset = pkt->Offset << 7;`
 
-### `padding00`
+### `padding086`
 
 _Padding; unused._
 

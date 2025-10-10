@@ -20,8 +20,8 @@ The layout of this packet is the following:
 // PS2: (New; did not exist.)
 struct record_t
 {
-    uint32_t    Id    : 12;
-    uint32_t    Count : 20;
+    uint32_t    Id    : 12; // PS2: (New; did not exist.)
+    uint32_t    Count : 20; // PS2: (New; did not exist.)
 };
 
 // PS2: (New; did not exist.)
@@ -30,7 +30,8 @@ struct packet_t
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
-    uint32_t    records[64];
+
+    uint32_t    records[64]; // PS2: (New; did not exist.)
 };
 ```
 

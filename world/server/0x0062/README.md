@@ -23,6 +23,7 @@ struct GP_SERV_CLISTATUS2
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
+
     uint32_t    CommandRecast[31];  // PS2: CommandRecast
     uint16_t    skill_base[64];     // PS2: skill_base
 };

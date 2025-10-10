@@ -23,17 +23,18 @@ struct GP_COMBINE_ANS
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
+
     uint8_t     Result;         // PS2: Result
     int8_t      Grade;          // PS2: Grade
     uint8_t     Count;          // PS2: Count
-    uint8_t     padding00;      // PS2: (New; did not exist.)
+    uint8_t     padding07;      // PS2: (New; did not exist.)
     uint16_t    ItemNo;         // PS2: ItemNo
     uint16_t    BreakNo[8];     // PS2: BreakNo
     int8_t      UpKind[4];      // PS2: UpKind
     int8_t      UpLevel[4];     // PS2: UpLevel
     uint16_t    CrystalNo;      // PS2: (New; did not exist.)
     uint16_t    MaterialNo[8];  // PS2: (New; did not exist.)
-    uint32_t    padding01;      // PS2: (New; did not exist.)
+    uint32_t    padding34;      // PS2: (New; did not exist.)
 };
 ```
 
@@ -98,7 +99,7 @@ _The count of items created by the synthesis._
 
 This value will generally be `1` for any failed or successful synthesis unless the result actually yields more than 1 item. _(ie. crafting stacks of items.)_
 
-### `padding00`
+### `padding07`
 
 _Padding; unused._
 
@@ -140,6 +141,6 @@ This array holds the materials used for the synthesis.
 
 Crafting recipes can accept a maximum of 8 items total. This includes any attempted stacks of items, it treats each item in a stack as an individual part of the recipe. When the client submits a synthesis request, it will reduce all items in the recipe window down to a single item per slot. Even if the client puts two of the same item into one slot, the client will separate the stack and put each item into its own slot.
 
-### `padding01`
+### `padding34`
 
 _Padding; unused._

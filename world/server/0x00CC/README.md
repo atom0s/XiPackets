@@ -23,6 +23,7 @@ struct GP_SERV_LINKSHELL_MESSAGE
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
+
     uint8_t     stat            : 4;    // PS2: stat
     uint8_t     attr            : 4;    // PS2: attr
     uint8_t     readLevel       : 2;    // PS2: readLevel
@@ -34,7 +35,7 @@ struct GP_SERV_LINKSHELL_MESSAGE
     uint32_t    updateTime;             // PS2: updateTime
     uint8_t     modifier[16];           // PS2: modifier
     uint16_t    opType;                 // PS2: opType
-    uint16_t    padding00;              // PS2: padding
+    uint16_t    padding9E;              // PS2: padding
     uint8_t     encodedLsName[16];      // PS2: encodedLsName
 };
 ```
@@ -97,7 +98,7 @@ _The name of the player who last edited the linkshell message._
 
 _The packet mode._
 
-### `padding00`
+### `padding9E`
 
 _Padding; unused._
 

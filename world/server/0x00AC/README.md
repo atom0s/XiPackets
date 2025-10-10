@@ -23,7 +23,8 @@ struct GP_SERV_COMMAND_DATA
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
-    uint8_t     CommandDataTbl[224];
+
+    uint8_t     CommandDataTbl[224]; // PS2: CommandDataTbl
 };
 ```
 

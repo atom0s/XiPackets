@@ -23,10 +23,11 @@ struct packet_t
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
-    uint16_t    ItemNo;
-    uint8_t     Flag;
-    uint8_t     padding00;
-    uint8_t     ItemName[64];
+
+    uint16_t    ItemNo;         // PS2: (New; did not exist.)
+    uint8_t     Flag;           // PS2: (New; did not exist.)
+    uint8_t     padding07;      // PS2: (New; did not exist.)
+    uint8_t     ItemName[64];   // PS2: (New; did not exist.)
 };
 ```
 
@@ -50,7 +51,7 @@ _The item number._
 
 _The response flag._
 
-### `padding00`
+### `padding07`
 
 _Padding; unused._
 

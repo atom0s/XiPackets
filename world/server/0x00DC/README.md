@@ -23,12 +23,14 @@ struct GP_SERV_GROUP_SOLICIT_REQ
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
-    uint32_t    UniqueNo;
-    uint16_t    ActIndex;
-    uint8_t     AnonFlag;
-    uint8_t     Kind;
-    uint8_t     sName[16];
-    uint16_t    RaceNo;
+
+    uint32_t    UniqueNo;       // PS2: UniqueNo
+    uint16_t    ActIndex;       // PS2: ActIndex
+    uint8_t     AnonFlag;       // PS2: AnonFlag
+    uint8_t     Kind;           // PS2: Kind
+    uint8_t     sName[16];      // PS2: sName
+    uint16_t    RaceNo;         // PS2: RaceNo
+    uint8_t     padding1E[2];   // PS2: (New; did not exist.)
 };
 ```
 
@@ -83,3 +85,7 @@ _The name of the player who invited the client._
 ### `RaceNo`
 
 _The race id of the player who invited the client._
+
+### `padding1E`
+
+_Padding; unused._

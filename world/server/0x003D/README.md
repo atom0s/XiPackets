@@ -26,10 +26,11 @@ struct GP_SERV_SHOP_SELL
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
+
     uint32_t    Price;              // PS2: Price
     uint8_t     PropertyItemIndex;  // PS2: PropertyItemIndex
     uint8_t     Type;               // PS2: (New; did not exist.)
-    uint16_t    padding00;          // PS2: (New; did not exist.)
+    uint16_t    padding0A;          // PS2: (New; did not exist.)
     uint32_t    Count;              // PS2: (New; did not exist.)
 };
 ```
@@ -61,7 +62,7 @@ _The type of packet being sent._
   - `0` - _The packet is for an item appraisal._
   - `1` - _The packet is for an item sale._
 
-### `padding00`
+### `padding0A`
 
 _Padding; unused._
 

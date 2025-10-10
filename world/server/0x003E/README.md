@@ -23,8 +23,9 @@ struct GP_SERV_SHOP_OPEN
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
-    uint16_t    ShopListNum; // PS2: ShopListNum
-    uint16_t    padding00;
+
+    uint16_t    ShopListNum;    // PS2: ShopListNum
+    uint16_t    padding006;     // PS2: (New; did not exist.)
 };
 ```
 
@@ -44,6 +45,6 @@ _You can find more information about the header fields here: [**Header**](/world
 
 _The number of items within the shop._
 
-### `padding00`
+### `padding006`
 
 _Padding; unused._

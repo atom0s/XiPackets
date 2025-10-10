@@ -35,6 +35,7 @@ struct GP_SERV_TRACKING_LIST
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
+
     GP_TRACKING TrackingListTbl[1]; // PS2: TrackingListTbl
 };
 ```
@@ -56,6 +57,8 @@ _You can find more information about the header fields here: [**Header**](/world
 _The wide scan entry._
 
 This value holds the initial information for the wide scan entry to be populated in the list shown to the client.
+
+## Structure Fields (`GP_TRACKING`)
 
 ### `ActIndex`
 

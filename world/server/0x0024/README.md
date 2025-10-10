@@ -26,6 +26,7 @@ struct GP_SERV_ITEM_PRESENT
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
+
     uint32_t    ItemNum;            // PS2: ItemNum
     uint16_t    ItemNo;             // PS2: ItemNo
     uint8_t     ReqID;              // PS2: ReqID

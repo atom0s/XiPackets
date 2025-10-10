@@ -23,15 +23,16 @@ struct packet_t
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
-    uint8_t     dancer[0x44];
-    uint8_t     job_lev2[0x18];
-    uint32_t    encumbrance;
-    uint8_t     can_thumbs_up_mentor;
-    uint8_t     mentor_rank;
-    uint8_t     mastery_rank;
-    uint8_t     padding00;
-    uint32_t    job_mastery_flags;
-    uint8_t     job_mastery_levels[0x18];
+
+    uint8_t     dancer[0x44];               // PS2: (New; did not exist.)
+    uint8_t     job_lev2[0x18];             // PS2: (New; did not exist.)
+    uint32_t    encumbrance;                // PS2: (New; did not exist.)
+    uint8_t     can_thumbs_up_mentor;       // PS2: (New; did not exist.)
+    uint8_t     mentor_rank;                // PS2: (New; did not exist.)
+    uint8_t     mastery_rank;               // PS2: (New; did not exist.)
+    uint8_t     padding67;                  // PS2: (New; did not exist.)
+    uint32_t    job_mastery_flags;          // PS2: (New; did not exist.)
+    uint8_t     job_mastery_levels[0x18];   // PS2: (New; did not exist.)
 };
 ```
 
@@ -69,7 +70,7 @@ struct GP_MYROOM_DANCER
     int32_t   hpmax;
     int32_t   mpmax;
     uint8_t   sjobflg;
-    uint8_t   Unknown00[3];
+    uint8_t   unknown41[3];
 
     // Rest of struct trimmed..
 };
@@ -117,7 +118,7 @@ This value can be `0` to `10`. _(Retail currently caps this to `8`)._ Values abo
   - `mastery_rank` = _`11` will display silver flag and mastery rank 1._
   - `mastery_rank` = _`21` will display gold flag and mastery rank 1._
 
-### `padding00`
+### `padding67`
 
 _Padding; unused._
 

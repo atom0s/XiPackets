@@ -27,7 +27,7 @@ struct GP_GROUP_ATTR
 	uint32_t        AllianceRFlg        : 1;    // PS2: AllianceRFlg
 	uint32_t        unknown06           : 1;    // PS2: MasterComFlg
 	uint32_t        unknown07           : 1;    // PS2: SubMasterComFlg
-	uint32_t        padding00           : 24;   // PS2: dammy
+	uint32_t        unused              : 24;   // PS2: dammy
 };
 
 // PS2: GP_SERV_GROUP_LIST
@@ -36,6 +36,7 @@ struct GP_SERV_GROUP_LIST
     uint16_t        id: 9;
     uint16_t        size: 7;
     uint16_t        sync;
+
     uint32_t        UniqueNo;       // PS2: UniqueNo
     uint32_t        Hp;             // PS2: Hp
     uint32_t        Mp;             // PS2: Mp
@@ -47,7 +48,7 @@ struct GP_SERV_GROUP_LIST
     uint8_t         Kind;           // PS2: Kind
     uint8_t         Hpp;            // PS2: (New; was HpMax)
     uint8_t         Mpp;            // PS2: (New; was MpMax)
-    uint8_t         padding00;      // PS2: (New; did not exist.)
+    uint8_t         padding1F;      // PS2: (New; did not exist.)
     uint16_t        ZoneNo;         // PS2: ZoneNo
     uint8_t         mjob_no;        // PS2: (New; did not exist.)
     uint8_t         mjob_lv;        // PS2: (New; did not exist.)
@@ -125,7 +126,7 @@ _The party members current health percent._
 
 _The party members current mana percent._
 
-### `padding00`
+### `padding1F`
 
 _Padding; unused._
 
@@ -202,7 +203,7 @@ _Unknown._
 
 This value is still checked and used by the client. Its purpose is currently unknown.
 
-### `padding00`
+### `unused`
 
 _Padding; unused._
 

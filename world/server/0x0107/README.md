@@ -23,8 +23,9 @@ struct GP_SERV_BAZAAR_CLOSE
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
+
     uint8_t     sName[16];      // PS2: sName
-    uint8_t     padding00[4];   // PS2: (New; did not exist.)
+    uint8_t     padding14[4];   // PS2: (New; did not exist.)
 };
 ```
 
@@ -44,6 +45,6 @@ _You can find more information about the header fields here: [**Header**](/world
 
 _The name of the player whos bazaar was closed._
 
-### `padding00`
+### `padding14`
 
 _Padding; unused._

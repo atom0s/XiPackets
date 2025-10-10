@@ -21,7 +21,7 @@ struct partymemberbuffs_t
 {
     uint32_t    UniqueNo;
     uint16_t    ActIndex;
-    uint16_t    padding00;
+    uint16_t    padding06;
     uint64_t    Bits;
     uint8_t     Buffs[32];
 };
@@ -32,7 +32,8 @@ struct packet_t
     uint16_t            id: 9;
     uint16_t            size: 7;
     uint16_t            sync;
-    partymemberbuffs_t  Members[5];
+
+    partymemberbuffs_t  Members[5]; // PS2: (New; did not exist.)
 };
 ```
 
@@ -64,7 +65,7 @@ _The party member server id._
 
 _The party member target index._
 
-### `padding00`
+### `padding06`
 
 _Padding; unused._
 

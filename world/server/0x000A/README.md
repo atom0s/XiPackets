@@ -24,7 +24,7 @@ struct GP_SERV_POS_HEAD
 {
     uint32_t            UniqueNo;           // PS2: UniqueNo
     uint16_t            ActIndex;           // PS2: ActIndex
-    uint8_t             padding00;          // PS2: (Removed; was SendFlg.)
+    uint8_t             padding06;          // PS2: (Removed; was SendFlg.)
     int8_t              dir;                // PS2: dir
     float               x;                  // PS2: x
     float               z;                  // PS2: y
@@ -68,7 +68,7 @@ struct GP_MYROOM_DANCER_PKT
     int32_t             hpmax;              // PS2: hpmax
     int32_t             mpmax;              // PS2: mpmax
     uint8_t             sjobflg;            // PS2: sjobflg
-    uint8_t             unknown00[3];       // Unknown
+    uint8_t             unknown41[3];       // PS2: (New; did not exist.)
 };
 
 // PS2: SAVE_CONF
@@ -83,6 +83,7 @@ struct GP_SERV_LOGIN
     uint16_t                id: 9;
     uint16_t                size: 7;
     uint16_t                sync;
+
     GP_SERV_POS_HEAD        PosHead;            // PS2: PosHead
     uint32_t                ZoneNo;             // PS2: ZoneNo
     uint32_t                ntTime;             // PS2: ntTime
@@ -107,12 +108,12 @@ struct GP_SERV_LOGIN
     SAVE_LOGIN_STATE        LoginState;         // PS2: LoginState
     char                    name[16];           // PS2: name
     int32_t                 certificate[2];     // PS2: certificate
-    uint16_t                unknown00;          // Unknown
+    uint16_t                unknown9C;          // PS2: (New; did not exist.)
     uint16_t                ZoneSubNo;          // PS2: (New; did not exist.)
     uint32_t                PlayTime;           // PS2: PlayTime
     uint32_t                DeadCounter;        // PS2: DeadCounter
     uint8_t                 MyroomSubMapNumber; // PS2: (New; did not exist.)
-    uint8_t                 unknown01;          // Unknown
+    uint8_t                 unknownA9;          // PS2: (New; did not exist.)
     uint16_t                MyroomMapNumber;    // PS2: MyroomMapNumber
     uint16_t                SendCount;          // PS2: SendCount
     uint8_t                 MyRoomExitBit;      // PS2: MyRoomExitBit
@@ -304,7 +305,7 @@ These values are unique to the current client. The client sends these values bac
 > [!NOTE]
 > The manner in which these values are generated or are connected to the client are unknown at this time. It may just be completely random, or it may be connected to other values in some manner.
 
-### `unknown00`
+### `unknown9C`
 
 _The purpose of this value is unknown._
 
@@ -360,7 +361,7 @@ zone->MyroomSubMapNumber = (pkt->MyroomSubMapNumber >> 1) & 3;
 
 _The client uses this value in various checks to determine if you are allowed to place/move furniture, which kind of exit menu is displayed, etc._
 
-### `unknown01`
+### `unknownA9`
 
 _The purpose of this value is unknown._
 
@@ -461,7 +462,7 @@ _The local players server id._
 
 _The local players target index._
 
-### `padding00`
+### `padding06`
 
 _Padding; unused._
 
@@ -628,7 +629,7 @@ _The local players sub job flag._
 
 This value is used to determine if the player has unlocked and can change their sub job.
 
-### `unknown00`
+### `unknown41`
 
 _Unknown._
 

@@ -25,21 +25,22 @@ struct packet_t
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
-    uint32_t    Mode;
-    uint32_t    Timestamp;
-    uint32_t    Duration;
-    uint32_t    DurationWarn;
-    int32_t     FenceX;
-    int32_t     FenceY;
-    uint32_t    FenceRadius;
-    uint32_t    FenceRotation;
-    uint8_t     Flags;
-    uint8_t     FenceColor;
-    uint8_t     unknown26;
-    uint8_t     padding00;
-    uint8_t     Data[128];
-    uint16_t    MesNumTitle;
-    uint16_t    MesNumDescription;
+
+    uint32_t    Mode;               // PS2: (New; did not exist.)
+    uint32_t    Timestamp;          // PS2: (New; did not exist.)
+    uint32_t    Duration;           // PS2: (New; did not exist.)
+    uint32_t    DurationWarn;       // PS2: (New; did not exist.)
+    int32_t     FenceX;             // PS2: (New; did not exist.)
+    int32_t     FenceY;             // PS2: (New; did not exist.)
+    uint32_t    FenceRadius;        // PS2: (New; did not exist.)
+    uint32_t    FenceRotation;      // PS2: (New; did not exist.)
+    uint8_t     Flags;              // PS2: (New; did not exist.)
+    uint8_t     FenceColor;         // PS2: (New; did not exist.)
+    uint8_t     unknown26;          // PS2: (New; did not exist.)
+    uint8_t     padding27;          // PS2: (New; did not exist.)
+    uint8_t     Data[128];          // PS2: (New; did not exist.)
+    uint16_t    MesNumTitle;        // PS2: (New; did not exist.)
+    uint16_t    MesNumDescription;  // PS2: (New; did not exist.)
 };
 ```
 
@@ -162,7 +163,7 @@ _Unknown._
 
 This value is used in a check that happens during `XiSkeletonActor::OnMove`. If this value is `0`, then the check is skipped. Otherwise, all other values will cause the check to happen. _(It appears that this is intended to be used to hide all other players not part of the battle content, but its exact purpose is not known at this time.)_
 
-### `padding00`
+### `padding27`
 
 _Padding; unused._
 

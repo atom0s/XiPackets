@@ -23,10 +23,11 @@ struct GP_SERV_BAZAAR_SALE
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
+
     uint32_t    ItemNum;        // PS2: ItemNum
     uint16_t    ItemNo;         // PS2: ItemNo
     uint8_t     sName[16];      // PS2: sName
-    uint8_t     padding00[2];   // PS2: padding00
+    uint8_t     padding1A[2];   // PS2: (New; did not exist.)
 };
 ```
 
@@ -54,6 +55,6 @@ _The item id._
 
 _The name of the buyer._
 
-### `padding00`
+### `padding1A`
 
 _Padding; unused._

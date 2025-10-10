@@ -25,9 +25,10 @@ struct packet_t
     uint16_t    id     : 9;
     uint16_t    size   : 7;
     uint16_t    sync;
-    uint16_t    type;       // pkt_type
-    uint16_t    unknown00;
-    uint8_t     data[];
+
+    uint16_t    type;       // PS2: (New; did not exist.)
+    uint16_t    unknown06;  // PS2: (New; did not exist.)
+    uint8_t     data[];     // PS2: (New; did not exist.)
 };
 ```
 
@@ -51,7 +52,7 @@ enum class pkt_type
 };
 ```
 
-### `unknown00`
+### `unknown06`
 
 _This value is unused._
 

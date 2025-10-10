@@ -23,6 +23,7 @@ struct GP_SERV_WPOS
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
+
     float       x;          // PS2: x
     float       y;          // PS2: y
     float       z;          // PS2: z
@@ -30,7 +31,7 @@ struct GP_SERV_WPOS
     uint16_t    ActIndex;   // PS2: ActIndex
     uint8_t     Mode;       // PS2: Mode
     char        dir;        // PS2: dir
-    uint32_t    padding00;  // PS2: (New; did not exist.)
+    uint32_t    padding18;  // PS2: (New; did not exist.)
 };
 ```
 
@@ -74,7 +75,7 @@ _The packet mode._
 
 _The entities heading direction._
 
-### `padding00`
+### `padding18`
 
 _Padding; unused._
 

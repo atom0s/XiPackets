@@ -26,10 +26,11 @@ struct GP_SERV_TELL
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
+
     uint32_t    UniqueNo;   // PS2: UniqueNo
     uint16_t    ActIndex;   // PS2: ActIndex
     uint8_t     Attr;       // PS2: Attr
-    uint8_t     padding00;  // PS2: dammy2
+    uint8_t     padding0B;  // PS2: dammy2
     uint8_t     Str[];      // PS2: Str
 };
 ```
@@ -58,7 +59,7 @@ _The target index of the entity that sent the tell._
 
 _The message attributes._
 
-### `padding00`
+### `padding0B`
 
 _Padding; unused._
 

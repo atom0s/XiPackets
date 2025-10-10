@@ -36,12 +36,12 @@ struct GP_SERV_MYROOM_OPERATION
     uint16_t            id: 9;
     uint16_t            size: 7;
     uint16_t            sync;
-    uint16_t            MyroomItemNo;   // PS2: MyroomItemNo
+
+    uint32_t            MyroomItemNo;   // PS2: MyroomItemNo
     GP_MYROOM_RESULT    Result;         // PS2: Result
-    uint16_t            unknown00;      // PS2: (New; did not exist.)
-    uint8_t             MyroomItemIndex;// PS2: ItemIndex
+    uint8_t             MyroomItemIndex;// PS2: MyroomItemIndex
     uint8_t             MyroomCategory; // PS2: (New; did not exist.)
-    uint16_t            unknown01;      // PS2: (New; did not exist.)
+    uint16_t            unknown0E;      // PS2: (New; did not exist.)
 };
 ```
 
@@ -65,10 +65,6 @@ _The item id._
 
 _The interaction result._
 
-### `unknown00`
-
-_Unknown._
-
 ### `MyroomItemIndex`
 
 _The item index._
@@ -77,12 +73,12 @@ _The item index._
 
 _The item container._
 
-### `unknown01`
+### `unknown0E`
 
 _Unknown._
 
 ## Additional Information
 
-The full layout of this packet is not known and the given information above is simply based on easy-to-determine values. The `Result` field is assumed based on the old PS2 beta information. However, it is not possible to fully determine all values in this packet as the client does not use this packet at all. The handle for this packet is simply a return statement, there is no usage of the actual packet at all. This packet is basically junk that is not needed at this time. There is no state change or handling in any manner regarding this packet, so the client can safely ignore it.
+The full layout of this packet is not known and the given information above is simply based on easy-to-determine values. The `Result` field is assumed based on the old PS2 beta information. However, it is not possible to fully determine all values in this packet as the client does not use this packet at all. The handler for this packet is simply a return statement, there is no usage of the actual packet at all. This packet is basically junk that is not needed at this time. There is no state change or handling in any manner regarding this packet, so the client can safely ignore it.
 
 There is no means to fully validate the information of `GP_MYROOM_RESULT`. The provided enumeration values above are from the PS2 beta information.

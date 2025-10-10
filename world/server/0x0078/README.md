@@ -23,12 +23,13 @@ struct packet_t
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
-    uint32_t    UniqueNo;
-    uint32_t    AllNum;
-    uint16_t    ActIndex;
-    uint8_t     sName[15];
-    uint8_t     Kind;
-    uint8_t     Str[];
+
+    uint32_t    UniqueNo;   // PS2: (New; did not exist.)
+    uint32_t    AllNum;     // PS2: (New; did not exist.)
+    uint16_t    ActIndex;   // PS2: (New; did not exist.)
+    uint8_t     sName[15];  // PS2: (New; did not exist.)
+    uint8_t     Kind;       // PS2: (New; did not exist.)
+    uint8_t     Str[];      // PS2: (New; did not exist.)
 };
 ```
 

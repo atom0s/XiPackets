@@ -23,6 +23,7 @@ struct GP_SERV_REQSUBMAPNUM
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
+
     uint32_t    MapNum; // PS2: MapNum
 };
 ```

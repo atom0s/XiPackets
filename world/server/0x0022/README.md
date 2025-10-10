@@ -38,9 +38,11 @@ struct GP_SERV_ITEM_TRADE_RES
     uint16_t                    id: 9;
     uint16_t                    size: 7;
     uint16_t                    sync;
-    uint32_t                    UniqueNo;   // PS2: UniqueNo
-    GP_ITEM_TRADE_RES_KIND      Kind;       // PS2: Kind
-    uint16_t                    ActIndex;   // PS2: ActIndex
+
+    uint32_t                    UniqueNo;       // PS2: UniqueNo
+    GP_ITEM_TRADE_RES_KIND      Kind;           // PS2: Kind
+    uint16_t                    ActIndex;       // PS2: ActIndex
+    uint8_t                     padding0E[2];   // PS2: (New; did not exist.)
 };
 ```
 
@@ -67,3 +69,7 @@ _The kind of trade action being reported._
 ### `ActIndex`
 
 _The target index of the entity causing the trade action._
+
+### `padding0E`
+
+_Padding; unused._

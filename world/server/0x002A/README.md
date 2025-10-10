@@ -23,13 +23,15 @@ struct GP_SERV_TALKNUMWORK
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
-    uint32_t    UniqueNo;   // PS2: UniqueNo
-    int32_t     num[4];     // PS2: num
-    uint16_t    ActIndex;   // PS2: ActIndex
-    uint16_t    MesNum;     // PS2: MesNum
-    uint8_t     Type;       // PS2: Type
-    uint8_t     Flag;       // PS2: dummy
-    uint8_t     String[32]; // PS2: dummy2
+
+    uint32_t    UniqueNo;       // PS2: UniqueNo
+    int32_t     num[4];         // PS2: num
+    uint16_t    ActIndex;       // PS2: ActIndex
+    uint16_t    MesNum;         // PS2: MesNum
+    uint8_t     Type;           // PS2: Type
+    uint8_t     Flag;           // PS2: dummy
+    uint8_t     String[32];     // PS2: dummy2
+    uint8_t     padding3E[2];   // PS2: (New; did not exist.)
 };
 ```
 

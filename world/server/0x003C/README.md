@@ -22,7 +22,7 @@ struct GP_SHOP
     uint32_t    ItemPrice;  // PS2: ItemPrice
     uint16_t    ItemNo;     // PS2: ItemNo
     uint8_t     ShopIndex;  // PS2: ShopIndex
-    uint8_t     padding00;  // PS2: Dammy
+    uint8_t     padding07;  // PS2: Dammy
     uint16_t    Skill;      // PS2: (New; did not exist.)
     uint16_t    GuildInfo;  // PS2: (New; did not exist.)
 };
@@ -33,9 +33,10 @@ struct GP_SERV_SHOP_LIST
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
+
     uint16_t    ShopItemOffsetIndex;// PS2: ShopItemOffsetIndex
     uint8_t     Flags;              // PS2: dammy
-    uint8_t     padding00;          // PS2: Dammy
+    uint8_t     padding07;          // PS2: Dammy
     GP_SHOP     ShopItemTbl[];      // PS2: ShopItemTbl
 };
 ```
@@ -62,7 +63,7 @@ _The shop flags._
 
 The client currently only uses the first bit of this value. However, its usage only sets flags in the client that are then never used.
 
-### `padding00`
+### `padding07`
 
 _Padding; unused._
 
@@ -86,7 +87,7 @@ _The shop index._
 
 This value is not used by the client. Instead, it starts the base index from the main `ShopItemOffsetIndex` value and increments it for each item in the packet.
 
-### `padding00`
+### `padding07`
 
 _Padding; unused._
 

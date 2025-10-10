@@ -23,12 +23,14 @@ struct GP_SERV_ITEM_TRADE_LIST
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
+
     uint32_t    ItemNum;            // PS2: ItemNum
     uint16_t    TradeCounter;       // PS2: TradeCounter
     uint16_t    ItemNo;             // PS2: ItemNo
     uint8_t     ItemFreeSpaceNum;   // PS2: ItemFreeSpaceNum
     uint8_t     TradeIndex;         // PS2: TradeIndex
     uint8_t     Attr[24];           // PS2: Attr
+    uint8_t     padding26[2];       // PS2: (New; did not exist.)
 };
 ```
 
@@ -81,3 +83,7 @@ This value holds the unique extended data of the item such as:
   - Cooldowns / Timers
   - Trials information.
   - etc.
+
+### `padding26`
+
+_Padding; unused._

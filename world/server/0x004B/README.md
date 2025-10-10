@@ -23,6 +23,7 @@ struct GP_SERV_PBX_RESULT
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
+
     uint8_t     Command;        // PS2: Command
     int8_t      BoxNo;          // PS2: BoxNo
     int8_t      PostWorkNo;     // PS2: PostWorkNo
@@ -69,7 +70,7 @@ struct GP_POST_BOX_STATE
     uint32_t    Stat;           // PS2: Stat
     GC_PBOX     box_state;      // PS2: box_state
     uint16_t    ItemNo;         // PS2: ItemNo
-    uint16_t    padding00;      // PS2: (New; did not exist.)
+    uint16_t    padding22;      // PS2: (New; did not exist.)
     int32_t     Kind;           // PS2: Kind
     uint32_t    Stack;          // PS2: Stack
     uint8_t     Data[28];       // PS2: (New; did not exist.)
@@ -252,7 +253,7 @@ This value will vary based on the kind of packet being sent. _(This is a union t
 
 _The item number._
 
-### `padding00`
+### `padding22`
 
 _Padding; unused._
 

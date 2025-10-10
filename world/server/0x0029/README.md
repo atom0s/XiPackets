@@ -23,6 +23,7 @@ struct GP_SERV_BATTLE_MESSAGE
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
+
     uint32_t    UniqueNoCas;    // PS2: UniqueNoCas
     uint32_t    UniqueNoTar;    // PS2: UniqueNoTar
     uint32_t    Data;           // PS2: data
@@ -31,7 +32,7 @@ struct GP_SERV_BATTLE_MESSAGE
     uint16_t    ActIndexTar;    // PS2: ActIndexTar
     uint16_t    MessageNum;     // PS2: MessageNum
     uint8_t     Type;           // PS2: Type
-    uint8_t     padding00;      // PS2: padding00
+    uint8_t     padding1B;      // PS2: dammy3
 };
 ```
 
@@ -88,6 +89,6 @@ This value is used to determine both the message color and the message string.
 
 _The message type._
 
-### `padding00`
+### `padding1B`
 
 _Padding; unused._

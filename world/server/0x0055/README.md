@@ -23,10 +23,11 @@ struct GP_SERV_SCENARIOITEM
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
+
     uint32_t    GetItemFlag[16];    // PS2: GetItemFlag
     uint32_t    LookItemFlag[16];   // PS2: LookItemFlag
     uint16_t    TableIndex;         // PS2: (New; did not exist.)
-    uint16_t    padding00;          // PS2: (New; did not exist.)
+    uint16_t    padding86;          // PS2: (New; did not exist.)
 };
 ```
 
@@ -56,6 +57,6 @@ _The key item table index this data will populate._
 
 This value can be `0` to `6`.
 
-### `padding00`
+### `padding86`
 
 _Padding; unused._

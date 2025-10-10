@@ -52,9 +52,10 @@ struct GP_SERV_LOGOUT
     uint16_t                id: 9;
     uint16_t                size: 7;
     uint16_t                sync;
-    GP_GAME_LOGOUT_STATE    LogoutState;
-    uint8_t                 Iwasaki[16];
-    GP_GAME_ECODE           cliErrCode;
+
+    GP_GAME_LOGOUT_STATE    LogoutState;    // PS2: LogoutState
+    uint8_t                 Iwasaki[16];    // PS2: Iwasaki
+    GP_GAME_ECODE           cliErrCode;     // PS2: cliErrCode
 };
 ```
 

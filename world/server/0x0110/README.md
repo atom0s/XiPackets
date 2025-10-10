@@ -23,13 +23,14 @@ struct packet_t
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
-    uint32_t    Sparks      : 24;
-    uint32_t    unused00    : 8;
-    uint16_t    Deeds;
-    uint16_t    padding00;
-    uint8_t     RoEUnityShared;
-    uint8_t     RoEUnityLeader;
-    uint8_t     unknown0E[6];
+
+    uint32_t    Sparks      : 24;   // PS2: (New; did not exist.)
+    uint32_t    unused      : 8;    // PS2: (New; did not exist.)
+    uint16_t    Deeds;              // PS2: (New; did not exist.)
+    uint16_t    padding0A;          // PS2: (New; did not exist.)
+    uint8_t     RoEUnityShared;     // PS2: (New; did not exist.)
+    uint8_t     RoEUnityLeader;     // PS2: (New; did not exist.)
+    uint8_t     unknown0E[6];       // PS2: (New; did not exist.)
 };
 ```
 
@@ -49,7 +50,7 @@ _You can find more information about the header fields here: [**Header**](/world
 
 _The local clients Sparks count._
 
-### `unused00`
+### `unused`
 
 _Unused bits._
 
@@ -57,7 +58,7 @@ _Unused bits._
 
 _The local clients Deeds count._
 
-### `padding00`
+### `padding0A`
 
 _Padding; unused._
 

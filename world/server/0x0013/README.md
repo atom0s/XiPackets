@@ -26,6 +26,7 @@ struct GP_SERV_GMCOMMAND
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
+
     uint32_t    GMUniqueNo; // PS2: GMUniqueNo
     uint8_t     Mes[];      // PS2: Mes
 };

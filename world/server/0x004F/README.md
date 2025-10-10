@@ -23,7 +23,8 @@ struct GP_SERV_EQUIP_CLEAR
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
-    uint32_t    padding00;
+
+    uint32_t    padding04; // PS2: Dammy
 };
 ```
 
@@ -39,7 +40,7 @@ _These fields are part of the packet header._
 
 _You can find more information about the header fields here: [**Header**](/world/HEADER.md)_
 
-### `padding00`
+### `padding04`
 
 _Padding; unused._
 

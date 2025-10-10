@@ -20,10 +20,10 @@ The layout of this packet is the following:
 // PS2: (New; did not exist.)
 struct equipsetitem_t
 {
-    uint8_t     ItemIndex;
-    uint8_t     EquipKind;
-    uint8_t     Category;
-    uint8_t     padding00;
+    uint8_t     ItemIndex;  // PS2: (New; did not exist.)
+    uint8_t     EquipKind;  // PS2: (New; did not exist.)
+    uint8_t     Category;   // PS2: (New; did not exist.)
+    uint8_t     padding03;  // PS2: (New; did not exist.)
 };
 
 // PS2: (New; did not exist.)
@@ -32,10 +32,11 @@ struct packet_t
     uint16_t        id: 9;
     uint16_t        size: 7;
     uint16_t        sync;
-    uint8_t         Count;
-    uint8_t         padding00[3];
-    equipsetitem_t  ItemsChanged[16];
-    equipsetitem_t  ItemsEquipped[16];
+
+    uint8_t         Count;              // PS2: (New; did not exist.)
+    uint8_t         padding05[3];       // PS2: (New; did not exist.)
+    equipsetitem_t  ItemsChanged[16];   // PS2: (New; did not exist.)
+    equipsetitem_t  ItemsEquipped[16];  // PS2: (New; did not exist.)
 };
 ```
 

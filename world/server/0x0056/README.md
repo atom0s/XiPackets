@@ -23,9 +23,10 @@ struct GP_SERV_MISSION
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
+
     uint32_t    data[8];    // PS2: data
     uint16_t    Port;       // PS2: Port
-    uint16_t    padding00;  // PS2: (New; did not exist.)
+    uint16_t    padding26;  // PS2: (New; did not exist.)
 };
 ```
 
@@ -49,7 +50,7 @@ _The mission and quest data._
 
 _The packet type._
 
-### `padding00`
+### `padding26`
 
 _Padding; unused._
 

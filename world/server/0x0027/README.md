@@ -23,12 +23,13 @@ struct GP_SERV_TALKNUMWORK2
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
+
     uint32_t    UniqueNo;   // PS2: UniqueNo
     uint16_t    ActIndex;   // PS2: ActIndex
     uint16_t    MesNum;     // PS2: MesNum
     uint16_t    Type;       // PS2: Type
     uint8_t     Flags;      // PS2: (New; did not exist.)
-    uint8_t     padding00;  // PS2: dummy
+    uint8_t     padding0F;  // PS2: dummy
     uint32_t    Num1[4];    // PS2: Num
     uint8_t     String1[32];// PS2: String
     uint8_t     String2[16];// PS2: (New; did not exist.)
@@ -94,7 +95,7 @@ This value is used to determine how the `String1` and `String2` values are used.
 
 _See `Additional Information` on how this works._
 
-### `padding00`
+### `padding0F`
 
 _Padding; unused._
 

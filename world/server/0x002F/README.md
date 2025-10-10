@@ -23,10 +23,11 @@ struct GP_SERV_DIG
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
+
     uint32_t    TarUniqueNo;    // PS2: TarUniqueNo
     uint16_t    TarActIndex;    // PS2: TarActIndex
     uint8_t     Flags;          // PS2: (New; did not exist.)
-    uint8_t     padding00;      // PS2: (New; did not exist.)
+    uint8_t     padding0B;      // PS2: (New; did not exist.)
 };
 ```
 
@@ -54,7 +55,7 @@ _The target entity target index._
 
 _The flags._
 
-### `padding00`
+### `padding0B`
 
 _Padding; unused._
 

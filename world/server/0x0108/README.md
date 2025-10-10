@@ -31,10 +31,11 @@ struct GP_SERV_BAZAAR_SHOPPING
     uint16_t                    id: 9;
     uint16_t                    size: 7;
     uint16_t                    sync;
+
     uint32_t                    UniqueNo;   // PS2: UniqueNo
     GP_BAZAAR_SHOPPING_STATE    State;      // PS2: State
     uint8_t                     HideLevel;  // PS2: HideLevel
-    uint8_t                     padding00;  // PS2: padding00
+    uint8_t                     padding0D;  // PS2: (New; did not exist.)
     uint16_t                    ActIndex;   // PS2: ActIndex
     uint8_t                     sName[16];  // PS2: sName
 };
@@ -69,7 +70,7 @@ _The players viewing state._
 
 _Flag used to hide the viewers message upon entering or leaving the local clients bazaar._
 
-### `padding00`
+### `padding0D`
 
 _Padding; unused._
 

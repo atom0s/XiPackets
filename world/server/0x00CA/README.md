@@ -23,6 +23,7 @@ struct GP_SERV_INSPECT_MESSAGE
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
+
     uint8_t     sInspectMessage[123];   // PS2: sInspectMessage
     uint8_t     BazaarFlag  : 1;        // PS2: BazaarFlag
     uint8_t     MyFlag      : 1;        // PS2: MyFlag

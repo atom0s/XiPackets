@@ -23,9 +23,10 @@ struct packet_t
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
-    uint16_t    Flags   : 6;
-    uint16_t    Mode    : 10;
-    uint8_t     Data[];
+
+    uint16_t    Flags   : 6;    // PS2: (New; did not exist.)
+    uint16_t    Mode    : 10;   // PS2: (New; did not exist.)
+    uint8_t     Data[];         // PS2: (New; did not exist.)
 };
 ```
 
@@ -84,15 +85,16 @@ struct packet_t
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
-    uint16_t    Flags   : 6;
-    uint16_t    Mode    : 10;
-    uint16_t    padding00;
-    uint32_t    unknown08;
-    uint32_t    unknown0C;
+
+    uint16_t    Flags   : 6;    // PS2: (New; did not exist.)
+    uint16_t    Mode    : 10;   // PS2: (New; did not exist.)
+    uint16_t    padding06;      // PS2: (New; did not exist.)
+    uint32_t    unknown08;      // PS2: (New; did not exist.)
+    uint32_t    unknown0C;      // PS2: (New; did not exist.)
 };
 ```
 
-### `padding00`
+### `padding06`
 
 _Padding; unused._
 
@@ -116,20 +118,21 @@ struct packet_t
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
-    uint16_t    Flags   : 6;
-    uint16_t    Mode    : 10;
-    uint16_t    padding00;
-    int32_t     PetraCount;
-    int32_t     Score[3];
-    int16_t     Scoreboard[2];
-    uint8_t     MatchPoints[3];
-    uint8_t     MatchSet;
-    uint32_t    Flammes;
-    int32_t     FlammeFlg;
+
+    uint16_t    Flags   : 6;    // PS2: (New; did not exist.)
+    uint16_t    Mode    : 10;   // PS2: (New; did not exist.)
+    uint16_t    padding06;      // PS2: (New; did not exist.)
+    int32_t     PetraCount;     // PS2: (New; did not exist.)
+    int32_t     Score[3];       // PS2: (New; did not exist.)
+    int16_t     Scoreboard[2];  // PS2: (New; did not exist.)
+    uint8_t     MatchPoints[3]; // PS2: (New; did not exist.)
+    uint8_t     MatchSet;       // PS2: (New; did not exist.)
+    uint32_t    Flammes;        // PS2: (New; did not exist.)
+    int32_t     FlammeFlg;      // PS2: (New; did not exist.)
 };
 ```
 
-### `padding00`
+### `padding06`
 
 _Padding; unused._
 
@@ -320,15 +323,20 @@ struct packet_t
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
-    uint16_t    Flags   : 6;
-    uint16_t    Mode    : 10;
-    uint16_t    padding00;
-    uint32_t    RookUniqueNo;
-    uint32_t    padding01;
-    float       RookPosition[4];
-    float       RookDistance;
+
+    uint16_t    Flags   : 6;        // PS2: (New; did not exist.)
+    uint16_t    Mode    : 10;       // PS2: (New; did not exist.)
+    uint16_t    padding06;          // PS2: (New; did not exist.)
+    uint32_t    RookUniqueNo;       // PS2: (New; did not exist.)
+    uint32_t    padding0C;          // PS2: (New; did not exist.)
+    float       RookPosition[4];    // PS2: (New; did not exist.)
+    float       RookDistance;       // PS2: (New; did not exist.)
 };
 ```
+
+### `padding06`
+
+_Padding; unused._
 
 ### `RookUniqueNo`
 
@@ -336,7 +344,7 @@ _The server id of the nearest Rook, if valid._
 
 This value will be set to 0 if there is no nearby Rook.
 
-### `padding01`
+### `padding0C`
 
 _Padding; unused._
 

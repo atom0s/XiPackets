@@ -23,8 +23,9 @@ struct GP_SERV_PACKETCONTROL
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
-    uint32_t    PacketCnt;
-    uint32_t    padding00[5];
+
+    uint32_t    PacketCnt;      // PS2: PacketCnt
+    uint32_t    padding08[5];   // PS2: DammyA - DammyE
 };
 ```
 
@@ -44,7 +45,7 @@ _You can find more information about the header fields here: [**Header**](/world
 
 _The new packet count value to set._
 
-### `padding00`
+### `padding08`
 
 _Padding; unused._
 

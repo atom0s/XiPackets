@@ -23,16 +23,17 @@ struct GP_COMBINE_INF
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
+
     uint8_t     Result;         // PS2: Result
     int8_t      Grade;          // PS2: Grade
     uint8_t     Count;          // PS2: Count
-    uint8_t     padding00;      // PS2: (New; did not exist.)
+    uint8_t     padding07;      // PS2: (New; did not exist.)
     uint16_t    ItemNo;         // PS2: ItemNo
     uint16_t    BreakNo[8];     // PS2: BreakNo
     uint16_t    UniqueNo;       // PS2: UniqueNo
     uint16_t    ActIndex;       // PS2: ActIndex
     uint8_t     name[16];       // PS2: Name
-    uint8_t     padding01[2];   // PS2: (New; did not exist.)
+    uint8_t     padding2E[2];   // PS2: (New; did not exist.)
 };
 ```
 
@@ -91,7 +92,7 @@ _The count of items created by the synthesis._
 
 This value will generally be `1` for any failed or successful synthesis unless the result actually yields more than 1 item. _(ie. crafting stacks of items.)_
 
-### `padding00`
+### `padding07`
 
 _Padding; unused._
 
@@ -120,6 +121,10 @@ The client does not use this value.
 ### `name`
 
 _The player name._
+
+### `padding2E`
+
+_Padding; unused._
 
 ## Additional Information
 

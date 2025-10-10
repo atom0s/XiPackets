@@ -6,7 +6,7 @@
 | **Client Handler**        | `RecvMyroomJob` |
 | **Direction**             | `S -> C` |
 | **OpCode**                | `0x009E` |
-| **Size**                  | `0x0017` |
+| **Size**                  | `0x0018` |
 
 ## Description
 
@@ -23,9 +23,11 @@ struct _GP_MYROOM_JOB
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
+
     int8_t      job_lev[16];    // PS2: job_lev
     int8_t      curjob[2];      // PS2: curjob
     int8_t      second;         // PS2: second
+    uint8_t     padding17;      // PS2: (New; did not exist.)
 };
 ```
 

@@ -23,6 +23,7 @@ struct GP_SERV_SET_GMMSG
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
+
     uint32_t    msgId;  // PS2: msgId
     uint16_t    seqId;  // PS2: seqId
     uint16_t    pktNum; // PS2: pktNum

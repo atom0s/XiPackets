@@ -23,9 +23,10 @@ struct GP_SERV_WEATHER
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
-    uint32_t    StartTime;
-    uint16_t    WeatherNumber;
-    uint16_t    WeatherOffsetTime;
+
+    uint32_t    StartTime;          // PS2: StartTime
+    uint16_t    WeatherNumber;      // PS2: WeatherNumber
+    uint16_t    WeatherOffsetTime;  // PS2: WeatherOffsetTime
 };
 ```
 

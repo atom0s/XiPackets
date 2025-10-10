@@ -23,9 +23,10 @@ struct _GP_GUILD_OPEN
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
-    uint8_t     Stat;
-    uint8_t     padding00[3];
-    uint32_t    Time;
+
+    uint8_t     Stat;           // PS2: Stat
+    uint8_t     padding05[3];   // PS2: (New; did not exist.)
+    uint32_t    Time;           // PS2: Time
 };
 ```
 
@@ -51,7 +52,7 @@ _The packet status._
 | `1` | _The guild is closed._ |
 | `2` | _The guild is closed. (Holiday)_ |
 
-### `padding00`
+### `padding05`
 
 _Padding; unused._
 

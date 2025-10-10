@@ -23,13 +23,14 @@ struct GP_SERV_BAZAAR_SELL
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
+
     uint32_t    UniqueNo;       // PS2: UniqueNo
     uint32_t    ItemNum;        // PS2: ItemNum
     uint16_t    ActIndex;       // PS2: ActIndex
     uint16_t    BazaarActIndex; // PS2: BazaarActIndex
     uint8_t     sName[16];      // PS2: sName
     uint8_t     ItemIndex;      // PS2: ItemIndex
-    uint8_t     padding00[3];   // PS2: padding00
+    uint8_t     padding21[3];   // PS2: (New; did not exist.)
 };
 ```
 
@@ -69,6 +70,6 @@ _The buying players name._
 
 _The purchased item index._
 
-### `padding00`
+### `padding21`
 
 _Padding; unused._

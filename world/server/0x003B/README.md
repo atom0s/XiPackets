@@ -23,6 +23,7 @@ struct GP_SERV_EVENTMES
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
+
     uint32_t    UniqueNo;   // PS2: UniqueNoCas
     uint16_t    ActIndex;   // PS2: ActIndexCast
     uint16_t    Number;     // PS2: Number

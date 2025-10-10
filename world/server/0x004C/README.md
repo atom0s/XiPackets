@@ -21,9 +21,9 @@ The layout of this packet is the following:
 struct GP_AUC_BOX
 {
     uint8_t     Stat;           // PS2: Stat
-    uint8_t     padding00;      // PS2: padding00
+    uint8_t     padding01;      // PS2: pad01
     uint8_t     ItemIndex;      // PS2: ItemIndex
-    uint8_t     padding01;      // PS2: padding01
+    uint8_t     padding03;      // PS2: pad03
     uint8_t     Name[16];       // PS2: Name
     uint16_t    ItemNo;         // PS2: ItemNo
     uint8_t     ItemQuantity;   // PS2: ItemQuantity
@@ -39,7 +39,7 @@ struct GP_AUC_PARAM_LOT
 {
     uint32_t    LimitPrice;     // PS2: LimitPrice
     uint16_t    ItemWorkIndex;  // PS2: ItemWorkIndex
-    uint16_t    padding00;      // PS2: padding00
+    uint16_t    padding06;      // PS2: padding00
     uint32_t    ItemStacks;     // PS2: ItemStacks
 };
 
@@ -48,7 +48,7 @@ struct GP_AUC_PARAM_BID
 {
     uint32_t    BidPrice;       // PS2: BidPrice
     uint16_t    ItemNo;         // PS2: ItemNo
-    uint16_t    padding00;      // PS2: dummy
+    uint16_t    padding06;      // PS2: dummy
     uint32_t    ItemStacks;     // PS2: ItemStacks
 };
 
@@ -91,12 +91,12 @@ struct GP_AUC_PARAM
 {
     union
     {
-        GP_AUC_PARAM_LOT        LotIn;      // LotIn
-        GP_AUC_PARAM_BID        Bid;        // Bid
-        GP_AUC_PARAM_SUMMARY    Summary;    // Summary
-        GP_AUC_PARAM_HISTORY    History;    // History
-        GP_AUC_PARAM_ASKCOMMIT  AskCommit;  // AskCommit
-        GP_AUC_PARAM_TRANS      Trans;      // Trans
+        GP_AUC_PARAM_LOT        LotIn;      // PS2: LotIn
+        GP_AUC_PARAM_BID        Bid;        // PS2: Bid
+        GP_AUC_PARAM_SUMMARY    Summary;    // PS2: Summary
+        GP_AUC_PARAM_HISTORY    History;    // PS2: History
+        GP_AUC_PARAM_ASKCOMMIT  AskCommit;  // PS2: AskCommit
+        GP_AUC_PARAM_TRANS      Trans;      // PS2: Trans
     } param;
 };
 
@@ -106,6 +106,7 @@ struct GP_SERV_AUC
     uint16_t        id: 9;
     uint16_t        size: 7;
     uint16_t        sync;
+
     uint8_t         Command;        // PS2: Command
     char            AucWorkIndex;   // PS2: AucWorkIndex
     char            Result;         // PS2: Result
@@ -286,7 +287,7 @@ _The parcel status._
 | `0x17` | `unknown` |
 | `0x18` | `NULL` |
 
-### `padding00`
+### `padding01`
 
 _Padding; unused._
 
@@ -294,7 +295,7 @@ _Padding; unused._
 
 _The parcel index._
 
-### `padding01`
+### `padding03`
 
 _Padding; unused._
 

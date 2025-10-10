@@ -23,7 +23,9 @@ struct packet_t
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
-    uint8_t     Mode;
+
+    uint8_t     Mode;   // PS2: (New; did not exist.)
+    uint8_t     data[]; // PS2: (New; did not exist.)
 };
 ```
 
@@ -55,6 +57,12 @@ This value is used to determine how the data within this packet should be handle
 
 _**Note:** Retail uses `Mode` 5 to set the `ChocoboRacingSys.DownloadFlg` to 1, which marks the system as fully populated and ready to be used. However, it will treat any non-listed `Mode` value in the same manner as a default behavior._
 
+### `data`
+
+_The packet data._
+
+This value is specific to the current `Mode` of the packet.
+
 ## Mode: `1`
 
 This mode is used to update the `ChocoboRacingSys.RacingParams` data.
@@ -67,10 +75,11 @@ struct packet_t
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
-    uint8_t     Mode;
-    uint8_t     padding00[3];
-    uint32_t    RaceParams[2];
-    uint8_t     junk00[];
+
+    uint8_t     Mode;           // PS2: (New; did not exist.)
+    uint8_t     padding00[3];   // PS2: (New; did not exist.)
+    uint32_t    RaceParams[2];  // PS2: (New; did not exist.)
+    uint8_t     junk00[];       // PS2: (New; did not exist.)
 };
 ```
 
@@ -100,12 +109,13 @@ struct packet_t
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
-    uint8_t     Mode;
-    uint8_t     ParamIndex;
-    uint8_t     ParamSize;
-    uint8_t     padding00;
-    uint8_t     ParamData[ParamSize];
-    uint8_t     junk00[];
+
+    uint8_t     Mode;                   // PS2: (New; did not exist.)
+    uint8_t     ParamIndex;             // PS2: (New; did not exist.)
+    uint8_t     ParamSize;              // PS2: (New; did not exist.)
+    uint8_t     padding00;              // PS2: (New; did not exist.)
+    uint8_t     ParamData[ParamSize];   // PS2: (New; did not exist.)
+    uint8_t     junk00[];               // PS2: (New; did not exist.)
 };
 ```
 
@@ -147,12 +157,13 @@ struct packet_t
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
-    uint8_t     Mode;
-    uint8_t     padding00;
-    uint8_t     ParamSize;
-    uint8_t     padding01;
-    uint8_t     ParamData1[];
-    uint8_t     ParamData2[];
+
+    uint8_t     Mode;           // PS2: (New; did not exist.)
+    uint8_t     padding00;      // PS2: (New; did not exist.)
+    uint8_t     ParamSize;      // PS2: (New; did not exist.)
+    uint8_t     padding01;      // PS2: (New; did not exist.)
+    uint8_t     ParamData1[];   // PS2: (New; did not exist.)
+    uint8_t     ParamData2[];   // PS2: (New; did not exist.)
 };
 ```
 

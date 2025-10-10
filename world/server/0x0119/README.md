@@ -20,11 +20,11 @@ The layout of this packet is the following:
 // PS2: (New; did not exist.)
 struct recasttimer_t
 {
-    uint16_t    Timer;
-    uint8_t     Calc1;
-    uint8_t     TimerId;
-    uint16_t    Calc2;
-    uint16_t    padding00;
+    uint16_t    Timer;      // PS2: (New; did not exist.)
+    uint8_t     Calc1;      // PS2: (New; did not exist.)
+    uint8_t     TimerId;    // PS2: (New; did not exist.)
+    uint16_t    Calc2;      // PS2: (New; did not exist.)
+    uint16_t    padding06;  // PS2: (New; did not exist.)
 };
 
 // PS2: (New; did not exist.)
@@ -33,9 +33,10 @@ struct packet_t
     uint16_t        id: 9;
     uint16_t        size: 7;
     uint16_t        sync;
-    recasttimer_t   Timers[31];
-    uint32_t        MountRecast;
-    uint32_t        MountRecastId;
+
+    recasttimer_t   Timers[31];     // PS2: (New; did not exist.)
+    uint32_t        MountRecast;    // PS2: (New; did not exist.)
+    uint32_t        MountRecastId;  // PS2: (New; did not exist.)
 };
 ```
 
@@ -83,7 +84,7 @@ _The recast timer id._
 
 _The recast timers extra calculated value. (2)_
 
-### `padding00`
+### `padding06`
 
 _Padding; unused._
 

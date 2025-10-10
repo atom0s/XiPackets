@@ -23,8 +23,9 @@ struct GP_SERV_MUSICVOLUME
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
-    uint16_t    time;
-    uint16_t    volume;
+
+    uint16_t    time;   // PS2: (New; did not exist.)
+    uint16_t    volume; // PS2: (New; did not exist.)
 };
 ```
 

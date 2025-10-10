@@ -29,9 +29,9 @@ struct GROUP_TBL
     uint8_t     AllianceRFlg        : 1;    // PS2: AllianceRFlg
     uint8_t     unknown06           : 1;    // PS2: MasterComFlg
     uint8_t     unknown07           : 1;    // PS2: SubMasterComFlg
-    uint8_t     padding00;                  // PS2: (New; was ZoneNo originally.)
+    uint8_t     padding07;                  // PS2: (New; was ZoneNo originally.)
     uint16_t    ZoneNo;                     // PS2: (New; did not exist.)
-    uint16_t    padding01;                  // PS2: (New; did not exist.)
+    uint16_t    padding0A;                  // PS2: (New; did not exist.)
 };
 
 // PS2: GP_SERV_GROUP_TBL
@@ -40,8 +40,9 @@ struct GP_SERV_GROUP_TBL
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
+
     uint8_t     Kind;           // PS2: Kind
-    uint8_t     padding00[3];   // PS2: (New; did not exist.)
+    uint8_t     padding05[3];   // PS2: (New; did not exist.)
     GROUP_TBL   GroupTbl[20];   // PS2: GroupTbl
 };
 ```
@@ -72,7 +73,7 @@ _The group kind._
 | `5` | _Resets `Kind` to `0`; uses Main Party table._ |
 | `6` | _Unknown._ |
 
-### `padding00`
+### `padding05`
 
 _Padding; unused._
 
@@ -131,7 +132,7 @@ _Unknown._
 
 This value is still checked and used by the client. Its purpose is currently unknown.
 
-### `padding00`
+### `padding07`
 
 _Padding; unused._
 
@@ -139,7 +140,7 @@ _Padding; unused._
 
 _The group members zone id._
 
-### `padding01`
+### `padding0A`
 
 _Padding; unused._
 

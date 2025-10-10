@@ -23,8 +23,9 @@ struct GP_SERV_MUSIC
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
-    uint16_t    Slot;
-    uint16_t    MusicNum;
+
+    uint16_t    Slot;       // PS2: Slot
+    uint16_t    MusicNum;   // PS2: MusicNum
 };
 ```
 

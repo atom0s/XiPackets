@@ -30,9 +30,10 @@ struct GP_BLACK_EDIT
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
+
     SAVE_BLACK  Data;           // PS2: Data
     int8_t      Mode;           // PS2: Mode
-    uint8_t     padding00[3];   // PS2: (New; did not exist.)
+    uint8_t     padding19[3];   // PS2: (New; did not exist.)
 };
 ```
 
@@ -61,7 +62,7 @@ The client uses this value to determine how the edit is being done.
   - `0` - _Add - Adds the new entry to the clients blacklist._
   - `1` - _Delete - Removes the entry from the clients blacklist._
 
-### `padding00`
+### `padding19`
 
 _Padding; unused._
 

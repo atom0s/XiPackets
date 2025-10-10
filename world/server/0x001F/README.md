@@ -23,11 +23,13 @@ struct GP_SERV_ITEM_LIST
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
-    uint32_t    ItemNum;    // PS2: ItemNum
-    uint16_t    ItemNo;     // PS2: ItemNo
-    uint8_t     Category;   // PS2: Category
-    uint8_t     ItemIndex;  // PS2: ItemIndex
-    uint8_t     LockFlg;    // PS2: LockFlg
+
+    uint32_t    ItemNum;        // PS2: ItemNum
+    uint16_t    ItemNo;         // PS2: ItemNo
+    uint8_t     Category;       // PS2: Category
+    uint8_t     ItemIndex;      // PS2: ItemIndex
+    uint8_t     LockFlg;        // PS2: LockFlg
+    uint8_t     padding0D[3];   // PS2: (New; did not exist.)
 };
 ```
 
@@ -62,3 +64,7 @@ _The index inside of the container this item is located._
 ### `LockFlg`
 
 _The item lock flag._
+
+### `padding0D`
+
+_Padding; unused._

@@ -23,9 +23,11 @@ struct GP_SERV_RECIPE
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
-    uint8_t     Data[40];
-    uint16_t    Type;
-    uint16_t    Unknown00;
+
+    uint8_t     Data[40];   // PS2: (New; did not exist.)
+    uint16_t    Type;       // PS2: (New; did not exist.)
+    uint16_t    unknown2E;  // PS2: (New; did not exist.)
+    uint32_t    padding30;  // PS2: (New; did not exist.)
 };
 ```
 
@@ -53,9 +55,13 @@ The data stored within this value will change based on the packet `Type`.
 
 _The packet type._
 
-### `Unknown00`
+### `unknown2E`
 
 _Unknown._
+
+### `padding30`
+
+_Padding; unused._
 
 ## Additional Information
 
@@ -79,6 +85,7 @@ struct GP_SERV_RECIPE
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
+
     uint16_t    productitem;    // PS2: productitem
     uint16_t    need_skill_1;   // PS2: need_skill_1
     uint16_t    need_skill_2;   // PS2: need_skill_2
@@ -88,7 +95,7 @@ struct GP_SERV_RECIPE
     uint16_t    itemnum[8];     // PS2: itemnum
     uint16_t    itemcount[8];   // PS2: itemcount
     uint16_t    Type;           // PS2: (New; did not exist.)
-    uint16_t    Unknown00;      // PS2: (New; did not exist.)
+    uint16_t    unknown32;      // PS2: (New; did not exist.)
 };
 ```
 
@@ -136,7 +143,7 @@ _An array of item counts that represent the required ingredients to make this re
 
 _The packet type._
 
-### `Unknown00`
+### `unknown32`
 
 _Unknown._
 
@@ -152,16 +159,17 @@ struct GP_SERV_RECIPE
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
-    uint16_t    junk00[6];      // PS2: (New; did not exist.)
+
+    uint16_t    unused04[6];    // PS2: (New; did not exist.)
     uint16_t    itemnum[16];    // PS2: (New; did not exist.)
     uint16_t    Type;           // PS2: (New; did not exist.)
     uint16_t    itemnum_next;   // PS2: (New; did not exist.)
 };
 ```
 
-### `junk00`
+### `unused04`
 
-_Junk data; the client does not use this and the buffer may contain unrelated data._
+_Unused data; the client does not use this and the buffer may contain unrelated data._
 
 ### `itemnum`
 

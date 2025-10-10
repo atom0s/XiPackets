@@ -23,10 +23,11 @@ struct GP_SERV_SHOP_BUY
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
-    uint16_t    ShopItemIndex;
-    uint8_t     BuyState;
-    uint8_t     padding00;
-    uint32_t    Count;
+
+    uint16_t    ShopItemIndex;  // PS2: ShopItemIndex
+    uint8_t     BuyState;       // PS2: BuyState
+    uint8_t     padding07;      // PS2: (New; did not exist.)
+    uint32_t    Count;          // PS2: (New; did not exist.)
 };
 ```
 
@@ -52,7 +53,7 @@ _Unknown._
 
 The client does not use this value.
 
-### `padding00`
+### `padding07`
 
 _Padding; unused._
 

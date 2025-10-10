@@ -19,10 +19,10 @@ The layout of this packet is the following:
 ```cpp
 struct jobpoint_t
 {
-    uint16_t    index: 5;
-    uint16_t    job_no: 11;
-    uint16_t    next: 10;
-    uint16_t    level: 6;
+    uint16_t    index   : 5;    // PS2: (New; did not exist.)
+    uint16_t    job_no  : 11;   // PS2: (New; did not exist.)
+    uint16_t    next    : 10;   // PS2: (New; did not exist.)
+    uint16_t    level   : 6;    // PS2: (New; did not exist.)
 };
 
 // PS2: (New; did not exist.)
@@ -31,7 +31,8 @@ struct packet_t
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
-    jobpoint_t  points[64];
+
+    jobpoint_t  points[64]; // PS2: (New; did not exist.)
 };
 ```
 

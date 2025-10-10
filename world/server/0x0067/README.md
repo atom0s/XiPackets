@@ -23,8 +23,10 @@ struct packet_t
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
-    uint16_t    Mode : 6;
-    uint16_t    Length : 10;
+
+    uint16_t    Mode : 6;       // PS2: (New; did not exist.)
+    uint16_t    Length : 10;    // PS2: (New; did not exist.)
+    uint8_t     data[];         // PS2: (New; did not exist.)
 };
 ```
 
@@ -60,6 +62,12 @@ _The packet content length._
 
 This value is used to determine the size of the packets content, minus the header. _(It includes the `Mode` and `Length` in this size!)_
 
+### `data`
+
+_The packet data._
+
+This value is specific to the current `Mode` of the packet.
+
 ## Mode: `2`
 
 This mode is used when the packet is intended to update a player entity. The contents of the packet will pertain to an existing PC entity and is used to update mainly the entities name flags for things such as Ballista, Campaign, Pankration, and similar other events.
@@ -72,21 +80,22 @@ struct packet_t
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
-    uint16_t    Mode: 6;
-    uint16_t    Length: 10;
-    uint16_t    ActIndex;
-    uint32_t    UniqueNo;
-    uint16_t    ActIndexFellow;
-    uint16_t    padding00;
-    uint32_t    NameFlags;
-    uint32_t    NameIcon;
-    uint32_t    CustomProperties;
-    uint32_t    unknown1C;
-    uint32_t    UniqueNoMog;
-    uint8_t     MogHouseFlag;
-    uint8_t     mjob_lv;
-    uint8_t     unknown26;
-    uint8_t     MogExpansionFlag;
+
+    uint16_t    Mode: 6;            // PS2: (New; did not exist.)
+    uint16_t    Length: 10;         // PS2: (New; did not exist.)
+    uint16_t    ActIndex;           // PS2: (New; did not exist.)
+    uint32_t    UniqueNo;           // PS2: (New; did not exist.)
+    uint16_t    ActIndexFellow;     // PS2: (New; did not exist.)
+    uint16_t    padding0E;          // PS2: (New; did not exist.)
+    uint32_t    NameFlags;          // PS2: (New; did not exist.)
+    uint32_t    NameIcon;           // PS2: (New; did not exist.)
+    uint32_t    CustomProperties;   // PS2: (New; did not exist.)
+    uint32_t    unknown1C;          // PS2: (New; did not exist.)
+    uint32_t    UniqueNoMog;        // PS2: (New; did not exist.)
+    uint8_t     MogHouseFlag;       // PS2: (New; did not exist.)
+    uint8_t     mjob_lv;            // PS2: (New; did not exist.)
+    uint8_t     unknown26;          // PS2: (New; did not exist.)
+    uint8_t     MogExpansionFlag;   // PS2: (New; did not exist.)
 };
 ```
 
@@ -102,7 +111,7 @@ _The entity server id._
 
 _The target index of the entities fellow NPC._
 
-### `padding00`
+### `padding0E`
 
 _Padding; unused._
 
@@ -203,14 +212,15 @@ struct packet_t
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
-    uint16_t    Mode: 6;
-    uint16_t    Length: 10;
-    uint16_t    ActIndex;
-    uint32_t    UniqueNo;
-    uint16_t    ActIndexTrustOwner;
-    uint16_t    padding00;
-    uint32_t    NameFlags;
-    char        Name[];
+
+    uint16_t    Mode: 6;            // PS2: (New; did not exist.)
+    uint16_t    Length: 10;         // PS2: (New; did not exist.)
+    uint16_t    ActIndex;           // PS2: (New; did not exist.)
+    uint32_t    UniqueNo;           // PS2: (New; did not exist.)
+    uint16_t    ActIndexTrustOwner; // PS2: (New; did not exist.)
+    uint16_t    padding0E;          // PS2: (New; did not exist.)
+    uint32_t    NameFlags;          // PS2: (New; did not exist.)
+    char        Name[];             // PS2: (New; did not exist.)
 };
 ```
 
@@ -228,7 +238,7 @@ _The owner entity target index of this entity._
 
 This value is only used when the entity is a 'pet' or 'trust'. Otherwise, it will be 0.
 
-### `padding00`
+### `padding0E`
 
 _Padding; unused._
 
@@ -266,16 +276,17 @@ struct packet_t
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
-    uint16_t    Mode: 6;
-    uint16_t    Length: 10;
-    uint16_t    ActIndex;
-    uint32_t    UniqueNo;
-    uint16_t    ActIndexOwner;
-    uint8_t     Hpp;
-    uint8_t     Mpp;
-    uint32_t    Tp;
-    uint32_t    UniqueNoTarget;
-    char        Name[];
+
+    uint16_t    Mode: 6;        // PS2: (New; did not exist.)
+    uint16_t    Length: 10;     // PS2: (New; did not exist.)
+    uint16_t    ActIndex;       // PS2: (New; did not exist.)
+    uint32_t    UniqueNo;       // PS2: (New; did not exist.)
+    uint16_t    ActIndexOwner;  // PS2: (New; did not exist.)
+    uint8_t     Hpp;            // PS2: (New; did not exist.)
+    uint8_t     Mpp;            // PS2: (New; did not exist.)
+    uint32_t    Tp;             // PS2: (New; did not exist.)
+    uint32_t    UniqueNoTarget; // PS2: (New; did not exist.)
+    char        Name[];         // PS2: (New; did not exist.)
 };
 ```
 

@@ -23,6 +23,7 @@ struct GP_SERV_FAQ_GMPARAM
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
+
     uint32_t    RescueCount;    // PS2: RescueCount
     uint32_t    params[4];      // PS2: params
     uint16_t    Id;             // PS2: Id

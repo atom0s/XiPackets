@@ -25,9 +25,10 @@ struct packet_t
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
-    uint8_t     Flags;
-    uint8_t     padding00[3];
-    uint8_t     Data[128];
+
+    uint8_t     Flags;          // PS2: (New; did not exist.)
+    uint8_t     padding05[3];   // PS2: (New; did not exist.)
+    uint8_t     Data[128];      // PS2: (New; did not exist.)
 };
 ```
 
@@ -51,7 +52,7 @@ This value is used to determine how the data within this packet should be handle
 
 At this time, the client only handles a single flag value; `1`.
 
-### `padding00`
+### `padding05`
 
 _Padding; unused._
 

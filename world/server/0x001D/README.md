@@ -23,8 +23,9 @@ struct GP_SERV_ITEM_SAME
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
+
     uint8_t     State;          // PS2: State
-    uint8_t     padding00[3];   // PS2: (New; did not exist.)
+    uint8_t     padding05[3];   // PS2: (New; did not exist.)
     uint32_t    Flags;          // PS2: (New; did not exist.)
 };
 ```
@@ -50,7 +51,7 @@ _The current state of inventory container loading for the client._
 
 When the `State` value is set to `1`, the client considers all containers as loaded and ready. When this state is seen, the client will set the current `pGlobalNowZone->Flg` value to `OR` in the needed flag values to disable the downloading container icon and mark the client as ready to interact with the containers.
 
-### `padding00`
+### `padding05`
 
 _Padding; unused._
 

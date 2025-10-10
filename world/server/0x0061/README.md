@@ -41,7 +41,7 @@ struct CLISTATUS
     uint8_t     nation;                 // PS2: nation
     uint8_t     myroom;                 // PS2: myroom
     uint8_t     su_lv;                  // PS2: (New; did not exist.)
-    uint8_t     padding00;              // PS2: (New; did not exist.)
+    uint8_t     padding4F;              // PS2: (New; did not exist.)
     uint8_t     highest_ilvl;           // PS2: (New; did not exist.)
     uint8_t     ilvl;                   // PS2: (New; did not exist.)
     uint8_t     ilvl_mhand;             // PS2: (New; did not exist.)
@@ -61,6 +61,7 @@ struct GP_SERV_CLISTATUS
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
+
     CLISTATUS   statusdata; // PS2: statusdata
 };
 ```
@@ -187,7 +188,7 @@ The client stores this value but does not reference or use it anywhere else.
 
 _The clients superior equipment level._
 
-### `padding00`
+### `padding4F`
 
 _Padding; unused._
 

@@ -23,10 +23,11 @@ struct GP_SERV_GROUP_COMLINK
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
-    uint8_t     LinkshellNum;
-    uint8_t     ItemIndex;
-    uint8_t     Category;
-    uint8_t     padding00;
+
+    uint8_t     LinkshellNum;   // PS2: (New; did not exist.)
+    uint8_t     ItemIndex;      // PS2: (New; did not exist.)
+    uint8_t     Category;       // PS2: (New; did not exist.)
+    uint8_t     padding07;      // PS2: (New; did not exist.)
 };
 ```
 
@@ -57,6 +58,6 @@ _The linkshell item index._
 
 _The container that the linkshell item is located in._
 
-### `padding00`
+### `padding07`
 
 _Padding; unused._

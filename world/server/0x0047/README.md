@@ -23,11 +23,12 @@ struct packet_t
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
-    uint16_t    ItemNo;
-    uint8_t     FromIndex;
-    uint8_t     ToIndex;
-    uint8_t     FromString[64];
-    uint8_t     ToString[64];
+
+    uint16_t    ItemNo;         // PS2: (New; did not exist.)
+    uint8_t     FromIndex;      // PS2: (New; did not exist.)
+    uint8_t     ToIndex;        // PS2: (New; did not exist.)
+    uint8_t     FromString[64]; // PS2: (New; did not exist.)
+    uint8_t     ToString[64];   // PS2: (New; did not exist.)
 };
 ```
 

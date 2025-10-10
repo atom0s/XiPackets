@@ -56,7 +56,7 @@ struct GP_SERV_EQUIP_INSPECT_MODE0
 
     GP_SERV_EQUIP_INSPECT_HDR eqHdr;    // PS2: eqHdr
 
-    uint8_t         padding00;          // PS2: (Unknown)
+    uint8_t         padding0F;          // PS2: (Unknown)
     uint16_t        ItemNo;             // PS2: (Unknown)
     SAVE_EQUIP_KIND EquipKind;          // PS2: (Unknown)
 };
@@ -70,7 +70,7 @@ struct GP_SERV_EQUIP_INSPECT_MODE1
 
     GP_SERV_EQUIP_INSPECT_HDR eqHdr;    // PS2: eqHdr
 
-    uint8_t     padding00[3];           // PS2: (New; did not exist.))
+    uint8_t     padding0B[3];           // PS2: (New; did not exist.))
     uint16_t    ItemNo;                 // PS2: ItemNo
     uint8_t     sComLinkName[16];       // PS2: sComLinkName
     uint8_t     sComColor[2];           // PS2: (Unnamed struct of bits.)
@@ -79,14 +79,14 @@ struct GP_SERV_EQUIP_INSPECT_MODE1
     uint8_t     mjob;                   // PS2: mjob
     uint8_t     mlvl;                   // PS2: (New; did not exist.)
     uint8_t     mflags;                 // PS2: (New; did not exist.)
-    uint8_t     padding01[3];           // PS2: (New; did not exist.)
+    uint8_t     padding29[3];           // PS2: (New; did not exist.)
     uint32_t    BallistaChevronCount;   // PS2: (New; did not exist.)
     uint8_t     BallistaChevronFlags;   // PS2: (New; did not exist.)
-    uint8_t     padding02;              // PS2: (New; did not exist.)
+    uint8_t     padding31;              // PS2: (New; did not exist.)
     uint16_t    BallistaFlags;          // PS2: (New; did not exist.)
     uint32_t    MesNo;                  // PS2: (New; did not exist.)
     int32_t     Params[5];              // PS2: (New; did not exist.)
-    uint8_t     padding03[8];           // PS2: (New; did not exist.)
+    uint8_t     padding4C[8];           // PS2: (New; did not exist.)
 };
 
 // PS2: GP_SERV_EQUIP_INSPECT2
@@ -105,10 +105,10 @@ struct GP_SERV_EQUIP_INSPECT_MODE2
 // PS2: (New; did not exist.)
 struct checkitem_t
 {
-    uint16_t        ItemNo;
-    SAVE_EQUIP_KIND EquipKind;
-    uint8_t         padding00;
-    uint8_t         Data[24];
+    uint16_t        ItemNo;     // PS2: (New; did not exist.)
+    SAVE_EQUIP_KIND EquipKind;  // PS2: (New; did not exist.)
+    uint8_t         padding03;  // PS2: (New; did not exist.)
+    uint8_t         Data[24];   // PS2: (New; did not exist.)
 };
 
 // PS2: (New; did not exist.)
@@ -118,10 +118,10 @@ struct GP_SERV_EQUIP_INSPECT_MODE3
     uint16_t    size: 7;
     uint16_t    sync;
 
-    GP_SERV_EQUIP_INSPECT_HDR eqHdr;    // PS2: eqHdr
+    GP_SERV_EQUIP_INSPECT_HDR eqHdr; // PS2: eqHdr
 
-    uint8_t     EquipCount;
-    checkitem_t Equip[];
+    uint8_t     EquipCount; // PS2: (New; did not exist.)
+    checkitem_t Equip[];    // PS2: (New; did not exist.)
 };
 ```
 
@@ -162,7 +162,7 @@ _You can find more information about the header fields here: [**Header**](/world
 
 _The packet sub-header._
 
-### `padding00`
+### `padding0F`
 
 _Padding; unused._
 
@@ -186,7 +186,7 @@ _You can find more information about the header fields here: [**Header**](/world
 
 _The packet sub-header._
 
-### `padding00`
+### `padding0B`
 
 _Padding; unused._
 
@@ -260,7 +260,7 @@ This value holds the master job flags for the checked entity. This states if the
 
 This value will be 0 if the entity is anonymous. _(`/anon`)_
 
-### `padding01`
+### `padding29`
 
 _Padding; unused._
 
@@ -285,7 +285,7 @@ Flag `0x02` is mainly used to print the checked entities Chevron count informati
 
 This value is only used during Ballista.
 
-### `padding02`
+### `padding31`
 
 _Padding; unused._
 
@@ -307,7 +307,7 @@ This value holds the system message id that will be printed if the `BallistaChev
 
 _The system message parameters to use to format the message._
 
-### `padding03`
+### `padding4C`
 
 _Padding; unused._
 
@@ -359,7 +359,7 @@ _The equipped item id._
 
 _The equipped item slot._
 
-### `padding00`
+### `padding03`
 
 _Padding; unused._
 

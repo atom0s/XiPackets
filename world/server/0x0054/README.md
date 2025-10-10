@@ -23,9 +23,10 @@ struct GP_SERV_DEBUGPRINT
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
+
     int32_t     data;           // PS2: data
     uint8_t     port;           // PS2: port
-    uint8_t     padding00[3];   // PS2: (New; did not exist.)
+    uint8_t     padding09[3];   // PS2: (New; did not exist.)
 };
 ```
 
@@ -51,7 +52,7 @@ _The port value._
 
 This value is limited to values `0` to `7`.
 
-### `padding00`
+### `padding09`
 
 _Padding; unused._
 

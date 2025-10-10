@@ -26,6 +26,7 @@ struct GP_SERV_CHANNEL_STATE
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
+
     uint32_t    UniqueNo;       // PS2: UniqueNo
     uint32_t    ZoneNo;         // PS2: ZoneNo
     uint32_t    IP;             // PS2: IP
@@ -33,6 +34,7 @@ struct GP_SERV_CHANNEL_STATE
     uint16_t    Port;           // PS2: Port
     uint8_t     ChannelIndex;   // PS2: ChannelIndex
     uint8_t     HP;             // PS2: HP
+    uint8_t     padding16[2];   // PS2: (New; did not exist.)
 };
 ```
 
@@ -75,3 +77,7 @@ _Unknown._
 ### `HP`
 
 _Unknown._
+
+### `padding16`
+
+_Padding; unused._

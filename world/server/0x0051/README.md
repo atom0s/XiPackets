@@ -23,8 +23,9 @@ struct GP_SERV_GRAP_LIST
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
+
     uint16_t    GrapIDTbl[9];   // PS2: GrapIDTbl
-    uint16_t    padding00;      // PS2: (New; did not exist.)
+    uint16_t    padding16;      // PS2: (New; did not exist.)
 };
 ```
 
@@ -54,6 +55,6 @@ _The clients equipment model visual ids._
   - `GrapIDTbl[7]` - _The clients sub equipment visual model id._
   - `GrapIDTbl[8]` - _The clients ranged equipment visual model id._
 
-### `padding00`
+### `padding16`
 
 _Padding; unused._

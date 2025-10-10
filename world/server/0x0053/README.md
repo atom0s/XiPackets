@@ -23,10 +23,11 @@ struct GP_SERV_SYSTEMMES
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
+
     uint32_t    para;       // PS2: para
     uint32_t    para2;      // PS2: para2
     uint16_t    Number;     // PS2: Number
-    uint16_t    padding00;  // PS2: padding00
+    uint16_t    padding0E;  // PS2: dummy
 };
 ```
 
@@ -54,7 +55,7 @@ _The message parameter. (2)_
 
 _The message number._
 
-### `padding00`
+### `padding0E`
 
 _Padding; unused._
 

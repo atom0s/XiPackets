@@ -23,13 +23,14 @@ struct packet_t
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
-    uint32_t    UniqueNo;
-    uint16_t    ActIndex;
-    uint8_t     Flags;
-    uint8_t     Status;
-    uint8_t     sName[16];
-    uint16_t    Race;
-    uint8_t     padding00[2];
+
+    uint32_t    UniqueNo;       // PS2: (New; did not exist.)
+    uint16_t    ActIndex;       // PS2: (New; did not exist.)
+    uint8_t     Flags;          // PS2: (New; did not exist.)
+    uint8_t     Status;         // PS2: (New; did not exist.)
+    uint8_t     sName[16];      // PS2: (New; did not exist.)
+    uint16_t    Race;           // PS2: (New; did not exist.)
+    uint8_t     padding1E[2];   // PS2: (New; did not exist.)
 };
 ```
 
@@ -84,6 +85,6 @@ _The requesting players race._
 
 This value was used to properly determine the requesting players gender. However this purpose is no longer used due to the French/German languages being deprecated.
 
-### `padding00`
+### `padding1E`
 
 _Padding; unused._

@@ -32,11 +32,12 @@ struct GP_SERV_TRACKING_POS
     uint16_t                id: 9;
     uint16_t                size: 7;
     uint16_t                sync;
+
     float                   x;          // PS2: x
     float                   y;          // PS2: y
     float                   z;          // PS2: z
     uint8_t                 Level;      // PS2: Level
-    uint8_t                 unused;     // PS2: Dammy
+    uint8_t                 padding11;  // PS2: Dammy
     uint16_t                ActIndex;   // PS2: (New; did not exist.)
     GP_TRACKING_POS_STATE   State;      // PS2: State
 };
@@ -70,9 +71,9 @@ _The tracked entities Z position._
 
 _The tracked entities level._
 
-### `unused`
+### `padding11`
 
-_Unused; junk._
+_Padding; unused._
 
 ### `ActIndex`
 

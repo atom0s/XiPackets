@@ -23,6 +23,7 @@ struct GP_SERV_MOTIONMES
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
+
     uint32_t    CasUniqueNo;        // PS2: CasUniqueNo
     uint32_t    TarUniqueNo;        // PS2: TarUniqueNo
     uint16_t    CasActIndex;        // PS2: CasActIndex
@@ -31,10 +32,10 @@ struct GP_SERV_MOTIONMES
     uint16_t    Param;              // PS2: (New; did not exist.)
     uint16_t    unknown14;          // PS2: (New; did not exist.)
     uint8_t     Mode;               // PS2: Mode
-    uint8_t     padding00;          // PS2: (New; did not exist.)
+    uint8_t     padding17;          // PS2: (New; did not exist.)
     uint32_t    FaithUniqueNo[5];   // PS2: (New; did not exist.)
     uint16_t    FaithActIndex[5];   // PS2: (New; did not exist.)
-    uint16_t    padding01;          // PS2: (New; did not exist.)
+    uint16_t    padding36;          // PS2: (New; did not exist.)
 };
 ```
 
@@ -96,7 +97,7 @@ This value represents how the emote should be executed.
 | `1` | `Text` _(The emote will only display its text to the chat log.)_ |
 | `2` | `Motion` _(The emote will only play the motion.)_ |
 
-### `padding00`
+### `padding17`
 
 _Padding; unused._
 
@@ -112,7 +113,7 @@ _The target indexs for each of the casters summoned trusts._
 
 These values are used to enable the `/emotefaith` command emote replication.
 
-### `padding01`
+### `padding36`
 
 _Padding; unused._
 

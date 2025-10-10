@@ -151,6 +151,7 @@ struct GP_SERV_SERVERSTATUS
     uint16_t        id: 9;
     uint16_t        size: 7;
     uint16_t        sync;
+
     uint8_t         BufStatus[32];          // PS2: BufStatus
     uint32_t        UniqueNo;               // PS2: UniqueNo
     flags0_t        Flags0;                 // PS2: <bits> (Nameless bitfield.)
@@ -167,7 +168,7 @@ struct GP_SERV_SERVERSTATUS
     uint16_t        warp_target_index;      // PS2: (New; did not exist.)
     uint16_t        fellow_target_index;    // PS2: (New; did not exist.)
     uint8_t         fishing_timer;          // PS2: (New; did not exist.)
-    uint8_t         padding00;              // PS2: (New; did not exist.)
+    uint8_t         padding4B;              // PS2: (New; did not exist.)
     status_bits_t   BufStatusBits;          // PS2: (New; did not exist.)
     uint16_t        monstrosity_info;       // PS2: (New; did not exist.)
     uint8_t         monstrosity_name_id1;   // PS2: (New; did not exist.)
@@ -256,7 +257,7 @@ _The entities fellow target index._
 
 _The entities fishing timer._
 
-### `padding00`
+### `padding4B`
 
 _Padding; unused._
 

@@ -23,6 +23,7 @@ struct GP_SERV_TROPHY_SOLUTION
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
+
     uint32_t    LootUniqueNo;           // PS2: LootUniqueNo
     uint32_t    EntryUniqueNo;          // PS2: EntryUniqueNo
     uint16_t    LootActIndex;           // PS2: LootActIndex
@@ -33,7 +34,8 @@ struct GP_SERV_TROPHY_SOLUTION
     uint8_t     TrophyItemIndex;        // PS2: TrophyItemIndex
     uint8_t     JudgeFlg;               // PS2: JudgeFlg
     uint8_t     sLootName[16];          // PS2: sLootName
-    uint8_t     sLootName2[24];         // PS2: (New; did not exist.)
+    uint8_t     sLootName2[16];         // PS2: (New; did not exist.)
+    uint8_t     padding36[6];           // PS2: (New; did not exist.)
 };
 ```
 
@@ -99,6 +101,10 @@ _The current winning lotters name._
 
 _The casting players name._
 
+### `padding36`
+
+_Padding; unused._
+
 ## Additional Information
 
 Each time a party member rolls for or passes an item, the server will send all other valid party members this packet to inform them of the action taken on the item in the treasure pool. The server will populate the current winning lot information based on whoever has rolled the highest for the item. The 'casting player' mentioned in the field information above is the player who caused this packet to be sent when a new lot/pass has been made. This information is used to tell the client how to properly update the local treasure pool information to be displayed both in the treasure pool _(when using hte expanded pool mode)_ as well as on the side of the party list.
@@ -106,6 +112,8 @@ Each time a party member rolls for or passes an item, the server will send all o
 The client has a special check for when the `EntryActIndex` is the local players target index, which will populate the local players lot information differently.
 
 The client will then check and use the `JudgeFlg` to determine if a judgement has been made on the item. If no judgement has been made _(`JudgeFlg` is 0)_ then the client checks to see if `EntryPoint` and `sLootName2` are set. If they are, then the client will print the casting players lot roll to chat. _(Passes are not announced.)_ If the `JudgeFlg` is set _(> 0)_, then the client will use its value to determine what message is printed based on the judgement result.
+
+_**Note:** While the true size of `sLootName` and `sLootName2` are both 16 bytes, the way the client is coded introduces a common C/C++ memory bug called a buffer overrun due to the manner in which the strings are being copied. The client will instead attempt to read 24 bytes for each name. When `sLootName` is read, the read will overrun into `sLootName2`. The same happens with `sLootName2` reading into `padding36`._
 
 ## Additional Information - `JudgeFlg`
 

@@ -26,6 +26,7 @@ struct GP_SERV_TALK
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
+
     uint8_t     Attr;       // PS2: Attr
     uint8_t     Channel;    // PS2: Channel
     uint8_t     Type;       // PS2: Type

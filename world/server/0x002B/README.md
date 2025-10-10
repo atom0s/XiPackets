@@ -26,6 +26,7 @@ struct GP_SERV_CHANNEL_ITEM
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
+
     uint8_t     PropertyItemIndex;  // PS2: PropertyItemIndex
     uint8_t     ChannelIndex;       // PS2: ChannelIndex
 };

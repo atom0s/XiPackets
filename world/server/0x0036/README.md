@@ -23,12 +23,13 @@ struct GP_SERV_TALKNUM
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
+
     uint32_t    UniqueNo;   // PS2: UniqueNo
     uint16_t    ActIndex;   // PS2: ActIndex
     uint16_t    MesNum;     // PS2: MesNum
     uint8_t     Type;       // PS2: Type
-    uint8_t     padding00;  // PS2: padding00
-    uint16_t    padding01;  // PS2: padding01
+    uint8_t     padding0D;  // PS2: dummmy
+    uint16_t    padding0E;  // PS2: dummy2
 };
 ```
 
@@ -84,10 +85,10 @@ This value is used to determine the message type. The client uses a local lookup
 
 _These values are used as the chat mode of the message that will be printed._
 
-### `padding00`
+### `padding0D`
 
 _Padding; unused._
 
-### `padding01`
+### `padding0E`
 
 _Padding; unused._

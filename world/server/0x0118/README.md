@@ -23,101 +23,102 @@ struct packet_t
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
-    int32_t     bayld;
-    uint16_t    kinetic_units;
-    uint8_t     coalition_imprimaturs;
-    uint8_t     mystical_canteens;
-    int32_t     obsidian_fragments;
-    uint16_t    lebondopt_wings_stored;
-    uint16_t    pulchridopt_wings_stored;
-    int32_t     mweya_plasm_corpuscles;
-    uint8_t     ghastly_stones_stored;
-    uint8_t     ghastly_stones_plus1_stored;
-    uint8_t     ghastly_stones_plus2_stored;
-    uint8_t     verdigris_stones_stored;
-    uint8_t     verdigris_stones_plus1_stored;
-    uint8_t     verdigris_stones_plus2_stored;
-    uint8_t     wailing_stones_stored;
-    uint8_t     wailing_stones_plus1_stored;
-    uint8_t     wailing_stones_plus2_stored;
-    uint8_t     snowslit_stones_stored;
-    uint8_t     snowslit_stones_plus1_stored;
-    uint8_t     snowslit_stones_plus2_stored;
-    uint8_t     snowtip_stones_stored;
-    uint8_t     snowtip_stones_plus1_stored;
-    uint8_t     snowtip_stones_plus2_stored;
-    uint8_t     snowdim_stones_stored;
-    uint8_t     snowdim_stones_plus1_stored;
-    uint8_t     snowdim_stones_plus2_stored;
-    uint8_t     snoworb_stones_stored;
-    uint8_t     snoworb_stones_plus1_stored;
-    uint8_t     snoworb_stones_plus2_stored;
-    uint8_t     leafslit_stones_stored;
-    uint8_t     leafslit_stones_plus1_stored;
-    uint8_t     leafslit_stones_plus2_stored;
-    uint8_t     leaftip_stones_stored;
-    uint8_t     leaftip_stones_plus1_stored;
-    uint8_t     leaftip_stones_plus2_stored;
-    uint8_t     leafdim_stones_stored;
-    uint8_t     leafdim_stones_plus1_stored;
-    uint8_t     leafdim_stones_plus2_stored;
-    uint8_t     leaforb_stones_stored;
-    uint8_t     leaforb_stones_plus1_stored;
-    uint8_t     leaforb_stones_plus2_stored;
-    uint8_t     duskslit_stones_stored;
-    uint8_t     duskslit_stones_plus1_stored;
-    uint8_t     duskslit_stones_plus2_stored;
-    uint8_t     dusktip_stones_stored;
-    uint8_t     dusktip_stones_plus1_stored;
-    uint8_t     dusktip_stones_plus2_stored;
-    uint8_t     duskdim_stones_stored;
-    uint8_t     duskdim_stones_plus1_stored;
-    uint8_t     duskdim_stones_plus2_stored;
-    uint8_t     duskorb_stones_stored;
-    uint8_t     duskorb_stones_plus1_stored;
-    uint8_t     duskorb_stones_plus2_stored;
-    uint8_t     pellucid_stones_stored;
-    uint8_t     fern_stones_stored;
-    uint8_t     taupe_stones_stored;
-    uint16_t    mellidopt_wings_stored;
-    uint16_t    escha_beads;
-    int32_t     escha_silt;
-    int32_t     potpourri;
-    int32_t     hallmarks;
-    int32_t     total_hallmarks;
-    int32_t     badges_of_gallantry;
-    int32_t     crafter_points;
-    uint8_t     fire_crystals_set;
-    uint8_t     ice_crystals_set;
-    uint8_t     wind_crystals_set;
-    uint8_t     earth_crystals_set;
-    uint8_t     lightning_crystals_set;
-    uint8_t     water_crystals_set;
-    uint8_t     light_crystals_set;
-    uint8_t     dark_crystals_set;
-    uint8_t     mc_i_sr01s_set;
-    uint8_t     mc_i_sr02s_set;
-    uint8_t     mc_i_sr03s_set;
-    uint8_t     liquefactions_spheres_set;
-    uint8_t     induration_spheres_set;
-    uint8_t     dentonation_spheres_set;
-    uint8_t     scission_spheres_set;
-    uint8_t     impaction_spheres_set;
-    uint8_t     reverberation_spheres_set;
-    uint8_t     transfixion_spheres_set;
-    uint8_t     compression_spheres_set;
-    uint8_t     fusion_spheres_set;
-    uint8_t     distortion_spheres_set;
-    uint8_t     fragmentation_spheres_set;
-    uint8_t     gravitation_spheres_set;
-    uint8_t     light_spheres_set;
-    uint8_t     darkness_spheres_set;
-    uint8_t     padding00[3];
-    int32_t     silver_aman_vouchers_stored;
-    int32_t     domain_points;
-    int32_t     domain_points_earned_today;
-    int32_t     mog_segments;
-    int32_t     gallimaufry;
+
+    int32_t     bayld;                          // PS2: (New; did not exist.)
+    uint16_t    kinetic_units;                  // PS2: (New; did not exist.)
+    uint8_t     coalition_imprimaturs;          // PS2: (New; did not exist.)
+    uint8_t     mystical_canteens;              // PS2: (New; did not exist.)
+    int32_t     obsidian_fragments;             // PS2: (New; did not exist.)
+    uint16_t    lebondopt_wings_stored;         // PS2: (New; did not exist.)
+    uint16_t    pulchridopt_wings_stored;       // PS2: (New; did not exist.)
+    int32_t     mweya_plasm_corpuscles;         // PS2: (New; did not exist.)
+    uint8_t     ghastly_stones_stored;          // PS2: (New; did not exist.)
+    uint8_t     ghastly_stones_plus1_stored;    // PS2: (New; did not exist.)
+    uint8_t     ghastly_stones_plus2_stored;    // PS2: (New; did not exist.)
+    uint8_t     verdigris_stones_stored;        // PS2: (New; did not exist.)
+    uint8_t     verdigris_stones_plus1_stored;  // PS2: (New; did not exist.)
+    uint8_t     verdigris_stones_plus2_stored;  // PS2: (New; did not exist.)
+    uint8_t     wailing_stones_stored;          // PS2: (New; did not exist.)
+    uint8_t     wailing_stones_plus1_stored;    // PS2: (New; did not exist.)
+    uint8_t     wailing_stones_plus2_stored;    // PS2: (New; did not exist.)
+    uint8_t     snowslit_stones_stored;         // PS2: (New; did not exist.)
+    uint8_t     snowslit_stones_plus1_stored;   // PS2: (New; did not exist.)
+    uint8_t     snowslit_stones_plus2_stored;   // PS2: (New; did not exist.)
+    uint8_t     snowtip_stones_stored;          // PS2: (New; did not exist.)
+    uint8_t     snowtip_stones_plus1_stored;    // PS2: (New; did not exist.)
+    uint8_t     snowtip_stones_plus2_stored;    // PS2: (New; did not exist.)
+    uint8_t     snowdim_stones_stored;          // PS2: (New; did not exist.)
+    uint8_t     snowdim_stones_plus1_stored;    // PS2: (New; did not exist.)
+    uint8_t     snowdim_stones_plus2_stored;    // PS2: (New; did not exist.)
+    uint8_t     snoworb_stones_stored;          // PS2: (New; did not exist.)
+    uint8_t     snoworb_stones_plus1_stored;    // PS2: (New; did not exist.)
+    uint8_t     snoworb_stones_plus2_stored;    // PS2: (New; did not exist.)
+    uint8_t     leafslit_stones_stored;         // PS2: (New; did not exist.)
+    uint8_t     leafslit_stones_plus1_stored;   // PS2: (New; did not exist.)
+    uint8_t     leafslit_stones_plus2_stored;   // PS2: (New; did not exist.)
+    uint8_t     leaftip_stones_stored;          // PS2: (New; did not exist.)
+    uint8_t     leaftip_stones_plus1_stored;    // PS2: (New; did not exist.)
+    uint8_t     leaftip_stones_plus2_stored;    // PS2: (New; did not exist.)
+    uint8_t     leafdim_stones_stored;          // PS2: (New; did not exist.)
+    uint8_t     leafdim_stones_plus1_stored;    // PS2: (New; did not exist.)
+    uint8_t     leafdim_stones_plus2_stored;    // PS2: (New; did not exist.)
+    uint8_t     leaforb_stones_stored;          // PS2: (New; did not exist.)
+    uint8_t     leaforb_stones_plus1_stored;    // PS2: (New; did not exist.)
+    uint8_t     leaforb_stones_plus2_stored;    // PS2: (New; did not exist.)
+    uint8_t     duskslit_stones_stored;         // PS2: (New; did not exist.)
+    uint8_t     duskslit_stones_plus1_stored;   // PS2: (New; did not exist.)
+    uint8_t     duskslit_stones_plus2_stored;   // PS2: (New; did not exist.)
+    uint8_t     dusktip_stones_stored;          // PS2: (New; did not exist.)
+    uint8_t     dusktip_stones_plus1_stored;    // PS2: (New; did not exist.)
+    uint8_t     dusktip_stones_plus2_stored;    // PS2: (New; did not exist.)
+    uint8_t     duskdim_stones_stored;          // PS2: (New; did not exist.)
+    uint8_t     duskdim_stones_plus1_stored;    // PS2: (New; did not exist.)
+    uint8_t     duskdim_stones_plus2_stored;    // PS2: (New; did not exist.)
+    uint8_t     duskorb_stones_stored;          // PS2: (New; did not exist.)
+    uint8_t     duskorb_stones_plus1_stored;    // PS2: (New; did not exist.)
+    uint8_t     duskorb_stones_plus2_stored;    // PS2: (New; did not exist.)
+    uint8_t     pellucid_stones_stored;         // PS2: (New; did not exist.)
+    uint8_t     fern_stones_stored;             // PS2: (New; did not exist.)
+    uint8_t     taupe_stones_stored;            // PS2: (New; did not exist.)
+    uint16_t    mellidopt_wings_stored;         // PS2: (New; did not exist.)
+    uint16_t    escha_beads;                    // PS2: (New; did not exist.)
+    int32_t     escha_silt;                     // PS2: (New; did not exist.)
+    int32_t     potpourri;                      // PS2: (New; did not exist.)
+    int32_t     hallmarks;                      // PS2: (New; did not exist.)
+    int32_t     total_hallmarks;                // PS2: (New; did not exist.)
+    int32_t     badges_of_gallantry;            // PS2: (New; did not exist.)
+    int32_t     crafter_points;                 // PS2: (New; did not exist.)
+    uint8_t     fire_crystals_set;              // PS2: (New; did not exist.)
+    uint8_t     ice_crystals_set;               // PS2: (New; did not exist.)
+    uint8_t     wind_crystals_set;              // PS2: (New; did not exist.)
+    uint8_t     earth_crystals_set;             // PS2: (New; did not exist.)
+    uint8_t     lightning_crystals_set;         // PS2: (New; did not exist.)
+    uint8_t     water_crystals_set;             // PS2: (New; did not exist.)
+    uint8_t     light_crystals_set;             // PS2: (New; did not exist.)
+    uint8_t     dark_crystals_set;              // PS2: (New; did not exist.)
+    uint8_t     mc_i_sr01s_set;                 // PS2: (New; did not exist.)
+    uint8_t     mc_i_sr02s_set;                 // PS2: (New; did not exist.)
+    uint8_t     mc_i_sr03s_set;                 // PS2: (New; did not exist.)
+    uint8_t     liquefactions_spheres_set;      // PS2: (New; did not exist.)
+    uint8_t     induration_spheres_set;         // PS2: (New; did not exist.)
+    uint8_t     dentonation_spheres_set;        // PS2: (New; did not exist.)
+    uint8_t     scission_spheres_set;           // PS2: (New; did not exist.)
+    uint8_t     impaction_spheres_set;          // PS2: (New; did not exist.)
+    uint8_t     reverberation_spheres_set;      // PS2: (New; did not exist.)
+    uint8_t     transfixion_spheres_set;        // PS2: (New; did not exist.)
+    uint8_t     compression_spheres_set;        // PS2: (New; did not exist.)
+    uint8_t     fusion_spheres_set;             // PS2: (New; did not exist.)
+    uint8_t     distortion_spheres_set;         // PS2: (New; did not exist.)
+    uint8_t     fragmentation_spheres_set;      // PS2: (New; did not exist.)
+    uint8_t     gravitation_spheres_set;        // PS2: (New; did not exist.)
+    uint8_t     light_spheres_set;              // PS2: (New; did not exist.)
+    uint8_t     darkness_spheres_set;           // PS2: (New; did not exist.)
+    uint8_t     padding7D[3];                   // PS2: (New; did not exist.)
+    int32_t     silver_aman_vouchers_stored;    // PS2: (New; did not exist.)
+    int32_t     domain_points;                  // PS2: (New; did not exist.)
+    int32_t     domain_points_earned_today;     // PS2: (New; did not exist.)
+    int32_t     mog_segments;                   // PS2: (New; did not exist.)
+    int32_t     gallimaufry;                    // PS2: (New; did not exist.)
 };
 ```
 

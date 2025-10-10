@@ -20,10 +20,10 @@ The layout of this packet is the following:
 // PS2: _GP_GUILD_ITEM
 struct _GP_GUILD_ITEM
 {
-    uint16_t        ItemNo;
-    uint8_t         Count;
-    uint8_t         Max;
-    int32_t         Price;
+    uint16_t        ItemNo; // PS2: ItemNo
+    uint8_t         Count;  // PS2: Count
+    uint8_t         Max;    // PS2: Max
+    int32_t         Price;  // PS2: Price
 };
 
 // PS2: _GP_GUILD_LIST
@@ -32,9 +32,11 @@ struct _GP_GUILD_LIST
     uint16_t        id: 9;
     uint16_t        size: 7;
     uint16_t        sync;
-    _GP_GUILD_ITEM  List[30];
-    uint8_t         Count;
-    uint8_t         Stat;
+
+    _GP_GUILD_ITEM  List[30];       // PS2: List
+    uint8_t         Count;          // PS2: Count
+    uint8_t         Stat;           // PS2: Stat
+    uint8_t         paddingF6[2];   // PS2: (New; did not exist.)
 };
 ```
 
@@ -70,6 +72,10 @@ This value is used to adjust different parts of the clients internal guild infor
     - _Sets the guilds buy list `Stat` to `3`._
   - `0x80` - Resets the guild `Stat` value.
     - _Sets the guilds buy list `Stat` to `1`._
+
+### `paddingF6`
+
+_Padding; unused._
 
 ## Structure Fields (`_GP_GUILD_ITEM`)
 

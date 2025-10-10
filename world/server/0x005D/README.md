@@ -23,11 +23,12 @@ struct packet_t
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
-    int32_t     num[9];
-    char        string1[16];
-    char        string2[16];
-    char        string3[16];
-    char        string4[16];
+
+    int32_t     num[9];         // PS2: (New; did not exist.)
+    char        string1[16];    // PS2: (New; did not exist.)
+    char        string2[16];    // PS2: (New; did not exist.)
+    char        string3[16];    // PS2: (New; did not exist.)
+    char        string4[16];    // PS2: (New; did not exist.)
 };
 ```
 

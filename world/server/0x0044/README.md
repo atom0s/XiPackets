@@ -23,9 +23,10 @@ struct packet_t
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
-    uint8_t     JobId;
-    uint8_t     IsSubJob;
-    uint8_t     Data[154];
+
+    uint8_t     JobId;      // PS2: (New; did not exist.)
+    uint8_t     IsSubJob;   // PS2: (New; did not exist.)
+    uint8_t     Data[154];  // PS2: (New; did not exist.)
 };
 ```
 

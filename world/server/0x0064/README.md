@@ -34,10 +34,12 @@ struct GP_SERV_PREFERENCE_DATA
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
+
     int32_t     ContentLen;         // PS2: ContentLen
     int32_t     SegmentIndex;       // PS2: SegmentIndex
     char        PreferenceData[50]; // PS2: PreferenceData
     char        SendDone;           // PS2: SendDone
+    uint8_t     padding3F;          // PS2: (New; did not exist.)
 };
 ```
 
@@ -70,3 +72,7 @@ _The preference data to be stored._
 ### `SendDone`
 
 _Flag that states all preference data has been sent/populated._
+
+### `padding3F`
+
+_Padding; unused._

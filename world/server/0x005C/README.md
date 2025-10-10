@@ -23,6 +23,7 @@ struct GP_SERV_PENDINGNUM
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
+
     int32_t     num[8]; // PS2: num
 };
 ```

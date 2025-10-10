@@ -23,8 +23,9 @@ struct _GP_MYROOM_GATE
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
+
     uint8_t     Result;         // PS2: Result
-    uint8_t     padding00[3];   // PS2: (New; did not exist.)
+    uint8_t     padding05[3];   // PS2: (New; did not exist.)
 };
 ```
 
@@ -44,7 +45,7 @@ _You can find more information about the header fields here: [**Header**](/world
 
 _The packet result._
 
-### `padding00`
+### `padding05`
 
 _Padding; unused._
 

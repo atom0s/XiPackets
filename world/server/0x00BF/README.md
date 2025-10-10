@@ -23,10 +23,12 @@ struct packet_t
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
-    uint16_t    unknown04;
-    uint16_t    Result;
-    uint32_t    unknown08;
-    uint32_t    ActIndex;
+
+    uint16_t    unknown04;      // PS2: (New; did not exist.)
+    uint16_t    Result;         // PS2: (New; did not exist.)
+    uint32_t    unknown08;      // PS2: (New; did not exist.)
+    uint32_t    ActIndex;       // PS2: (New; did not exist.)
+    uint8_t     padding10[12];  // PS2: (New; did not exist.)
 };
 ```
 
@@ -65,6 +67,10 @@ The client does not use this value.
 _The entity target index._
 
 This value is the target index of the NPC being interacted with.
+
+### `padding10`
+
+_Padding; unused._
 
 ## Additional Information
 

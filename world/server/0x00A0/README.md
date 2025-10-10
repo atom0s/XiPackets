@@ -23,9 +23,10 @@ struct _GP_MAP_GROUP
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
+
     uint32_t    UniqueID;   // PS2: UniqueID
     int16_t     zone;       // PS2: zone
-    uint16_t    padding00;  // PS2: padding00
+    uint16_t    padding0A;  // PS2: (New; did not exist.)
     float       x;          // PS2: x
     float       y;          // PS2: y
     float       z;          // PS2: z
@@ -52,7 +53,7 @@ _The server id of the party member._
 
 _The zone id of the party member._
 
-### `padding00`
+### `padding0A`
 
 _Padding; unused._
 

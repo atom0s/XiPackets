@@ -6,7 +6,7 @@
 | **Client Handler**        | `RecvEventCalcStr` |
 | **Direction**             | `S -> C` |
 | **OpCode**                | `0x0033` |
-| **Size**                  | `0x0038` |
+| **Size**                  | `0x0070` |
 
 ## Description
 
@@ -23,6 +23,7 @@ struct GP_SERV_EVENTSTR
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
+
     uint32_t    UniqueNo;       // PS2: UniqueNo
     uint16_t    ActIndex;       // PS2: ActIndex
     uint16_t    EventNum;       // PS2: EventNum

@@ -19,9 +19,9 @@ The layout of this packet is the following:
 ```cpp
 struct merit_t
 {
-    uint16_t    index;
-    uint8_t     next;
-    uint8_t     count;
+    uint16_t    index;  // PS2: (New; did not exist.)
+    uint8_t     next;   // PS2: (New; did not exist.)
+    uint8_t     count;  // PS2: (New; did not exist.)
 };
 
 // PS2: (New; did not exist.)
@@ -30,10 +30,11 @@ struct packet_t
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
-    uint16_t    merit_count;
-    uint16_t    padding00;
-    merit_t     merits[];
-    uint8_t     padding01[];
+
+    uint16_t    merit_count;    // PS2: (New; did not exist.)
+    uint16_t    padding06;      // PS2: (New; did not exist.)
+    merit_t     merits[];       // PS2: (New; did not exist.)
+    uint8_t     padding[];      // PS2: (New; did not exist.)
 };
 ```
 
@@ -57,7 +58,7 @@ This value will vary based on the usage of this packet. When the server is popul
 
 When the client spends merit points or removes spent points, then this value will be `1` with the `merit` array entry being the merit the client modified.
 
-### `padding00`
+### `padding06`
 
 _Padding; unused._
 
@@ -65,7 +66,7 @@ _Padding; unused._
 
 _The array of merit points information._
 
-### `padding01`
+### `padding`
 
 _Padding; unused._
 

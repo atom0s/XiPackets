@@ -31,8 +31,10 @@ struct GP_SERV_BAZAAR_BUY
     uint16_t            id: 9;
     uint16_t            size: 7;
     uint16_t            sync;
-    GP_BAZAAR_BUY_STATE State;      // PS2: State
-    uint8_t             sName[16];  // PS2: sName
+
+    GP_BAZAAR_BUY_STATE State;          // PS2: State
+    uint8_t             sName[16];      // PS2: sName
+    uint8_t             padding18[4];   // PS2: (New; did not exist.)
 };
 ```
 
@@ -60,3 +62,7 @@ _The state of the purchase._
 ### `sName`
 
 _The name of the player whos bazaar the item was purchased from._
+
+### `padding18`
+
+_Padding; unused._

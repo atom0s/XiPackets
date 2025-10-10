@@ -23,13 +23,14 @@ struct GP_SERV_BAZAAR_LIST
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
+
     uint32_t    Price;          // PS2: Price
     uint32_t    ItemNum;        // PS2: ItemNum
     uint16_t    TaxRate;        // PS2: TaxRate
     uint16_t    ItemNo;         // PS2: ItemNo
     uint8_t     ItemIndex;      // PS2: ItemIndex
     uint8_t     Attr[24];       // PS2: Attr
-    uint8_t     padding00[3];   // PS2: (New; did not exist.))
+    uint8_t     padding29[3];   // PS2: (New; did not exist.)
 };
 ```
 
@@ -84,6 +85,6 @@ This value holds the unique extended data of the item such as:
   - Trials information.
   - etc.
 
-### `padding00`
+### `padding29`
 
 _Padding; unused._

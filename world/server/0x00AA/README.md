@@ -23,6 +23,7 @@ struct GP_SERV_MAGIC_DATA
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
+
     uint8_t     MagicDataTbl[128]; // PS2: MagicDataTbl
 };
 ```

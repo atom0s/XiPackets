@@ -23,6 +23,7 @@ struct GP_SERV_RES
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
+
     uint32_t    UniqueNo;   // PS2: UniqueNo
     uint16_t    ActIndex;   // PS2: ActIndex
     uint16_t    type;       // PS2: type

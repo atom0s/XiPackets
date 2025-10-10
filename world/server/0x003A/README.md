@@ -23,13 +23,14 @@ struct GP_SERV_MAGICSCHEDULOR
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
+
     uint32_t    UniqueNoCas;    // PS2: UniqueNoCas
     uint32_t    UniqueNoTar;    // PS2: UniqueNoTar
     uint16_t    ActIndexCast;   // PS2: ActIndexCast
     uint16_t    ActIndexTar;    // PS2: ActIndexTar
     uint16_t    fileNum;        // PS2: fileNum
     uint8_t     type;           // PS2: (New; did not exist.)
-    uint8_t     padding00;      // PS2: (New; did not exist.)
+    uint8_t     padding13;      // PS2: (New; did not exist.)
 };
 ```
 
@@ -87,6 +88,6 @@ _The following list is not guaranteed to be accurate due to the above note._
   - `0x0B` - _Unknown (Has misc banner announcements.)_
   - `0x0C` - _Unknown (Has misc casting animations.)_
 
-### `padding00`
+### `padding13`
 
 _Padding; unused._

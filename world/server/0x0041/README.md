@@ -30,10 +30,11 @@ struct GP_BLACK_LIST
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
+
     SAVE_BLACK  List[12];   // PS2: List
     int8_t      Stat;       // PS2: Stat
     int8_t      Num;        // PS2: Num
-    uint16_t    padding00;  // PS2: (New; did not exist.)
+    uint16_t    paddingF6;  // PS2: (New; did not exist.)
 };
 ```
 
@@ -66,7 +67,7 @@ The client uses this value to determine the current initialization state of the 
 
 _The number of entries populated in the `List` array._
 
-### `padding00`
+### `paddingF6`
 
 _Padding; unused._
 

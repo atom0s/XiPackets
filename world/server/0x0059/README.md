@@ -23,13 +23,14 @@ struct GP_SERV_FRIENDPASS
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
+
     int32_t     leftNum;    // PS2: leftNum
     int32_t     leftDays;   // PS2: leftDays
     int32_t     passPop;    // PS2: passPop
     char        String[16]; // PS2: String
     char        Type;       // PS2: Type
     char        unknown21;  // PS2: (New; did not exist.)
-    uint16_t    padding00;  // PS2: (New; did not exist.)
+    uint16_t    padding22;  // PS2: (New; did not exist.)
 };
 ```
 
@@ -73,7 +74,7 @@ This value will vary based on the current state of the world pass event.
 
 _Unknown._
 
-### `padding00`
+### `padding22`
 
 _Padding; unused._
 

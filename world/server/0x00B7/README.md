@@ -26,6 +26,7 @@ struct GP_SERV_GMSCITEM
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
+
     uint32_t    ItemFlag[16];   // PS2: ItemFlag
     uint32_t    UniqueNo;       // PS2: UniqueNo
     uint8_t     sName[16];      // PS2: sName

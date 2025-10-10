@@ -23,10 +23,11 @@ struct GP_SERV_ASSIST
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
-    uint32_t    UniqueNo;
-    uint32_t    AssistNo;
-    uint16_t    ActIndex;
-    uint16_t    padding00;
+
+    uint32_t    UniqueNo;   // PS2: UniqueNo
+    uint32_t    AssistNo;   // PS2: AssistNo
+    uint16_t    ActIndex;   // PS2: ActIndex
+    uint16_t    padding0E;  // PS2: dammy2
 };
 ```
 
@@ -56,6 +57,6 @@ _The actor index._
 
 The client does not use this value.
 
-### `padding00`
+### `padding0E`
 
 _Padding; unused._

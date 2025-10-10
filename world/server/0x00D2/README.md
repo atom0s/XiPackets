@@ -23,16 +23,17 @@ struct GP_SERV_TROPHY_LIST
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
+
     uint32_t    TrophyItemNum;      // PS2: TrophyItemNum
     uint32_t    TargetUniqueNo;     // PS2: TargetUniqueNo
     uint16_t    Gold;               // PS2: Gold
-    uint16_t    padding00;          // PS2: (New; was Exp originally.)
+    uint16_t    padding0E;          // PS2: (New; was Exp originally.)
     uint16_t    TrophyItemNo;       // PS2: TrophyItemNo
     uint16_t    TargetActIndex;     // PS2: TargetActIndex
     uint8_t     TrophyItemIndex;    // PS2: TrophyItemIndex
     uint8_t     Entry;              // PS2: Entry
     uint8_t     IsContainer;        // PS2: (New; did not exist.)
-    uint8_t     padding01;          // PS2: (New; did not exist.)
+    uint8_t     padding17;          // PS2: (New; did not exist.)
     uint32_t    StartTime;          // PS2: StartTime
     uint16_t    IsLocallyLotted;    // PS2: (New; did not exist.)
     uint16_t    Point;              // PS2: (New; did not exist.)
@@ -47,7 +48,7 @@ struct GP_SERV_TROPHY_LIST
     uint8_t     Flags_5     : 1;    // PS2: (New; did not exist.)
     uint8_t     Flags_6     : 1;    // PS2: (New; did not exist.)
     uint8_t     Flags_7     : 1;    // PS2: (New; did not exist.)
-    uint8_t     padding02[3];       // PS2: (New; did not exist.)
+    uint8_t     padding39[3];       // PS2: (New; did not exist.)
 };
 ```
 
@@ -81,7 +82,7 @@ _The amount of gold that was found._
 
 This value is set to the amount of gil that will be obtained by the player. _(See notes below for more info.)_
 
-### `padding00`
+### `padding0E`
 
 _Padding; unused._
 
@@ -116,7 +117,7 @@ This value is set when the item (and/or gold) gold that was found was inside of 
   - `0` - `You find [a] <item name> on [the] <name>.`
   - `1` - `You find [a] <item name> in the <name>.`
 
-### `padding01`
+### `padding17`
 
 _Padding; unused._
 
@@ -176,7 +177,7 @@ _Unknown._
 
 These flag values are used by the client when handling different verbiage for certain languages. This is mainly used for the discontinued French and German languages. _(Due to the European languages being discontinued, testing for what this values all are is not worth spending time on currently.)_
 
-### `padding02`
+### `padding39`
 
 _Padding; unused._
 

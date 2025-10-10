@@ -23,9 +23,10 @@ struct GP_SERV_ITEM_TRADE_REQ
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
+
     uint32_t    UniqueNo;   // PS2: UniqueNo
     uint16_t    ActIndex;   // PS2: ActIndex
-    uint16_t    padding00;  // PS2: dammy2
+    uint16_t    padding0A;  // PS2: dammy2
 };
 ```
 
@@ -49,6 +50,6 @@ _The server id of the entity who sent the trade request._
 
 _The target index of the entity who sent the trade request._
 
-### `padding00`
+### `padding0A`
 
 _Padding; unused._

@@ -32,6 +32,7 @@ struct _GP_MYROOM_DIARY
     uint16_t                id: 9;
     uint16_t                size: 7;
     uint16_t                sync;
+
     _GP_MYROOM_DIARY_DATA   data; // PS2: data
 };
 ```

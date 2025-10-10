@@ -18,7 +18,7 @@ The layout of this packet is the following:
 
 ```cpp
 // PS2: SAVE_EQUIP_KIND
-enum SAVE_EQUIP_KIND
+enum SAVE_EQUIP_KIND : uint8_t
 {
     SAVE_EQUIP_KIND_RIGHTHAND,
     SAVE_EQUIP_KIND_LEFTHAND,
@@ -45,10 +45,11 @@ struct GP_SERV_EQUIP_LIST
     uint16_t        id: 9;
     uint16_t        size: 7;
     uint16_t        sync;
+
     uint8_t         PropertyItemIndex;  // PS2: PropertyItemIndex
     SAVE_EQUIP_KIND EquipKind;          // PS2: EquipKind
     uint8_t         Category;           // PS2: (New; did not exist.)
-    uint8_t         padding00;          // PS2: (New; did not exist.)
+    uint8_t         padding07;          // PS2: (New; did not exist.)
 };
 ```
 
@@ -72,10 +73,12 @@ _The index of the item within the container._
 
 _The equipment slot enumeration id._
 
+**Note:** This is aligned as a single byte!
+
 ### `Category`
 
 _The container holding the item being equipped._
 
-### `padding00`
+### `padding07`
 
 _Padding; unused._

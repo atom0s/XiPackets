@@ -26,9 +26,10 @@ struct packet_t
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
-    uint8_t     Count;
-    uint8_t     padding00[3];
-    uint16_t    ItemNo[];
+
+    uint8_t     Count;          // PS2: (New; did not exist.)
+    uint8_t     padding05[3];   // PS2: (New; did not exist.)
+    uint16_t    ItemNo[];       // PS2: (New; did not exist.)
 };
 ```
 
@@ -48,7 +49,7 @@ _You can find more information about the header fields here: [**Header**](/world
 
 _The number of entries within the `ItemNo` array._
 
-### `padding00`
+### `padding05`
 
 _Padding; unused._
 

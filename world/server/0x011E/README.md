@@ -23,8 +23,9 @@ struct packet_t
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
-    uint16_t    ActIndex;
-    uint8_t     padding00[2];
+
+    uint16_t    ActIndex;       // PS2: (New; did not exist.)
+    uint8_t     padding06[2];   // PS2: (New; did not exist.)
 };
 ```
 
@@ -44,6 +45,6 @@ _You can find more information about the header fields here: [**Header**](/world
 
 _The target index of the entity that jumped._
 
-### `padding00`
+### `padding06`
 
 _Padding; unused._

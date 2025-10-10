@@ -23,16 +23,17 @@ struct packet_t
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
-    uint16_t    stamina;
-    uint16_t    arrow_delay;
-    uint16_t    regen;
-    uint16_t    move_frequency;
-    uint16_t    arrow_damage;
-    uint16_t    arrow_regen;
-    uint16_t    time;
-    uint8_t     angler_sense;
-    uint8_t     padding00;
-    uint32_t    intuition;
+
+    uint16_t    stamina;        // PS2: (New; did not exist.)
+    uint16_t    arrow_delay;    // PS2: (New; did not exist.)
+    uint16_t    regen;          // PS2: (New; did not exist.)
+    uint16_t    move_frequency; // PS2: (New; did not exist.)
+    uint16_t    arrow_damage;   // PS2: (New; did not exist.)
+    uint16_t    arrow_regen;    // PS2: (New; did not exist.)
+    uint16_t    time;           // PS2: (New; did not exist.)
+    uint8_t     angler_sense;   // PS2: (New; did not exist.)
+    uint8_t     padding13;      // PS2: (New; did not exist.)
+    uint32_t    intuition;      // PS2: (New; did not exist.)
 };
 ```
 
@@ -164,7 +165,7 @@ fish->arrow_time = 60 * (::rand() % 6 + 5);
 
 The second value (`fish->sense2`) is used directly within the packet handler to set the players entity to play the angler sense animation. _(Lightbulb over their head when they first hook the fish.)_
 
-### `padding00`
+### `padding13`
 
 _Padding; unused._
 

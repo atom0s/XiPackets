@@ -23,7 +23,9 @@ struct packet_t
     uint16_t    id: 9;
     uint16_t    size: 7;
     uint16_t    sync;
-    uint8_t     Mode;
+
+    uint8_t     Mode;   // PS2: (New; did not exist.)
+    uint8_t     data[]; // PS2: (New; did not exist.)
 };
 ```
 
@@ -50,6 +52,10 @@ This value determines which map information is contained within the packet.
 
 _**Note:** All other mode values are ignored._
 
+### `data`
+
+_The packet data._
+
 ## Additional Information: Mode `2`
 
 This layout is used when the packet contains campaign map information:
@@ -57,19 +63,19 @@ This layout is used when the packet contains campaign map information:
 ```cpp
 struct campaigncontrolledareas_t
 {
-    uint32_t Sandoria: 5;
-    uint32_t Bastok: 5;
-    uint32_t Windurst: 5;
-    uint32_t Beastman: 5;
-    uint32_t unused: 12;
+    uint32_t Sandoria   : 5;
+    uint32_t Bastok     : 5;
+    uint32_t Windurst   : 5;
+    uint32_t Beastman   : 5;
+    uint32_t unused     : 12;
 };
 
 struct campaignnation_t
 {
-    uint32_t Reconnaissance: 4;
-    uint32_t unused: 14;
-    uint32_t Morale: 7;
-    uint32_t Prosperity: 7;
+    uint32_t Reconnaissance : 4;
+    uint32_t unused         : 14;
+    uint32_t Morale         : 7;
+    uint32_t Prosperity     : 7;
 };
 
 struct campaignnations_t
@@ -85,18 +91,18 @@ struct campaignnations_t
 
 struct campaignzone_t
 {
-    uint32_t    unused00: 1;
-    uint32_t    Owner: 3;
-    uint32_t    CurrentFortifications: 10;
-    uint32_t    CurrentResources: 10;
-    uint32_t    Heroism: 8;
+    uint32_t    unused00                : 1;
+    uint32_t    Owner                   : 3;
+    uint32_t    CurrentFortifications   : 10;
+    uint32_t    CurrentResources        : 10;
+    uint32_t    Heroism                 : 8;
     uint8_t     InfluenceSandoria;
     uint8_t     InfluenceBastok;
     uint8_t     InfluenceWindurst;
     uint8_t     InfluenceBeastman;
-    uint32_t    MaxFortifications: 10;
-    uint32_t    MaxResources: 10;
-    uint32_t    unused01: 12;
+    uint32_t    MaxFortifications       : 10;
+    uint32_t    MaxResources            : 10;
+    uint32_t    unused01                : 12;
 };
 
 struct packet_t
@@ -104,21 +110,21 @@ struct packet_t
     uint16_t                    id: 9;
     uint16_t                    size: 7;
     uint16_t                    sync;
-    uint8_t                     Mode;
-    uint8_t                     padding00;
-    uint8_t                     Length;
-    uint8_t                     padding01;
-    uint8_t                     padding02;
-    uint8_t                     ZoneOffset;
-    uint8_t                     padding03[2];
-    int32_t                     AlliedNotes;
-    campaigncontrolledareas_t   ControlledAreas;
-    campaignnations_t           Nations;
-    campaignzone_t              Zones[13];
+
+    uint8_t                     Mode;               // PS2: (New; did not exist.)
+    uint8_t                     padding05;          // PS2: (New; did not exist.)
+    uint8_t                     Length;             // PS2: (New; did not exist.)
+    uint8_t                     padding07[2];       // PS2: (New; did not exist.)
+    uint8_t                     ZoneOffset;         // PS2: (New; did not exist.)
+    uint8_t                     padding0A[2];       // PS2: (New; did not exist.)
+    int32_t                     AlliedNotes;        // PS2: (New; did not exist.)
+    campaigncontrolledareas_t   ControlledAreas;    // PS2: (New; did not exist.)
+    campaignnations_t           Nations;            // PS2: (New; did not exist.)
+    campaignzone_t              Zones[13];          // PS2: (New; did not exist.)
 };
 ```
 
-### `padding00`
+### `padding05`
 
 _Padding; unused._
 
@@ -130,11 +136,7 @@ The client does not use this value, it is ignored.
 
 _The `padding01` value may be part of this making it a `uint16_t`, however the client never references/uses it so its type size is unknown._
 
-### `padding01`
-
-_Padding; unused._
-
-### `padding02`
+### `padding07`
 
 _Padding; unused._
 
@@ -144,7 +146,7 @@ _The starting offset that the `Zones` information will contain the information f
 
 This value is used by the client to determine where to copy the `Zones` information into its local memory. The packet handler expects this to be broken into at least two packets, where the offset should be either `0` or `13`. This is enough space to break the zone information in half properly.
 
-### `padding03`
+### `padding0A`
 
 _Padding; unused._
 
@@ -339,21 +341,21 @@ This layout is used when the packet contains colonization map information:
 ```cpp
 struct coalitionranks_t
 {
-    uint32_t Pioneers: 4;
-    uint32_t Peacekeepers: 4;
-    uint32_t Couriers: 4;
-    uint32_t Scouts: 4;
-    uint32_t Inventors: 4;
-    uint32_t Mummers: 4;
-    uint32_t unused: 8;
+    uint32_t Pioneers       : 4;
+    uint32_t Peacekeepers   : 4;
+    uint32_t Couriers       : 4;
+    uint32_t Scouts         : 4;
+    uint32_t Inventors      : 4;
+    uint32_t Mummers        : 4;
+    uint32_t unused         : 8;
 };
 
 struct colonizationzone_t
 {
-    uint32_t ColonizationRate: 7;
-    uint32_t CurrentBivouacs: 3;
-    uint32_t MaxBivouacs: 3;
-    uint32_t unused: 19;
+    uint32_t ColonizationRate   : 7;
+    uint32_t CurrentBivouacs    : 3;
+    uint32_t MaxBivouacs        : 3;
+    uint32_t unused             : 19;
 };
 
 struct colonizationzones_t
@@ -374,32 +376,33 @@ struct packet_t
     uint16_t            id: 9;
     uint16_t            size: 7;
     uint16_t            sync;
-    uint8_t             Mode;
-    uint8_t             padding00;
-    uint8_t             Length;
-    uint8_t             padding01;
-    uint32_t            unknown00;
-    uint32_t            unknown01;
-    coalitionranks_t    Ranks;
-    colonizationzones_t Zones;
-    int32_t             Bayld;
+
+    uint8_t             Mode;       // PS2: (New; did not exist.)
+    uint8_t             padding05;  // PS2: (New; did not exist.)
+    uint8_t             Length;     // PS2: (New; did not exist.)
+    uint8_t             padding07;  // PS2: (New; did not exist.)
+    uint32_t            unknown00;  // PS2: (New; did not exist.)
+    uint32_t            unknown01;  // PS2: (New; did not exist.)
+    coalitionranks_t    Ranks;      // PS2: (New; did not exist.)
+    colonizationzones_t Zones;      // PS2: (New; did not exist.)
+    int32_t             Bayld;      // PS2: (New; did not exist.)
 };
 ```
 
-### `padding00`
+### `padding05`
 
 _Padding; unused._
 
 ### `Length`
 
-_The length of data, starting at the `padding02` value._
+_The length of data, starting at the `padding07` value._
 
 The client does not use this value, it is ignored.
 
-_The `padding01` value may be part of this making it a `uint16_t`, however the client never references/uses it so its type size is unknown._
+_The `padding07` value may be part of this making it a `uint16_t`, however the client never references/uses it so its type size is unknown._
 
 
-### `padding01`
+### `padding07`
 
 _Padding; unused._
 
