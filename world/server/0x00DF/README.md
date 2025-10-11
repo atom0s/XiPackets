@@ -6,7 +6,7 @@
 | **Client Handler**        | `RecvGroupAttr` |
 | **Direction**             | `S -> C` |
 | **OpCode**                | `0x00DF` |
-| **Size**                  | `0x0012`, `0x0014` |
+| **Size**                  | `0x0024`, `0x0028` |
 
 ## Description
 
@@ -42,6 +42,7 @@ struct GP_SERV_GROUP_ATTR
     uint8_t     sjob_lv;            // PS2: (New; did not exist.)
     uint8_t     masterjob_lv;       // PS2: (New; did not exist.)
     uint8_t     masterjob_flags;    // PS2: (New; did not exist.)
+    uint8_t     padding26[2];       // PS2: (New; did not exist.)
 };
 ```
 
@@ -147,6 +148,10 @@ This value holds two flags related to the party members job mastery:
 
   - `0x01` - Flag that states the job mastery system is unlocked.
   - `0x02` - Flag that states the current job is capped on exemplar points.
+
+### `padding26`
+
+_Padding; unused._
 
 ## Additional Information
 
