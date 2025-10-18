@@ -75,9 +75,11 @@ _The casting players target index._
 
 _Flag that states if the casting player lotted or passed on the item._
 
+The client will check this bit to determine the entry kind based on the following enum:
+
   - `0` - `GC_ITEM_TROPHY_ENTRY_KIND_NONE` - _None. (This should not happen with this packet.)_
-  - `1` - `GC_ITEM_TROPHY_ENTRY_KIND_NO` - _The player passed on the item._
-  - `2` - `GC_ITEM_TROPHY_ENTRY_KIND_YES` - _The player lotted on the item._
+  - `1` - `GC_ITEM_TROPHY_ENTRY_KIND_NO` - _The player passed on the item. (Used if `EntryFlg` is 0.)_
+  - `2` - `GC_ITEM_TROPHY_ENTRY_KIND_YES` - _The player lotted on the item. (Used if `EntryFlg` is 1.)_
 
 ### `EntryPoint`
 
