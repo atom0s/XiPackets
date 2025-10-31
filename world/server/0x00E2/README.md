@@ -27,7 +27,8 @@ struct GP_GROUP_ATTR
 	uint32_t        AllianceRFlg        : 1;    // PS2: AllianceRFlg
 	uint32_t        unknown06           : 1;    // PS2: MasterComFlg
 	uint32_t        unknown07           : 1;    // PS2: SubMasterComFlg
-	uint32_t        unused              : 24;   // PS2: dammy
+    uint32_t        LevelSyncFlg        : 1;    // PS2: (New; did not exist.)
+	uint32_t        unused              : 23;   // PS2: dammy
 };
 
 // PS2: GP_SERV_GROUP_LIST2
@@ -202,6 +203,10 @@ This value is still checked and used by the client. Its purpose is currently unk
 _Unknown._
 
 This value is still checked and used by the client. Its purpose is currently unknown.
+
+### `LevelSyncFlg`
+
+_Flag set if the party member is under the effect of level sync._
 
 ### `unused`
 
