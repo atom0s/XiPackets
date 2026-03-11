@@ -119,6 +119,7 @@ The following list is the various packets that are currently sent from the serve
 | [`0x0086`](/world/server/0x0086/README.md) | `GP_SERV_COMMAND_GUILD_OPEN`         | `gcRecvGuildOpen`             | `YkWndGuildMain::RecvGuildOpen`       | :white_check_mark: |
 | [`0x008C`](/world/server/0x008C/README.md) | `(UnknownName)`                      | `(UnknownName)`               | _None._                               | :white_check_mark: |
 | [`0x008D`](/world/server/0x008D/README.md) | `(UnknownName)`                      | `(UnknownName)`               | _None._                               | :white_check_mark: |
+| [`0x008D`](/world/server/0x008E/README.md) | `(UnknownName)`                      | `(UnknownName)`               | _None._                               | :white_check_mark: |
 | [`0x0096`](/world/server/0x0096/README.md) | `GP_SERV_COMMAND_MYROOM_ENTER`       | _None._                       | `RecvMyroomEnter`                     | :white_check_mark: |
 | [`0x0097`](/world/server/0x0097/README.md) | `GP_SERV_COMMAND_MYROOM_EXIT`        | _None._                       | `RecvMyroomExit`                      | :white_check_mark: |
 | [`0x0098`](/world/server/0x0098/README.md) | `GP_SERV_COMMAND_MYROOM_IS`          | _None._                       | `RecvMyroomIs`                        | :white_check_mark: |
